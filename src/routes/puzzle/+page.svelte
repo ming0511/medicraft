@@ -461,9 +461,13 @@
 							style={i===hiddenIdx
 								? 'border-color:var(--text);background:var(--surface);'
 								: `border-color:${col(i)}30;background:${col(i)}0d;`}>
-							<p class="font-semibold text-sm" style="color:{i===hiddenIdx ? 'var(--text)' : col(i)};">{e.part}</p>
+							<p class="font-semibold text-sm" style="color:{i===hiddenIdx ? 'var(--text)' : col(i)};">{i===hiddenIdx && qMode==='fill' ? '?' : e.part}</p>
 							{#if i===hiddenIdx}
-								<p class="text-base font-bold" style="color:var(--muted);">?</p>
+								{#if qMode==='fill'}
+									<p class="text-xs" style="color:var(--muted);">{e.meaningKo}</p>
+								{:else}
+									<p class="text-base font-bold" style="color:var(--muted);">?</p>
+								{/if}
 							{:else}
 								<p class="text-xs" style="color:var(--muted);">{e.meaningKo}</p>
 							{/if}
