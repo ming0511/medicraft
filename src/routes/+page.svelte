@@ -5,6 +5,18 @@
 	let stats = $derived(getStats());
 	let dueCount = $derived(getDueCards().length);
 
+	const DAILY_GOAL = 10;
+	function loadDailySolved(): number {
+		try {
+			const raw = localStorage.getItem('mediflash_daily');
+			if (!raw) return 0;
+			const d = JSON.parse(raw);
+			const today = new Date().toISOString().slice(0, 10);
+			return d.date === today ? d.solved : 0;
+		} catch { return 0; }
+	}
+	let dailySolved = $state(loadDailySolved());
+
 	function progressPct(val: number, total: number) {
 		return total ? Math.round((val / total) * 100) : 0;
 	}
@@ -34,21 +46,21 @@
 	<!-- Start study button -->
 	<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-center justify-between">
 		<div>
-			<h2 class="text-lg font-bold text-gray-800">오늘의 복습</h2>
+			<h2 class="text-lg font-bold text-gray-800">오늘의 퍼즐</h2>
 			<p class="text-sm text-gray-500 mt-1">
-				{#if dueCount > 0}
-					<span style="color: #ef4444; font-weight: 600;">{dueCount}개</span>의 카드가 복습을 기다리고 있습니다.
+				{#if dailySolved >= DAILY_GOAL}
+					<span style="color:#22c55e; font-weight:600;">오늘 목표 달성!</span> 내일 또 도전하세요.
 				{:else}
-					모든 카드를 완료했습니다! 내일 다시 확인하세요.
+					<span style="color:#1a2f70; font-weight:600;">{dailySolved}/{DAILY_GOAL}</span> 문제 완료
 				{/if}
 			</p>
 		</div>
 		<a
-			href="/flashcards"
+			href="/puzzle"
 			class="px-6 py-3 rounded-xl text-white font-semibold text-sm transition-opacity hover:opacity-90"
 			style="background-color: #1a2f70;"
 		>
-			{dueCount > 0 ? '학습 시작' : '전체 복습'}
+			퍼즐 시작
 		</a>
 	</div>
 

@@ -1,42 +1,56 @@
-# sv
+# MediCraft
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+의생명 전공자를 위한 의학 용어 **어원 조합 퍼즐** 학습 앱
 
-## Creating a project
+## 소개
 
-If you're seeing this, you've probably already done this step. Congrats!
+> **"의학 용어를 처음 봐도 뜻을 추론할 수 있게 한다"**
 
-```sh
-# create a new project
-npx sv create my-app
-```
+MediCraft는 의학 용어를 단순 암기가 아닌 **라틴/그리스어 어원 조각을 직접 조합**하며 구조적으로 이해하는 게임형 학습 앱입니다. 하트 시스템과 콤보 점수로 게임처럼 즐기면서 어원 지식을 쌓을 수 있습니다.
 
-To recreate this project with the same configuration:
+## 게임 구조
 
-```sh
-# recreate this project
-pnpm dlx sv@0.12.5 create --template minimal --types ts --add tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:node" paraglide="languageTags:en, ko+demo:no" --install pnpm frontend-app
-```
+- **하트 3개**로 시작 — 오답 시 1개 감소, 0개가 되면 게임 오버
+- **정답 10개** 달성 시 클리어
+- 틀린 문제는 3문제 후 자동 재출제
+- 연속 정답 시 콤보 보너스 점수
 
-## Developing
+## 학습 모드
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+| 모드 | 설명 |
+|------|------|
+| 조합 | 어원 블록을 드래그/클릭으로 올바른 순서에 배치 |
+| 추론 | 용어를 보고 특정 어원 파트의 뜻을 4지선다로 선택 |
+| 빈칸 채우기 | 어원 뜻을 보고 해당 파트를 4지선다로 선택 |
+| 랜덤 | 위 3가지 모드가 랜덤으로 출제 |
 
-```sh
-npm run dev
+## 주요 기능
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- **어원 조합 퍼즐** — 블록 드래그 & 클릭 인터랙션
+- **어원 사전** — 전체 용어 검색 및 어원 색인 필터
+- **통계** — 오늘 기록, 연속 학습일, 어원별 정답률, 뱃지
+- **어원 마스터 뱃지** — 같은 어원을 5회 정답 시 획득
+- **데이터 자동 저장** — 브라우저 로컬 저장, 서버 불필요
 
-## Building
+## 수록 용어 (50개)
 
-To create a production version of your app:
+| 카테고리 | 용어 수 |
+|----------|---------|
+| 심장학 | 8 |
+| 신경학 | 7 |
+| 호흡기학 | 6 |
+| 소화기학 | 6 |
+| 신장학 | 6 |
+| 혈액학 | 5 |
+| 병리학 | 7 |
+| 해부학 | 5 |
 
-```sh
-npm run build
-```
+## 기술 스택
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+| 항목 | 내용 |
+|------|------|
+| 프레임워크 | SvelteKit + Svelte 5 (Runes) |
+| 스타일링 | Tailwind CSS v4 |
+| 언어 | TypeScript |
+| 배포 | Vercel |
+| 저장소 | localStorage (브라우저) |
