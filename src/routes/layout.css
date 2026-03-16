@@ -1,3 +1,27 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+:root {
+	--bg:      #F5F5F7;
+	--surface: #FFFFFF;
+	--hover:   #F2F2F7;
+	--border:  #D2D2D7;
+	--text:    #1D1D1F;
+	--muted:   #6E6E73;
+	--accent:  #007AFF;
+	--radius:  12px;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C7C7CC; border-radius: 99px; }

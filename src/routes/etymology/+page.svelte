@@ -42,7 +42,7 @@
 			placeholder="용어, 어원, 한국어 검색..."
 			bind:value={search}
 			class="w-full pl-9 pr-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 bg-white"
-			style="focus:ring-color: #1a2f70;"
+			style="focus:ring-color: #007AFF;"
 		/>
 	</div>
 	<select
@@ -99,13 +99,19 @@
 	<div class="hidden lg:block">
 		<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 sticky top-4">
 			<h2 class="text-sm font-bold text-gray-700 mb-3">어원 색인</h2>
-			<div class="space-y-2 max-h-[60vh] overflow-y-auto pr-1">
+			<div class="space-y-1 max-h-[60vh] overflow-y-auto pr-1">
 				{#each allRoots as root}
-					<div class="text-xs">
-						<span class="font-semibold" style="color:#3b6fd4;">{root.part}</span>
+					<button
+						class="w-full text-left px-2 py-1.5 rounded-lg text-xs transition-colors"
+						style={search === root.part
+							? 'background:#EFF6FF;'
+							: 'hover:background:#F5F5F7;'}
+						onclick={() => search = search === root.part ? '' : root.part}
+					>
+						<span class="font-semibold" style="color:#007AFF;">{root.part}</span>
 						<span class="text-gray-400 ml-1">({root.origin})</span>
 						<span class="text-gray-600 ml-1">= {root.meaningKo}</span>
-					</div>
+					</button>
 				{/each}
 			</div>
 		</div>
