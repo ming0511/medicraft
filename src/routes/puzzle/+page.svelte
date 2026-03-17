@@ -18,14 +18,14 @@
 	const MODE_OPTIONS: { key: ModeOption; emoji: string; label: string; desc: string }[] = [
 		{ key: 'normal',  emoji: '🧩', label: '조합',      desc: '블록을 순서대로 배치하세요' },
 		{ key: 'reverse', emoji: '🔍', label: '추론',      desc: '어원의 뜻을 고르세요' },
-		{ key: 'fill',    emoji: '✏️', label: '빈칸 채우기', desc: '어원 파트를 맞추세요' },
+		{ key: 'fill',    emoji: '✏️', label: '빈칸', desc: '어원 파트를 맞추세요' },
 		{ key: 'random',  emoji: '🎲', label: '랜덤',      desc: '모든 유형이 랜덤으로 출제' },
 	];
 	const MODES: Mode[] = ['normal', 'reverse', 'fill'];
 	const MODE_LABEL: Record<Mode, { emoji: string; label: string }> = {
 		normal:  { emoji: '🧩', label: '조합' },
 		reverse: { emoji: '🔍', label: '추론' },
-		fill:    { emoji: '✏️', label: '빈칸 채우기' },
+		fill:    { emoji: '✏️', label: '빈칸' },
 	};
 
 	function loadJson<T>(key: string, fb: T): T {
