@@ -74,6 +74,7 @@
 	let hiddenIdx = $state(0);
 	let choices   = $state<string[]>([]);
 	let picked    = $state<string | null>(null);
+	let fillInput = $state('');
 
 	function col(i: number) { return COLORS[i % COLORS.length]; }
 	function pct(a: number, b: number) { return b ? Math.round(a / b * 100) : 0; }
@@ -93,7 +94,7 @@
 	}
 
 	function nextQ() {
-		submitted = false; wasCorrect = false; picked = null;
+		submitted = false; wasCorrect = false; picked = null; fillInput = '';
 		selBlock = null; dragBlock = null; dragFrom = null; newBadge = null;
 
 		let t: MedicalTerm;
@@ -142,6 +143,12 @@
 	}
 
 	function submitChoice(ok: boolean) { submitted = true; finish(ok); }
+	function normalize(s: string) { return s.trim().toLowerCase().replace(/-/g, ''); }
+	function submitFill() {
+		const ans = term!.etymology[hiddenIdx].part;
+		const ok = normalize(fillInput) === normalize(ans);
+		submitted = true; finish(ok);
+	}
 
 	function finish(ok: boolean) {
 		wasCorrect = ok; qCount++;
@@ -481,30 +488,55 @@
 						<strong style="color:var(--text);">{term.etymology[hiddenIdx].meaningKo}</strong> 에 해당하는 어원 파트는?
 					{/if}
 				</p>
-				<div class="grid grid-cols-2 gap-2">
-					{#each choices as c}
-						{@const isAns = c === (qMode==='reverse' ? term.etymology[hiddenIdx].meaningKo : term.etymology[hiddenIdx].part)}
-						<button
-							class="py-2.5 px-3 rounded-md border text-sm text-left transition-all"
+				{#if qMode === 'fill'}
+					<div class="flex gap-2">
+						<input
+							type="text"
+							class="flex-1 py-2.5 px-3 rounded-lg border text-sm outline-none"
 							style={submitted
-								? isAns
-									? 'border-color:#3d9970;background:#f0faf4;color:#2d7054;font-weight:500;'
-									: picked===c
-									? 'border-color:#e03e3e;background:#fff0f0;color:#c0392b;'
-									: 'border-color:var(--border);color:var(--muted);background:var(--surface);'
-								: picked===c
-								? 'border-color:var(--text);background:var(--surface);color:var(--text);font-weight:500;'
+								? wasCorrect
+									? 'border-color:#3d9970;background:#f0faf4;color:#2d7054;'
+									: 'border-color:#e03e3e;background:#fff0f0;color:#c0392b;'
 								: 'border-color:var(--border);color:var(--text);background:white;'}
-							disabled={submitted} onclick={() => (picked = c)}
-						>{c}{#if submitted && isAns} ✓{/if}</button>
-					{/each}
-				</div>
+							placeholder="어원 파트를 입력하세요"
+							bind:value={fillInput}
+							disabled={submitted}
+							onkeydown={(e) => { if (e.key === 'Enter' && fillInput.trim()) submitFill(); }}
+						/>
+					</div>
+					{#if submitted && !wasCorrect}
+						<p class="text-xs mt-2" style="color:#3d9970;">정답: {term.etymology[hiddenIdx].part}</p>
+					{/if}
+				{:else}
+					<div class="grid grid-cols-2 gap-2">
+						{#each choices as c}
+							{@const isAns = c === term.etymology[hiddenIdx].meaningKo}
+							<button
+								class="py-2.5 px-3 rounded-md border text-sm text-left transition-all"
+								style={submitted
+									? isAns
+										? 'border-color:#3d9970;background:#f0faf4;color:#2d7054;font-weight:500;'
+										: picked===c
+										? 'border-color:#e03e3e;background:#fff0f0;color:#c0392b;'
+										: 'border-color:var(--border);color:var(--muted);background:var(--surface);'
+									: picked===c
+									? 'border-color:var(--text);background:var(--surface);color:var(--text);font-weight:500;'
+									: 'border-color:var(--border);color:var(--text);background:white;'}
+								disabled={submitted} onclick={() => (picked = c)}
+							>{c}{#if submitted && isAns} ✓{/if}</button>
+						{/each}
+					</div>
+				{/if}
 			</div>
 			{#if !submitted}
-				<button class="btn btn-primary w-full" disabled={!picked}
-					onclick={() => submitChoice(picked === (qMode==='reverse' ? term!.etymology[hiddenIdx].meaningKo : term!.etymology[hiddenIdx].part))}>
-					확인
-				</button>
+				{#if qMode === 'fill'}
+					<button class="btn btn-primary w-full" disabled={!fillInput.trim()} onclick={submitFill}>확인</button>
+				{:else}
+					<button class="btn btn-primary w-full" disabled={!picked}
+						onclick={() => submitChoice(picked === term!.etymology[hiddenIdx].meaningKo)}>
+						확인
+					</button>
+				{/if}
 			{:else}
 				{@render resultRow()}
 			{/if}
