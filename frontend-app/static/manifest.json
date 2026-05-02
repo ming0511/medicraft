@@ -1,0 +1,17 @@
+{
+	"name": "MediCraft",
+	"short_name": "MediCraft",
+	"description": "의학 용어 어원 조합 퍼즐 학습 앱",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#F2F2F7",
+	"theme_color": "#007AFF",
+	"icons": [
+		{
+			"src": "/icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		}
+	]
+}
