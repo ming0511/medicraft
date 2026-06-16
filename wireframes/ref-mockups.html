@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCraft Pro — 세로 모바일 게임 UI/UX 레퍼런스 적용 목업</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      }
+      .wf { background: #fafafa; }
+      .wf-screen { background: #fff; border: 2px solid #111; box-shadow: 6px 6px 0 #111; }
+      .wf-solid { border: 1.5px solid #111; background: #fff; }
+      .wf-fill  { border: 1.5px solid #111; background: #111; color: #fff; }
+      .wf-muted { border: 1.5px solid #bbb; background: #f5f5f5; color: #999; }
+      .label { font-size: 10px; letter-spacing: .05em; text-transform: uppercase; color: #888; }
+
+      /* phone frame */
+      .phone {
+        width: 300px; aspect-ratio: 9 / 19.5; background: #fff;
+        border: 2px solid #111; border-radius: 30px; box-shadow: 6px 6px 0 #111;
+        padding: 9px; display: flex; flex-direction: column; position: relative;
+      }
+      .phone-notch { position: absolute; top: 9px; left: 50%; transform: translateX(-50%);
+        width: 96px; height: 15px; background: #111; border-radius: 0 0 9px 9px; z-index: 5; }
+      .phone-home { position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%);
+        width: 84px; height: 3px; background: #111; border-radius: 2px; }
+      .phone-screen { flex: 1; border: 1px solid #ccc; border-radius: 18px; overflow: hidden;
+        display: flex; flex-direction: column; margin-top: 20px; margin-bottom: 12px; position: relative; }
+
+      .hdr { display: flex; align-items: center; gap: 6px; padding: 5px 8px;
+        border-bottom: 1px solid #ddd; font-size: 9px; flex: 0 0 auto; }
+      .hdr .ttl { flex: 1; text-align: center; }
+
+      .gameview { position: relative; flex: 0 0 auto;
+        background: repeating-linear-gradient(45deg,#fafafa,#fafafa 6px,#f0f0f0 6px,#f0f0f0 12px);
+        border-bottom: 1.5px solid #111; overflow: hidden; }
+      .ground { position: absolute; left: 0; right: 0; bottom: 16%; border-top: 1.5px solid #111; }
+      .actor { position: absolute; bottom: 16%; border: 1.5px solid #111;
+        display: flex; align-items: flex-end; justify-content: center; font-size: 20px; padding-bottom: 1px;
+        transition: left .9s linear; }
+      .nameTag { position: absolute; bottom: 3%; font-size: 8px; text-align: center; }
+      .hpwrap { position: absolute; left: 8px; right: 8px; top: 6px; display: flex; gap: 5px; font-size: 8px; }
+      .hpbox { background:#fff; border:1.5px solid #111; padding: 2px 4px; flex: 1; }
+      .hpbar { height: 4px; background: #e5e5e5; margin-top: 2px; }
+      .hpbar > i { display:block; height:100%; background:#111; transition: width .5s ease; }
+      .speech { position: absolute; padding: 2px 6px; background:#fff; border:1.5px solid #111;
+        font-size: 8px; white-space: nowrap; border-radius: 8px; }
+      .speech::after { content:""; position:absolute; bottom:-5px; left: 14px; width: 8px; height: 8px;
+        background:#fff; border-right:1.5px solid #111; border-bottom:1.5px solid #111; transform: rotate(45deg); }
+      .fx { position:absolute; font-weight:700; color:#111; font-size:15px; opacity:0; pointer-events:none; }
+      @keyframes pop { 0%{opacity:1; transform:translateY(0) scale(.6);} 30%{transform:translateY(-8px) scale(1.1);}
+        100%{opacity:0; transform:translateY(-26px) scale(1);} }
+      .fx.go { animation: pop .9s ease forwards; }
+      @keyframes shake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-3px);} 75%{transform:translateX(3px);} }
+      .shake { animation: shake .3s ease 2; }
+
+      .uiarea { flex: 1; padding: 7px 8px; display: flex; flex-direction: column; gap: 6px; font-size: 9px; overflow: hidden; }
+
+      .chip { border:1.5px solid #111; background:#fff; padding: 2px 5px; font-size: 8px; display:inline-block; }
+      .chip.done { color:#bbb; border-color:#ccc; text-decoration: line-through; }
+      .chip.on  { background:#111; color:#fff; }
+
+      .card { border:1.5px solid #111; background:#fff; padding: 4px 3px; text-align:center; cursor:pointer;
+        line-height:1.25; transition: transform .12s ease, box-shadow .12s ease; user-select:none; }
+      .card:hover { transform: translateY(-2px); box-shadow: 2px 2px 0 #111; }
+      .card .gloss { font-size: 7px; color:#666; }
+      .card .cost  { font-size: 7px; }
+      .card.spent { opacity:.25; pointer-events:none; }
+
+      .slot { border:1.5px dashed #999; background:#f7f7f7; min-height: 24px; display:flex; align-items:center;
+        justify-content:center; font-size:8px; color:#999; }
+      .slot.filled { border-style:solid; border-color:#111; background:#fff; color:#111; }
+
+      .opt { border:1.5px solid #111; background:#fff; padding: 8px; cursor:pointer; transition: background .1s; }
+      .opt:hover { background:#f3f3f3; }
+      .opt.sel { background:#111; color:#fff; }
+      .opt.right { box-shadow: inset 0 0 0 2px #111; }
+      .opt.wrong { background:#fff; color:#bbb; text-decoration: line-through; }
+
+      .btn { border:1.5px solid #111; background:#111; color:#fff; padding: 7px; text-align:center; cursor:pointer; }
+      .btn[disabled] { background:#eee; color:#bbb; border-color:#ccc; cursor:not-allowed; }
+      .btn.ghost { background:#fff; color:#111; }
+
+      .sheet { position:absolute; left:0; right:0; bottom:0; background:#fff; border-top:2px solid #111;
+        padding: 9px 10px; font-size:9px; transform: translateY(110%); transition: transform .25s ease; }
+      .sheet.up { transform: translateY(0); }
+
+      .progbar { flex:1; height:7px; background:#e8e8e8; border:1px solid #111; }
+      .progbar > i { display:block; height:100%; background:#111; transition: width .35s ease; }
+
+      .bottomtabs { display:flex; border-top:1px solid #ddd; font-size:8px; flex:0 0 auto; }
+      .bottomtabs > div { flex:1; text-align:center; padding:5px 0; }
+      .bottomtabs > div.act { background:#111; color:#fff; }
+
+      .resetbtn { font-size:10px; border:1px solid #111; background:#fff; padding:3px 8px; cursor:pointer; }
+    </style>
+  </head>
+  <body class="wf text-neutral-900">
+    <header class="border-b-2 border-black bg-white">
+      <div class="mx-auto max-w-[1500px] px-8 py-5">
+        <h1 class="text-2xl font-bold tracking-tight">세로 모바일 게임 UI/UX 레퍼런스 적용 목업</h1>
+        <p class="mt-1 text-sm text-neutral-600">
+          MediCraft Pro 톤(박스드로잉 · 모노스페이스 · 게임뷰 50% / UI 50%) 위에 레퍼런스 게임의 UX 패턴을 얹어본 인터랙티브 목업. 폰 안을 직접 눌러볼 수 있음.
+        </p>
+        <p class="mt-1 text-xs text-neutral-500">짝 문서: <a class="underline" href="pro-mobile.html">pro-mobile.html</a> (구조 와이어프레임)</p>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-[1500px] px-8 py-8 grid gap-8" style="grid-template-columns: repeat(3, 1fr);">
+
+      <!-- ============ A. 병동전투 — Slay the Spire ============ -->
+      <section>
+        <div class="flex items-baseline gap-2 mb-2">
+          <span class="rounded bg-black px-2 py-0.5 text-xs text-white">A</span>
+          <h2 class="font-bold">병동전투</h2>
+          <span class="label">레퍼런스: Slay the Spire</span>
+        </div>
+        <div class="phone mx-auto" id="phoneA">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="hdr"><div>← 후송</div><div class="ttl">병동 · 호흡기 3F (1/4)</div><div>Lv.5</div></div>
+
+            <div class="gameview" style="height: 46%;">
+              <div class="ground"></div>
+              <!-- bed -->
+              <div class="actor" style="right:14px; bottom:16%; width:64px; height:18px; background:#fafafa; border-color:#111;"></div>
+              <!-- player -->
+              <div class="actor" style="left:22px; width:26px; height:38px; background:#111;">🩺</div>
+              <div class="nameTag" style="left:14px; width:46px;">🧑‍⚕️ Lv.5</div>
+              <!-- patient -->
+              <div class="actor" id="patA" style="right:26px; width:28px; height:34px; background:#fff;">🤒</div>
+              <div class="nameTag" style="right:14px; width:54px;">환자 #034</div>
+              <!-- intent speech = StS enemy intent -->
+              <div class="speech" id="intentA" style="right:30px; top:18%;">다음 ▸ "기침" 악화</div>
+              <!-- hp -->
+              <div class="hpwrap">
+                <div class="hpbox"><div class="flex justify-between"><span>나 HP</span><span id="hpMeTxtA">80%</span></div><div class="hpbar"><i id="hpMeA" style="width:80%"></i></div></div>
+                <div class="hpbox"><div class="flex justify-between"><span>환자 HP</span><span id="hpPatTxtA">62%</span></div><div class="hpbar"><i id="hpPatA" style="width:62%"></i></div></div>
+              </div>
+              <div class="fx" id="fxA" style="right:46px; top:34%;">-40!</div>
+            </div>
+
+            <div class="uiarea">
+              <div>
+                <div class="label">차트 · 증상</div>
+                <div class="mt-1 flex flex-wrap gap-1">
+                  <span class="chip on">호흡곤란</span><span class="chip done">기침</span>
+                  <span class="chip" id="targetChipA">객혈</span><span class="chip">흉통</span>
+                </div>
+              </div>
+              <div class="wf-solid text-center" style="padding:5px;"><b>"객혈"</b> 을(를) 조합하라 &nbsp; <span class="label">MP <span id="mpTxtA">3</span>/3</span></div>
+
+              <div class="grid grid-cols-2 gap-1">
+                <div class="slot" id="slot1A">슬롯 1</div>
+                <div class="slot" id="slot2A">슬롯 2</div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-1" id="handA">
+                <div class="card" data-id="hemo" data-cost="1" data-key="A"><b>hemo-</b><div class="gloss">혈·피</div><div class="cost">💧1</div></div>
+                <div class="card" data-id="ptysis" data-cost="1" data-key="A"><b>-ptysis</b><div class="gloss">뱉다</div><div class="cost">💧1</div></div>
+                <div class="card" data-id="pneumo" data-cost="2" data-key="A"><b>pneumo-</b><div class="gloss">폐·공기</div><div class="cost">💧2</div></div>
+                <div class="card" data-id="algia" data-cost="1" data-key="A"><b>-algia</b><div class="gloss">통증</div><div class="cost">💧1</div></div>
+                <div class="card" data-id="cyan" data-cost="2" data-key="A"><b>cyano-</b><div class="gloss">푸름</div><div class="cost">💧2</div></div>
+                <div class="card" data-id="dys" data-cost="1" data-key="A"><b>dys-</b><div class="gloss">나쁨</div><div class="cost">💧1</div></div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-1 mt-auto">
+                <div class="btn ghost" id="clearA">↩ 비우기</div>
+                <div class="btn" id="castA" disabled>⚔ 시전</div>
+              </div>
+            </div>
+
+            <div class="sheet" id="sheetA">
+              <div class="text-center"><b id="sheetTitleA">✓ 정답! hemoptysis = 객혈</b></div>
+              <div class="text-center mt-1" id="sheetSubA">✨ 도감 신규 등록: <b>-ptysis</b> (그리스 ptysis · 침뱉기)</div>
+              <div class="btn mt-2" id="sheetNextA">계속 →</div>
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+        <ul class="mt-3 text-xs text-neutral-600 space-y-1">
+          <li><b>인텐트 표시</b> — 환자 머리 위 말풍선 = StS의 '적 의도'. 다음 턴 무슨 일이 날지 미리 보여줘 핸드 운용을 계획하게 함</li>
+          <li><b>핸드 = 카드</b> — 어원 조각이 코스트(MP)·뜻을 가진 카드. 슬롯 2칸에 탭으로 조립 → 시전</li>
+          <li><b>연출은 시전 순간에</b> — 게임뷰는 정적, 데미지 텍스트·환자 셰이크로 타격감</li>
+        </ul>
+      </section>
+
+      <!-- ============ B. 강의실 — Duolingo / Brilliant ============ -->
+      <section>
+        <div class="flex items-baseline gap-2 mb-2">
+          <span class="rounded bg-black px-2 py-0.5 text-xs text-white">B</span>
+          <h2 class="font-bold">강의실</h2>
+          <span class="label">레퍼런스: Duolingo · Brilliant</span>
+        </div>
+        <div class="phone mx-auto" id="phoneB">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="hdr"><div style="cursor:pointer">✕</div><div class="ttl"><div class="progbar" style="display:inline-block;width:120px;vertical-align:middle"><i id="progB" style="width:58%"></i></div> <span id="progTxtB">7/12</span></div><div>🔥 3</div></div>
+
+            <div class="gameview" style="height: 28%;">
+              <div class="ground"></div>
+              <div class="actor" style="left:30%; width:40px; height:14px; background:#fafafa;">📋</div>
+              <div class="nameTag" style="left:28%; width:46px;">칠판</div>
+              <div class="actor" style="right:30px; width:24px; height:32px; background:#fff;">🧑‍🏫</div>
+              <div class="nameTag" style="right:18px; width:46px;">강사</div>
+              <div class="label" style="position:absolute; top:6px; left:8px;">강의실 SCENE — 학습 중엔 게임뷰 축소</div>
+            </div>
+
+            <div class="uiarea" style="gap:8px;">
+              <div class="wf-solid text-center" style="padding:8px; font-size:11px;">
+                <span class="label">접두어</span><br><b id="qWordB" style="font-size:16px;">cardio-</b> 의 뜻은?
+              </div>
+              <div class="flex flex-col gap-1" id="optsB">
+                <div class="opt" data-v="0">심장 (heart)</div>
+                <div class="opt" data-v="1">혈관 (vessel)</div>
+                <div class="opt" data-v="2">가슴 (chest)</div>
+                <div class="opt" data-v="3">근육 (muscle)</div>
+              </div>
+              <div class="label" id="hintB">한 화면 = 한 개념 · 정답 고른 뒤 확인</div>
+              <div class="btn mt-auto" id="confirmB" disabled>확인</div>
+            </div>
+
+            <div class="sheet" id="sheetB">
+              <div><b>✓ 정답!</b> &nbsp; cardio = 심장 <span class="label">(그리스 kardia)</span></div>
+              <div class="mt-1">✨ 도감 신규 등록: <b>cardio-</b></div>
+              <div class="btn mt-2" id="sheetNextB">계속 →</div>
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+        <ul class="mt-3 text-xs text-neutral-600 space-y-1">
+          <li><b>진행 게이지 + 스트릭</b> — 세션 끝이 보임(12장). 헤더에 항상 노출</li>
+          <li><b>게임뷰 의도적 축소</b> — "지금은 공부 모드" 신호. 캠퍼스/전투에서만 게임뷰 50%</li>
+          <li><b>하단 시트 피드백</b> — Duo식 슬라이드업. 단 폭죽·효과음 남발 X (Brilliant 톤으로 절제), 즉시 도감 등록 보상</li>
+        </ul>
+      </section>
+
+      <!-- ============ C. 캠퍼스맵 — Reigns / Loop Hero ============ -->
+      <section>
+        <div class="flex items-baseline gap-2 mb-2">
+          <span class="rounded bg-black px-2 py-0.5 text-xs text-white">C</span>
+          <h2 class="font-bold">캠퍼스맵</h2>
+          <span class="label">레퍼런스: Reigns · Loop Hero</span>
+        </div>
+        <div class="phone mx-auto" id="phoneC">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="hdr"><div>학교 ←→ 병원</div><div class="ttl">캠퍼스</div><div>Lv.5</div></div>
+
+            <div class="gameview" style="height: 50%;">
+              <div class="ground"></div>
+              <!-- buildings on a 1-axis world wider than screen -->
+              <div class="actor bldg" data-name="강의실" data-blurb="챕터1 순환계 · 7/12 학습 — 4장 더 외우면 도서관 해금" style="left:14px; width:40px; height:40px; background:#fff;">🏛️</div>
+              <div class="nameTag" style="left:8px; width:52px;">강의실</div>
+              <div class="actor bldg" data-name="도서관" data-blurb="조합 트레이닝 — 어원 8개 모아 챕터1 도감 달성" style="left:120px; width:40px; height:40px; background:#fff;">📚</div>
+              <div class="nameTag" style="left:114px; width:52px;">도서관</div>
+              <div class="actor bldg" data-name="병동🔒" data-blurb="🔒 잠김 — 강의실 챕터1 클리어 시 해금" style="left:226px; width:40px; height:42px; background:#f5f5f5; color:#999;">🏥</div>
+              <div class="nameTag" style="left:218px; width:56px; color:#999;">🔒병동</div>
+              <!-- player -->
+              <div class="actor" id="heroC" style="left:24px; width:22px; height:30px; background:#111;">🧑‍⚕️</div>
+              <div class="label" style="position:absolute; top:6px; left:8px;">탭=자동이동 · (스와이프=카메라)</div>
+            </div>
+
+            <div class="uiarea">
+              <div class="label">▸ 다음 할 일</div>
+              <div class="wf-solid" style="padding:7px;">
+                <b id="destTitleC">강의실 · 챕터1 순환계</b>
+                <div class="mt-1" id="destBlurbC" style="color:#555;">7/12 학습 — 4장 더 외우면 도서관 해금</div>
+                <div class="mt-2 flex items-center gap-2"><div class="progbar"><i style="width:58%"></i></div><span style="font-size:8px">7/12</span></div>
+                <div class="btn mt-2" id="enterC">입장 →</div>
+              </div>
+              <div class="label mt-1">건물을 탭하면 캐릭터가 자동으로 걸어감</div>
+              <div class="bottomtabs mt-auto">
+                <div class="act">🏫 캠퍼스</div><div>📒 도감</div><div>🏆 랭킹</div><div>⚙ 설정</div>
+              </div>
+            </div>
+
+            <div class="sheet" id="sheetC">
+              <div><b id="sheetTitleC">강의실</b> 에 입장합니다</div>
+              <div class="mt-1" id="sheetSubC" style="color:#555">풀스크린 씬 전환 (모달 아님)</div>
+              <div class="btn mt-2" id="sheetNextC">▶ 씬 진입</div>
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+        <ul class="mt-3 text-xs text-neutral-600 space-y-1">
+          <li><b>탭 = 목적지, 스와이프 = 둘러보기</b> — 캐릭터 직접 조종 X (한 손 엄지 조작 · 와이어프레임 결정 4)</li>
+          <li><b>"다음 할 일 카드 1개"</b> — Loop Hero식. 복잡한 맵에서도 안 헤매게 함</li>
+          <li><b>풀스크린 씬 전환</b> — 모달 아님 (와이어프레임 결정 3)</li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="mx-auto max-w-[1500px] px-8 pb-10">
+      <button class="resetbtn" onclick="location.reload()">↺ 전체 리셋</button>
+      <span class="ml-3 text-xs text-neutral-500">목업이라 일부 상태만 인터랙티브. 톤·레이아웃·인터랙션 감 잡는 용도.</span>
+    </div>
+
+    <script>
+      // ---------- A. 병동전투 ----------
+      (function(){
+        const need = ['hemo','ptysis']; // 객혈 = hemo + ptysis
+        let slots = [null, null];
+        let mp = 3;
+        const $ = s => document.querySelector(s);
+        const slotEls = [ $('#slot1A'), $('#slot2A') ];
+        const mpTxt = $('#mpTxtA'), cast = $('#castA');
+
+        function render(){
+          slotEls.forEach((el,i)=>{
+            if(slots[i]){ el.textContent = slots[i].label; el.classList.add('filled'); }
+            else { el.textContent = '슬롯 '+(i+1); el.classList.remove('filled'); }
+          });
+          mpTxt.textContent = mp;
+          // disable cards over budget or already placed
+          document.querySelectorAll('#handA .card').forEach(c=>{
+            const placed = slots.some(s=>s && s.id===c.dataset.id);
+            const tooPricey = (+c.dataset.cost) > mp;
+            c.classList.toggle('spent', placed || (tooPricey && !placed));
+          });
+          const filled = slots.filter(Boolean).length===2;
+          cast.toggleAttribute('disabled', !filled);
+        }
+        document.querySelectorAll('#handA .card').forEach(c=>{
+          c.addEventListener('click', ()=>{
+            if(c.classList.contains('spent')) return;
+            const idx = slots.indexOf(null); if(idx<0) return;
+            slots[idx] = { id:c.dataset.id, label:c.querySelector('b').textContent, cost:+c.dataset.cost };
+            mp -= +c.dataset.cost; render();
+          });
+        });
+        $('#clearA').addEventListener('click', ()=>{ slots=[null,null]; mp=3; render(); });
+        cast.addEventListener('click', ()=>{
+          const ids = slots.map(s=>s.id).sort().join('+');
+          const ok = ids === need.slice().sort().join('+');
+          const pat = $('#patA'); pat.classList.add('shake'); setTimeout(()=>pat.classList.remove('shake'), 700);
+          const fx = $('#fxA'); fx.textContent = ok ? '-40!' : 'miss';
+          fx.classList.remove('go'); void fx.offsetWidth; fx.classList.add('go');
+          if(ok){
+            const bar = $('#hpPatA'); bar.style.width = '22%'; $('#hpPatTxtA').textContent='22%';
+            $('#targetChipA').className='chip done';
+            $('#intentA').textContent='환자 ▸ 안정세';
+            $('#sheetTitleA').textContent='✓ 정답!  hemo + -ptysis = hemoptysis (객혈)';
+            $('#sheetSubA').innerHTML='✨ 도감 신규 등록: <b>-ptysis</b> (그리스 ptysis · 침뱉기) &nbsp;|&nbsp; 환자 HP -40';
+          } else {
+            const me = $('#hpMeA'); me.style.width='65%'; $('#hpMeTxtA').textContent='65%';
+            $('#sheetTitleA').textContent='✗ 오진!  '+slots.map(s=>s.label).join(' + ')+' → 그 조합은 객혈이 아님';
+            $('#sheetSubA').innerHTML='환자 상태 악화로 내 HP -15. 차트를 다시 보자.';
+          }
+          $('#sheetA').classList.add('up');
+        });
+        $('#sheetNextA').addEventListener('click', ()=>{ $('#sheetA').classList.remove('up'); slots=[null,null]; mp=3; render(); });
+        render();
+      })();
+
+      // ---------- B. 강의실 ----------
+      (function(){
+        const $ = s => document.querySelector(s);
+        let sel = -1; const RIGHT = 0;
+        document.querySelectorAll('#optsB .opt').forEach(o=>{
+          o.addEventListener('click', ()=>{
+            if($('#confirmB').dataset.locked) return;
+            document.querySelectorAll('#optsB .opt').forEach(x=>x.classList.remove('sel'));
+            o.classList.add('sel'); sel = +o.dataset.v;
+            $('#confirmB').removeAttribute('disabled');
+          });
+        });
+        $('#confirmB').addEventListener('click', ()=>{
+          if($('#confirmB').hasAttribute('disabled')) return;
+          $('#confirmB').dataset.locked = '1'; $('#confirmB').setAttribute('disabled','');
+          document.querySelectorAll('#optsB .opt').forEach(x=>{
+            if(+x.dataset.v===RIGHT) x.classList.add('right');
+            else if(+x.dataset.v===sel) x.classList.add('wrong');
+          });
+          if(sel===RIGHT){
+            $('#progB').style.width='67%'; $('#progTxtB').textContent='8/12';
+            $('#sheetB').classList.add('up');
+          } else {
+            $('#hintB').textContent='아쉽다 — 정답은 심장(heart). [계속]을 누르면 다음 카드.';
+            $('#sheetB').querySelector('b').textContent='✗ 오답';
+            $('#sheetB').children[1].innerHTML='cardio = <b>심장</b> (그리스 kardia) · 이 카드는 잠시 후 다시 출제됨 (SRS)';
+            $('#sheetB').classList.add('up');
+          }
+        });
+        $('#sheetNextB').addEventListener('click', ()=>{
+          $('#sheetB').classList.remove('up');
+          // next card stub
+          $('#qWordB').textContent='hepato-';
+          document.querySelectorAll('#optsB .opt').forEach((x,i)=>{ x.className='opt'; x.textContent=['간 (liver)','신장 (kidney)','위 (stomach)','담낭 (gallbladder)'][i]; });
+          $('#hintB').textContent='한 화면 = 한 개념 · 정답 고른 뒤 확인';
+          $('#confirmB').textContent='확인'; $('#confirmB').setAttribute('disabled',''); delete $('#confirmB').dataset.locked;
+          sel=-1;
+          $('#sheetB').querySelector('b').textContent='✓ 정답!';
+        });
+      })();
+
+      // ---------- C. 캠퍼스맵 ----------
+      (function(){
+        const $ = s => document.querySelector(s);
+        const hero = $('#heroC');
+        document.querySelectorAll('#phoneC .bldg').forEach(b=>{
+          b.addEventListener('click', ()=>{
+            const left = parseInt(b.style.left,10);
+            hero.style.left = (left + 6) + 'px'; // walk to building
+            $('#destTitleC').textContent = b.dataset.name.replace('🔒','') + ' · ' + (b.dataset.name.includes('강의실')?'챕터1 순환계':b.dataset.name.includes('도서관')?'조합 트레이닝':'');
+            $('#destBlurbC').textContent = b.dataset.blurb;
+            const locked = b.dataset.name.includes('🔒');
+            $('#enterC').textContent = locked ? '🔒 잠김' : '입장 →';
+            $('#enterC').classList.toggle('ghost', locked);
+            $('#enterC').dataset.locked = locked ? '1' : '';
+            $('#sheetTitleC').textContent = b.dataset.name.replace('🔒','');
+            $('#sheetSubC').textContent = locked ? '강의실 챕터1을 먼저 클리어해야 함' : '풀스크린 씬 전환 (모달 아님)';
+          });
+        });
+        $('#enterC').addEventListener('click', ()=>{
+          if($('#enterC').dataset.locked==='1'){ $('#destBlurbC').textContent='🔒 아직 못 들어감 — 강의실 챕터1 클리어 필요'; return; }
+          $('#sheetC').classList.add('up');
+        });
+        $('#sheetNextC').addEventListener('click', ()=>$('#sheetC').classList.remove('up'));
+      })();
+    </script>
+  </body>
+</html>

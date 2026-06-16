@@ -196,16 +196,16 @@
         <div class="grid grid-cols-5 gap-3 text-xs">
           <div class="wf-screen p-4">
             <div class="label">결정 1 / 화면 분할</div>
-            <div class="mt-1 font-bold">게임뷰 60% · UI 40%</div>
+            <div class="mt-1 font-bold">게임뷰 50% · UI 50%</div>
             <div class="mt-2 text-neutral-600">
-              위 60%: 사이드뷰 픽셀 캔버스<br />
-              아래 40%: HUD·대화·명령
+              위 50%: 사이드뷰 픽셀 캔버스<br />
+              아래 50%: HUD·대화·명령
             </div>
             <div class="mt-3 wf-box h-20 flex flex-col">
-              <div class="flex-[6] border-b border-dashed border-neutral-500 flex items-center justify-center">GAME</div>
-              <div class="flex-[4] flex items-center justify-center">UI</div>
+              <div class="flex-1 border-b border-dashed border-neutral-500 flex items-center justify-center">GAME</div>
+              <div class="flex-1 flex items-center justify-center">UI</div>
             </div>
-            <div class="label mt-2">대안: 풀스크린+오버레이 / 70:30</div>
+            <div class="label mt-2">대안: 풀스크린+오버레이 / 60:40</div>
           </div>
 
           <div class="wf-screen p-4">
@@ -274,7 +274,7 @@
         </div>
 
         <p class="mt-3 text-xs text-neutral-500">
-          ※ 아래 와이어프레임은 위 5개 결정 (60/40 · 좌우스크롤 · 풀스크린전환 ·
+          ※ 아래 와이어프레임은 위 5개 결정 (50/50 · 좌우스크롤 · 풀스크린전환 ·
           탭+스와이프 · JRPG배틀)을 채택했다고 가정.
         </p>
       </section>
@@ -300,20 +300,19 @@
               <div class="phone-notch"></div>
               <div class="phone-screen">
                 <!-- 상단 바 -->
-                <div class="flex items-center justify-between px-3 py-2 border-b border-neutral-300 text-[10px]">
+                <div class="flex items-center px-3 py-2 border-b border-neutral-300 text-[10px]">
                   <div class="font-bold">▣ MediCraft Pro</div>
-                  <div class="wf-fill px-2 py-0.5 text-[9px]">로그인</div>
                 </div>
-                <!-- HERO: 사이드뷰 픽셀 GIF 자리 -->
-                <div class="gameview" style="height: 200px;">
-                  <div class="ground-line"></div>
-                  <div class="sprite-box" style="left: 20px; bottom: 18%; width: 36px; height: 40px;">
+                <!-- HERO: 사이드뷰 픽셀 GIF 자리 (50/50) -->
+                <div class="gameview" style="flex: 3;">
+                  <div class="ground-line" style="bottom: 38%;"></div>
+                  <div class="sprite-box" style="left: 20px; bottom: 38%; width: 44px; height: 50px;">
                     🏫<br /><span class="text-[7px]">학교</span>
                   </div>
-                  <div class="sprite-box" style="right: 20px; bottom: 18%; width: 36px; height: 40px;">
+                  <div class="sprite-box" style="right: 20px; bottom: 38%; width: 44px; height: 50px;">
                     🏥<br /><span class="text-[7px]">병원</span>
                   </div>
-                  <div class="sprite" style="left: 80px;"></div>
+                  <div class="sprite" style="left: 100px; bottom: 38%; width: 22px; height: 32px;"></div>
                   <div class="absolute top-2 left-2 wf-fill px-1 py-0.5 text-[8px]">
                     GIF · 캐릭터 좌→우 이동
                   </div>
@@ -321,30 +320,22 @@
                     [320×180 픽셀 사이드뷰 루프]
                   </div>
                 </div>
-                <!-- 카피 -->
-                <div class="px-3 py-3 text-[10px]">
+                <!-- 카피 + CTA (50/50, CTA 하단 anchor) -->
+                <div class="px-3 py-3 text-[10px] flex flex-col" style="flex: 5;">
                   <div class="font-bold text-sm leading-tight">
                     의학용어,<br />외우지 말고 조립하세요.
                   </div>
                   <p class="mt-1 text-neutral-600">
-                    cardio + megaly = 심장비대.<br />
-                    어원 RPG로 1·2학년 수천 단어 돌파.
+                    cardio + megaly = 심장비대.
                   </p>
-                  <div class="wf-fill mt-3 py-2 text-center text-xs">
-                    ▶ Google로 시작
+                  <div class="mt-auto">
+                    <div class="wf-fill py-2 text-center text-xs">
+                      ▶ Google로 시작
+                    </div>
+                    <div class="wf-solid mt-2 py-2 text-center text-xs">
+                      Guest로 시작
+                    </div>
                   </div>
-                  <div class="wf-solid mt-2 py-2 text-center text-xs">
-                    데모 보기
-                  </div>
-                  <div class="mt-2 text-[9px] text-neutral-500">
-                    ◆ 어원 200+ · ◆ SRS · ◆ 학과 랭킹
-                  </div>
-                </div>
-                <!-- 3-피처 -->
-                <div class="px-3 pb-3 grid grid-cols-3 gap-1 text-[9px]">
-                  <div class="wf-solid p-1 text-center">강의실<br /><span class="text-neutral-500">카드</span></div>
-                  <div class="wf-solid p-1 text-center">도서관<br /><span class="text-neutral-500">퍼즐</span></div>
-                  <div class="wf-solid p-1 text-center">병동<br /><span class="text-neutral-500">RPG</span></div>
                 </div>
               </div>
               <div class="phone-home"></div>
@@ -357,7 +348,7 @@
             <div>
               <div class="label">히어로의 역할</div>
               <p class="mt-1 text-neutral-700">
-                위 60%에 사이드뷰 픽셀 GIF 루프(캠퍼스 → 병원으로 캐릭터가
+                히어로 영역에 사이드뷰 픽셀 GIF 루프(캠퍼스 → 병원으로 캐릭터가
                 걸어가는 5초 클립). <b>"와"의 80%는 여기서 결정됨.</b>
                 정적 스크린샷 X — 반드시 모션.
               </p>
@@ -371,22 +362,35 @@
               </ul>
             </div>
             <div>
-              <div class="label">CTA 우선순위</div>
+              <div class="label">CTA 우선순위 (단일 CTA + Guest 도피로)</div>
               <p class="mt-1 text-neutral-700">
-                <b>① Google 로그인</b> (1초 클릭) → <b>② 데모 보기</b>
-                (비회원도 ④ 강의실 1챕터 체험) → 상단 우측 로그인은 보조.
+                <b>① Google로 시작</b> (메인 · 진행도 클라우드 동기화) ·
+                <b>② Guest로 시작</b> (보조 · 로그인 거부감 완화, 로컬 저장).
+                상단 로그인 버튼 / 피처 카드 / 데모 모달 모두 제거 — 폴드 위는
+                "히어로 + 단일 CTA"에만 집중.
               </p>
+            </div>
+            <div>
+              <div class="label">Guest 흐름 결정사항</div>
+              <ul class="mt-1 list-disc pl-5 text-neutral-700 space-y-0.5">
+                <li>닉네임 1개만 입력 → 바로 ③ 캠퍼스 (학교/학과/진단퀴즈 모두 스킵)</li>
+                <li>진행도는 localStorage. 기기/브라우저 변경 시 소실 경고</li>
+                <li>리더보드/SRS 클라우드 동기화는 비활성 → 추후 "Google 연결" 유도</li>
+                <li>결제(⑩)는 Guest 상태 차단 → 로그인 강제</li>
+              </ul>
             </div>
             <div>
               <div class="label">스크롤 다운 시 (이 와이어프레임에선 생략)</div>
               <p class="mt-1 text-neutral-500">
-                특징 3개 · 사용자 후기 · 가격(₩9,900/월) · FAQ ·
-                푸터.
+                특징 3개 (강의실/도서관/병동) · 사용자 후기 · 가격(₩9,900/월) ·
+                FAQ · 푸터.
               </p>
             </div>
             <div class="border-t border-dashed border-neutral-400 pt-2">
               <div class="label">→ 다음</div>
-              <p class="mt-1">Google 로그인 클릭 → ② 온보딩 (3 스텝)</p>
+              <p class="mt-1">
+                Google → ② 온보딩 3스텝 / Guest → ② 닉네임만 입력 → ③ 캠퍼스
+              </p>
             </div>
           </div>
         </div>
@@ -400,13 +404,13 @@
           <span class="rounded bg-black px-2 py-0.5 text-xs text-white"
             >02</span
           >
-          <h2 class="text-lg font-bold">온보딩 (3 스텝, ~3분)</h2>
+          <h2 class="text-lg font-bold">온보딩 (2 스텝, ~30초)</h2>
           <span class="label"
-            >닉네임/소속 → 진단 10문항 → 캐릭터 선택</span
+            >닉네임/소속 → 캐릭터 선택 (진단 퀴즈 제거 — 첫 챕터가 자연 보정)</span
           >
         </div>
 
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-2 gap-6">
           <!-- step 1: 기본 정보 -->
           <div>
             <div class="phone mx-auto">
@@ -414,25 +418,25 @@
               <div class="phone-screen">
                 <div class="flex items-center gap-2 px-3 py-2 border-b border-neutral-300 text-[10px]">
                   <div>← 뒤로</div>
-                  <div class="flex-1 text-center label">STEP 1 / 3</div>
+                  <div class="flex-1 text-center label">STEP 1 / 2</div>
                 </div>
                 <div class="flex-1 px-3 py-3 text-[10px] flex flex-col">
                   <div class="font-bold text-sm">기본 정보</div>
                   <div class="mt-3 space-y-2">
                     <div>
-                      <div class="text-neutral-500">닉네임</div>
+                      <div class="text-neutral-500">닉네임 <span class="text-rose-600">*</span></div>
                       <div class="wf-solid mt-0.5 h-7 px-2 leading-7">_______</div>
                     </div>
                     <div>
-                      <div class="text-neutral-500">학교</div>
+                      <div class="text-neutral-500">학교 <span class="text-neutral-400">(선택)</span></div>
                       <div class="wf-solid mt-0.5 h-7 px-2 leading-7">▾ 선택</div>
                     </div>
                     <div>
-                      <div class="text-neutral-500">학과</div>
+                      <div class="text-neutral-500">학과 <span class="text-neutral-400">(선택)</span></div>
                       <div class="wf-solid mt-0.5 h-7 px-2 leading-7">▾ 선택</div>
                     </div>
                     <div>
-                      <div class="text-neutral-500">학년</div>
+                      <div class="text-neutral-500">학년 <span class="text-neutral-400">(선택)</span></div>
                       <div class="grid grid-cols-4 gap-1 mt-0.5">
                         <div class="wf-fill py-1 text-center">1</div>
                         <div class="wf-solid py-1 text-center">2</div>
@@ -443,7 +447,6 @@
                   </div>
                   <div class="mt-auto">
                     <div class="wf-fill py-2 text-center">다음 →</div>
-                    <div class="text-center mt-1 text-neutral-500">건너뛰기</div>
                   </div>
                 </div>
               </div>
@@ -452,73 +455,30 @@
             <div class="text-center label mt-2">STEP 1 · 기본 정보</div>
           </div>
 
-          <!-- step 2: 진단 퀴즈 -->
+          <!-- step 2: 캐릭터 선택 -->
           <div>
             <div class="phone mx-auto">
               <div class="phone-notch"></div>
               <div class="phone-screen">
                 <div class="flex items-center gap-2 px-3 py-2 border-b border-neutral-300 text-[10px]">
                   <div>← 뒤로</div>
-                  <div class="flex-1 text-center label">STEP 2 / 3 · 3 of 10</div>
+                  <div class="flex-1 text-center label">STEP 2 / 2</div>
                 </div>
-                <!-- 게임뷰 = 픽셀 강의실 (NPC 교수가 문제 출제) -->
-                <div class="gameview" style="height: 160px;">
-                  <div class="ground-line" style="bottom: 22%;"></div>
-                  <div class="sprite-box" style="left: 20px; bottom: 22%; width: 40px; height: 50px;">
-                    👨‍🏫<br /><span class="text-[7px]">교수</span>
-                  </div>
-                  <div class="sprite" style="right: 30px;"></div>
-                  <!-- 말풍선 -->
-                  <div class="absolute top-3 left-12 right-3 wf-solid bg-white p-1 text-[9px] text-center">
-                    "cardiomegaly의 뜻은?"
-                  </div>
-                  <div class="absolute top-1 left-1 label">진단 퀴즈 SCENE</div>
+                <!-- 미리보기 게임뷰 (50/50) -->
+                <div class="gameview" style="flex: 3;">
+                  <div class="ground-line"></div>
+                  <div class="sprite" style="left: 50%; transform: translateX(-50%); width: 28px; height: 40px;"></div>
+                  <div class="absolute top-2 left-2 label">미리보기</div>
                 </div>
-                <!-- 선택지 -->
-                <div class="px-3 py-2 text-[10px] flex-1 flex flex-col">
-                  <div class="space-y-1.5">
-                    <div class="wf-solid px-2 py-1.5">A. 심장비대</div>
-                    <div class="wf-solid px-2 py-1.5">B. 간비대</div>
-                    <div class="wf-solid px-2 py-1.5">C. 심근경색</div>
-                    <div class="wf-solid px-2 py-1.5">D. 모름</div>
-                  </div>
-                  <div class="mt-auto flex justify-between text-[9px] text-neutral-500">
-                    <span>건너뛰기</span><span>30%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-home"></div>
-            </div>
-            <div class="text-center label mt-2">STEP 2 · 진단 (게임화)</div>
-          </div>
-
-          <!-- step 3: 캐릭터 선택 -->
-          <div>
-            <div class="phone mx-auto">
-              <div class="phone-notch"></div>
-              <div class="phone-screen">
-                <div class="flex items-center gap-2 px-3 py-2 border-b border-neutral-300 text-[10px]">
-                  <div>← 뒤로</div>
-                  <div class="flex-1 text-center label">STEP 3 / 3</div>
-                </div>
-                <div class="flex-1 px-3 py-3 text-[10px] flex flex-col">
+                <!-- UI: 타이틀 + 스프라이트 선택 + 버튼 -->
+                <div class="px-3 py-3 text-[10px] flex flex-col" style="flex: 5;">
                   <div class="font-bold text-sm">캐릭터 선택</div>
-                  <!-- 미리보기 게임뷰 -->
-                  <div class="gameview mt-2" style="height: 100px;">
-                    <div class="ground-line"></div>
-                    <div class="sprite" style="left: 50%; transform: translateX(-50%); width: 24px; height: 32px;"></div>
-                    <div class="absolute top-1 left-1 label">미리보기</div>
-                  </div>
                   <div class="text-neutral-500 mt-3">스프라이트 4종</div>
                   <div class="mt-1 grid grid-cols-4 gap-1">
                     <div class="wf-fill aspect-square"></div>
                     <div class="wf-solid aspect-square"></div>
                     <div class="wf-solid aspect-square"></div>
                     <div class="wf-solid aspect-square"></div>
-                  </div>
-                  <div class="mt-3 wf-solid p-2 text-[9px]">
-                    <div class="text-neutral-500">측정 결과</div>
-                    <div class="mt-0.5">초기 <b>Lv.3</b> · 어원 12개 보유</div>
                   </div>
                   <div class="mt-auto">
                     <div class="wf-fill py-2 text-center">▶ 캠퍼스로 입장</div>
@@ -527,10 +487,10 @@
               </div>
               <div class="phone-home"></div>
             </div>
-            <div class="text-center label mt-2">STEP 3 · 캐릭터</div>
+            <div class="text-center label mt-2">STEP 2 · 캐릭터</div>
           </div>
         </div>
-        <p class="mt-2 text-xs text-neutral-500">▸ 입장 → ③ 캠퍼스맵 (학교 구역만 해금)</p>
+        <p class="mt-2 text-xs text-neutral-500">▸ 입장 → ③ 캠퍼스맵 (모두 Lv.1 시작 · 학교 구역만 해금)</p>
       </section>
 
       <!-- ============================================ -->
@@ -562,10 +522,9 @@
                   </div>
                   <div>🔥4</div>
                   <div>📚27</div>
-                  <div class="wf-solid px-1 py-0.5">≡</div>
                 </div>
                 <!-- GAMEVIEW: 사이드뷰 가로 스크롤 -->
-                <div class="gameview" style="flex: 6;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 22%;"></div>
                   <!-- 학교 구역 (보임) -->
                   <div class="sprite-box" style="left: 12px; bottom: 22%; width: 36px; height: 44px;">
@@ -592,7 +551,7 @@
                   <div class="absolute top-2 right-1 text-[9px] text-neutral-500">스와이프 →</div>
                 </div>
                 <!-- UI 영역 -->
-                <div class="px-2 py-2 text-[9px] flex flex-col gap-1.5" style="flex: 4;">
+                <div class="px-2 py-2 text-[9px] flex flex-col gap-1.5" style="flex: 5;">
                   <!-- 미니맵 -->
                   <div class="wf-solid p-1.5">
                     <div class="label">미니맵</div>
@@ -613,10 +572,10 @@
                   </div>
                   <!-- 액션바 (하단 고정) -->
                   <div class="grid grid-cols-4 gap-1 mt-auto">
-                    <div class="wf-solid py-1.5 text-center">🏠</div>
+                    <div class="wf-fill py-1.5 text-center">🏫<br /><span class="text-[7px]">캠퍼스</span></div>
                     <div class="wf-solid py-1.5 text-center">📖<br /><span class="text-[7px]">도감</span></div>
                     <div class="wf-solid py-1.5 text-center">🏆<br /><span class="text-[7px]">랭킹</span></div>
-                    <div class="wf-solid py-1.5 text-center">⚙️</div>
+                    <div class="wf-solid py-1.5 text-center">⚙️<br /><span class="text-[7px]">설정</span></div>
                   </div>
                 </div>
               </div>
@@ -706,7 +665,7 @@
                   <div>3/12</div>
                 </div>
                 <!-- 사이드뷰 강의실 -->
-                <div class="gameview" style="flex: 5;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 18%;"></div>
                   <!-- 칠판 -->
                   <div class="absolute" style="left: 8px; right: 8px; top: 8px; height: 38px; border: 1.5px solid #111; background: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px;">
@@ -747,7 +706,7 @@
                   <div>3/12</div>
                 </div>
                 <!-- 사이드뷰 (이펙트: 칠판에 분해 애니) -->
-                <div class="gameview" style="flex: 4;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 18%;"></div>
                   <div class="absolute" style="left: 8px; right: 8px; top: 8px; height: 38px; border: 1.5px solid #111; background: #fff; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 10px;">
                     <span class="wf-fill px-1">cardio</span>+<span class="wf-fill px-1">megaly</span>
@@ -757,7 +716,7 @@
                   <div class="absolute top-12 left-1 label">분해 이펙트</div>
                 </div>
                 <!-- 분해 + 설명 -->
-                <div class="px-2 py-2 text-[10px] flex flex-col" style="flex: 6;">
+                <div class="px-2 py-2 text-[10px] flex flex-col" style="flex: 5;">
                   <div class="wf-box p-2">
                     <div class="flex items-center justify-center gap-1 text-[10px]">
                       <div class="wf-fill px-1.5 py-1 text-center">
@@ -849,7 +808,7 @@
                   <div>⏱02:14 · ×3</div>
                 </div>
                 <!-- 사이드뷰 도서관 -->
-                <div class="gameview" style="flex: 4;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 22%;"></div>
                   <!-- 책장 -->
                   <div class="absolute" style="left: 6px; top: 6px; bottom: 22%; width: 40px; border: 1.5px solid #111; background: repeating-linear-gradient(90deg, #fff 0 6px, #ddd 6px 8px);"></div>
@@ -865,7 +824,7 @@
                   <div class="absolute top-1 left-1 label">도서관 SCENE</div>
                 </div>
                 <!-- UI: 슬롯 + 인벤토리 -->
-                <div class="px-2 py-2 text-[9px] flex flex-col" style="flex: 6;">
+                <div class="px-2 py-2 text-[9px] flex flex-col" style="flex: 5;">
                   <!-- 조립 슬롯 -->
                   <div class="label">조립 슬롯</div>
                   <div class="mt-1 flex items-center gap-1">
@@ -914,12 +873,12 @@
                   <div class="flex-1 text-center">도서관 · 7/20</div>
                 </div>
                 <!-- 게임뷰 (어두워짐) -->
-                <div class="gameview opacity-30" style="flex: 4;">
+                <div class="gameview opacity-30" style="flex: 5;">
                   <div class="ground-line"></div>
                   <div class="sprite" style="left: 50%; transform: translateX(-50%);"></div>
                 </div>
                 <!-- 정답 모달 -->
-                <div class="px-2 py-2 flex-1 flex flex-col">
+                <div class="px-2 py-2 flex flex-col" style="flex: 5;">
                   <div class="wf-screen flex-1 p-3 text-center text-[10px]">
                     <div class="text-2xl">✨ 정답!</div>
                     <div class="mt-2 wf-box p-2">
@@ -996,7 +955,7 @@
                   <div>Lv.5</div>
                 </div>
                 <!-- 게임뷰: JRPG 사이드뷰 배틀 -->
-                <div class="gameview" style="flex: 5;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 18%;"></div>
                   <!-- 침대 (배경) -->
                   <div class="absolute" style="right: 12px; bottom: 18%; width: 80px; height: 24px; border: 1.5px solid #111; background: #fafafa;"></div>
@@ -1069,7 +1028,7 @@
                   <div>Lv.5</div>
                 </div>
                 <!-- 보스전 -->
-                <div class="gameview" style="flex: 4;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 18%;"></div>
                   <div class="absolute" style="left: 16px; bottom: 18%; width: 24px; height: 32px; background: #111; border: 1.5px solid #111;"></div>
                   <!-- 보스 환자 (큰 사이즈) -->
@@ -1083,7 +1042,7 @@
                   </div>
                 </div>
                 <!-- 레벨업 모달 -->
-                <div class="px-2 py-2 flex-1 flex flex-col">
+                <div class="px-2 py-2 flex flex-col" style="flex: 5;">
                   <div class="wf-screen p-3 text-center text-[10px]">
                     <div class="text-xl font-bold">✨ LEVEL UP!</div>
                     <div class="mt-1 text-[10px]">Lv.5 → <b>Lv.6</b></div>
@@ -1174,7 +1133,7 @@
                   <div class="absolute bottom-1 right-1 text-[8px] text-neutral-500">↔ 스와이프</div>
                 </div>
                 <!-- 베드 카드 스택 (모바일 핵심: 데스크탑 4분할 → 모바일 카드 리스트) -->
-                <div class="px-2 py-2 text-[9px] flex flex-col gap-1.5 overflow-auto" style="flex: 7;">
+                <div class="px-2 py-2 text-[9px] flex flex-col gap-1.5 overflow-auto" style="flex: 5;">
                   <div class="wf-solid p-1.5">
                     <div class="flex justify-between">
                       <span class="font-bold">Bed 1 · 위중 🔥</span>
@@ -1222,7 +1181,7 @@
                   <div class="flex-1 text-center font-bold text-rose-600">⏱ 12:32</div>
                   <div>Bed 1</div>
                 </div>
-                <div class="gameview" style="flex: 4;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 18%;"></div>
                   <div class="absolute" style="left: 24px; bottom: 18%; width: 24px; height: 32px; background: #111; border: 1.5px solid #111;"></div>
                   <div class="absolute" style="right: 8px; bottom: 18%; width: 80px; height: 24px; border: 1.5px solid #111; background: #fee2e2;"></div>
@@ -1232,7 +1191,7 @@
                     <div class="h-1 bg-neutral-200 mt-0.5"><div class="h-full w-1/4 bg-rose-500"></div></div>
                   </div>
                 </div>
-                <div class="px-2 py-2 text-[9px] flex flex-col" style="flex: 6;">
+                <div class="px-2 py-2 text-[9px] flex flex-col" style="flex: 5;">
                   <div class="wf-box p-2">
                     <div class="label">Bed 1 · 진단 단계 (1/3)</div>
                     <div class="mt-1 text-[10px]">Q. 가장 의심되는 진단은?</div>
@@ -1303,9 +1262,7 @@
               <div class="phone-notch"></div>
               <div class="phone-screen">
                 <div class="flex items-center gap-2 px-2 py-1.5 border-b border-neutral-300 text-[9px]">
-                  <div>← 캠퍼스</div>
                   <div class="flex-1 text-center font-bold">📖 도감</div>
-                  <div>⚙️</div>
                 </div>
                 <div class="px-2 py-2 text-[9px] flex flex-col gap-2 overflow-auto" style="flex:1;">
                   <!-- 프로필 -->
@@ -1372,10 +1329,10 @@
                 </div>
                 <!-- 하단 nav -->
                 <div class="grid grid-cols-4 gap-0 border-t border-neutral-300 text-[9px]">
-                  <div class="py-1.5 text-center">🏫</div>
-                  <div class="py-1.5 text-center wf-fill">📖</div>
-                  <div class="py-1.5 text-center">🏆</div>
-                  <div class="py-1.5 text-center">⚙️</div>
+                  <div class="py-1.5 text-center">🏫<br /><span class="text-[7px]">캠퍼스</span></div>
+                  <div class="py-1.5 text-center wf-fill">📖<br /><span class="text-[7px]">도감</span></div>
+                  <div class="py-1.5 text-center">🏆<br /><span class="text-[7px]">랭킹</span></div>
+                  <div class="py-1.5 text-center">⚙️<br /><span class="text-[7px]">설정</span></div>
                 </div>
               </div>
               <div class="phone-home"></div>
@@ -1471,9 +1428,7 @@
               <div class="phone-notch"></div>
               <div class="phone-screen">
                 <div class="flex items-center gap-2 px-2 py-1.5 border-b border-neutral-300 text-[9px]">
-                  <div>← 캠퍼스</div>
                   <div class="flex-1 text-center font-bold">🏆 랭킹</div>
-                  <div>≡</div>
                 </div>
                 <div class="px-2 py-2 text-[9px] flex flex-col gap-2 overflow-auto" style="flex:1;">
                   <!-- 범위 탭 -->
@@ -1545,10 +1500,10 @@
                   </div>
                 </div>
                 <div class="grid grid-cols-4 gap-0 border-t border-neutral-300 text-[9px]">
-                  <div class="py-1.5 text-center">🏫</div>
-                  <div class="py-1.5 text-center">📖</div>
-                  <div class="py-1.5 text-center wf-fill">🏆</div>
-                  <div class="py-1.5 text-center">⚙️</div>
+                  <div class="py-1.5 text-center">🏫<br /><span class="text-[7px]">캠퍼스</span></div>
+                  <div class="py-1.5 text-center">📖<br /><span class="text-[7px]">도감</span></div>
+                  <div class="py-1.5 text-center wf-fill">🏆<br /><span class="text-[7px]">랭킹</span></div>
+                  <div class="py-1.5 text-center">⚙️<br /><span class="text-[7px]">설정</span></div>
                 </div>
               </div>
               <div class="phone-home"></div>
@@ -1611,7 +1566,7 @@
                   <div>?</div>
                 </div>
                 <!-- 게임뷰: 응급실 문(잠금 이펙트) -->
-                <div class="gameview" style="flex: 4;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 22%;"></div>
                   <div class="absolute" style="left: 50%; transform: translateX(-50%); bottom: 22%; width: 80px; height: 80px; border: 2px solid #111; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 30px;">🚨</div>
                   <div class="absolute" style="left: 50%; transform: translate(-50%, -50%); top: 50%; font-size: 24px;">🔒</div>
@@ -1620,7 +1575,7 @@
                   </div>
                 </div>
                 <!-- 가격 -->
-                <div class="px-2 py-2 text-[10px] flex flex-col gap-2" style="flex: 6;">
+                <div class="px-2 py-2 text-[10px] flex flex-col gap-2" style="flex: 5;">
                   <div class="text-[9px] text-neutral-600 text-center">
                     국시 대비 시간제한 모의고사 + 임상 케이스 30+
                   </div>
@@ -1669,7 +1624,7 @@
                   <div class="flex-1 text-center font-bold">✨ 해금!</div>
                   <div></div>
                 </div>
-                <div class="gameview" style="flex: 5;">
+                <div class="gameview" style="flex: 3;">
                   <div class="ground-line" style="bottom: 22%;"></div>
                   <!-- 캠퍼스맵 (응급실 ✨ 발광) -->
                   <div class="sprite-box" style="left: 16px; bottom: 22%; width: 30px; height: 36px;">🏛️</div>
@@ -1679,7 +1634,7 @@
                   <div class="absolute" style="right: 16px; top: 8px; font-size: 14px;">✨</div>
                   <div class="absolute" style="left: 50%; transform: translateX(-50%); top: 40%; font-size: 18px; font-weight: bold;">UNLOCKED!</div>
                 </div>
-                <div class="px-2 py-2 text-[10px] flex flex-col">
+                <div class="px-2 py-2 text-[10px] flex flex-col" style="flex: 5;">
                   <div class="wf-solid p-2 text-center">
                     <div class="font-bold">응급실이 해금되었습니다</div>
                     <div class="text-[9px] text-neutral-600 mt-1">
@@ -1738,8 +1693,8 @@
             <pre class="mt-2 font-mono text-[10px] leading-relaxed whitespace-pre-wrap">
 [D+0 · 첫 세션 ~15분]
   ① 랜딩 (히어로 GIF)
-       ↓ Google
-  ② 온보딩 3 step (3분)
+       ↓ Google / Guest
+  ② 온보딩 2 step (~30초)
        ↓
   ③ 캠퍼스맵 (사이드뷰 · 학교만 해금)
        ↓ 강의실 탭
@@ -1784,8 +1739,8 @@
                   자체가 강의실/도서관/병동 진입점이라 "홈" 탭 불필요.
                 </li>
                 <li>
-                  <b>UI 비율 60/40</b> 위/아래 고정. 게임뷰가 너무 작으면 픽셀
-                  매력 소실, 너무 크면 SRS 4버튼 터치영역 부족.
+                  <b>UI 비율 50/50</b> 위/아래 고정. 모든 화면에서 동일한 게임뷰
+                  높이 — 시각적 리듬 일관성. 화면별로 비율이 달라지면 어색.
                 </li>
                 <li>
                   <b>플래시카드 = 게임뷰 위 칠판 + 아래 카드</b>. 게임뷰 안에
