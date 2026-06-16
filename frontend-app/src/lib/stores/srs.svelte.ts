@@ -1,5 +1,6 @@
 import { terms, type MedicalTerm } from '$lib/data/terms';
 import { morphemes, type Morpheme } from '$lib/data/morphemes';
+import { scheduleSync } from './sync';
 
 /** 어근(morpheme) SRS 카드 키는 'm:' 접두 — 용어 id와의 충돌 방지(예: 'edema'). */
 const M_PREFIX = 'm:';
@@ -67,6 +68,7 @@ function loadFromStorage(): Record<string, CardState> {
 function saveToStorage(data: Record<string, CardState>) {
 	if (typeof localStorage === 'undefined') return;
 	localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+	scheduleSync();
 }
 
 /** SM-2 style interval calculation */
@@ -242,6 +244,16 @@ export function isMorphemeWeak(mid: string): boolean {
 	const s = cardStates[M_PREFIX + mid];
 	if (!s || s.lastRated === null) return false;
 	return weaknessScore(s) >= WEAK_LABEL_THRESHOLD;
+}
+
+/**
+ * 어근이 '마스터' 됐는가 — interval ≥ 7일(getStats 의 mastered 기준과 동일).
+ * 긴 용어를 봐도 뜻이 바로 떠오르는 '즉답'(decode-state) 판정에 사용:
+ * 용어의 모든 어근이 마스터여야 즉답.
+ */
+export function isMorphemeMastered(mid: string): boolean {
+	const s = cardStates[M_PREFIX + mid];
+	return !!s && s.lastRated !== null && s.interval >= 7;
 }
 
 /** 어근의 약점 점수(0~1). 미학습/신규는 0. 도서관 디코딩 큐의 약점 가중 정렬용. */

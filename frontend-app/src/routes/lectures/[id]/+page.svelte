@@ -5,17 +5,10 @@
 	import { resolveLecture } from '$lib/stores/generated-lectures.svelte';
 	import { morphemeById } from '$lib/data/morphemes';
 	import { terms as allTerms } from '$lib/data/terms';
-	import { isDailyMergeEnabled, setDailyMergeEnabled } from '$lib/stores/lecture-prefs.svelte';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 
 	const lec = $derived(page.params.id ? resolveLecture(page.params.id) : undefined);
-	const lectureId = $derived(lec?.id ?? '');
-	const dailyOn = $derived(lectureId ? isDailyMergeEnabled(lectureId) : true);
-
-	function toggleDaily() {
-		if (lectureId) setDailyMergeEnabled(lectureId, !dailyOn);
-	}
 
 	type Bucket = 'inNet' | 'autoMerge' | 'pending' | 'blocked';
 	const BUCKET_META: Record<Bucket, { label: string; icon: 'check' | 'plus' | 'search' | 'hand'; tint: string; ink: string; desc: string }> = {
@@ -54,7 +47,14 @@
 			return m ? `${m.form} · ${m.meaningKo}` : p.id;
 		}
 		if (p.status === 'candidate') return `${p.meaning || p.id} · 후보 (출처: ${p.source || 'nbk-ch1'})`;
-		if (p.status === 'unverified-with-source') return `${p.nbkMeaning || p.id} · NBK 출처 있음`;
+		if (p.status === 'unverified-with-source') {
+			// RAG 검색이면 인용·유사도를, 정확매칭 폴백이면 기존 라벨.
+			if (p.citation) {
+				const sim = p.similarity != null ? ` · 유사도 ${(p.similarity * 100).toFixed(0)}%` : '';
+				return `${p.citation}${sim}`;
+			}
+			return `${p.nbkMeaning || p.id} · ${p.source || 'NBK'} 출처 있음`;
+		}
 		return `${p.id} · 출처 없음`;
 	}
 
@@ -94,20 +94,6 @@
 				</div>
 			</section>
 
-			<!-- 데일리 합류 토글 -->
-			<button class="dm-toggle card" onclick={toggleDaily} aria-pressed={dailyOn}>
-				<span class="dm-tx">
-					<span class="dm-name">데일리 학습 풀에 포함</span>
-					<span class="dm-desc">
-						{#if dailyOn}이 강의에서 합류한 용어가 데일리 SRS 큐와 진척 통계에 들어갑니다.
-						{:else}현재 제외 중 — 이 강의 페이지 안에서만 학습됩니다.{/if}
-					</span>
-				</span>
-				<span class="dm-switch" class:on={dailyOn}>
-					<span class="dm-knob"></span>
-				</span>
-			</button>
-
 			<!-- 강의 발췌 -->
 			<details class="excerpt card">
 				<summary>강의 본문 발췌 보기</summary>
@@ -144,7 +130,7 @@
 												{:else if p.status === 'candidate'}
 													<span class="chip-ko">{p.meaning || '후보'}</span>
 												{:else if p.status === 'unverified-with-source'}
-													<span class="chip-ko">{p.nbkMeaning || 'NBK'}</span>
+													<span class="chip-ko">{p.nbkMeaning || 'NBK'}{#if p.similarity != null} · {(p.similarity * 100).toFixed(0)}%{/if}</span>
 												{:else}
 													<span class="chip-ko">출처 없음</span>
 												{/if}
@@ -171,6 +157,9 @@
 					<div><b>{(lec.set.eval.citation_coverage * 100).toFixed(0)}%</b><span>citation 커버리지</span></div>
 				</div>
 				<div class="eval-note">{lec.set._meta.pipeline}</div>
+				{#if lec.set._meta.retrieval}
+					<div class="eval-note">③ 출처대조: {lec.set._meta.retrieval}</div>
+				{/if}
 			</section>
 
 			<div class="bottom-space"></div>
@@ -197,17 +186,6 @@
 	.metric { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 6px; background: var(--card); border-radius: var(--r-sm); }
 	.metric b { font-size: 18px; font-weight: 800; }
 	.metric span { font-size: 10.5px; color: var(--mut); }
-
-	/* 데일리 합류 토글 */
-	.dm-toggle { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; margin-top: 12px; padding: 14px; transition: transform 0.08s; }
-	.dm-toggle:active { transform: scale(0.99); }
-	.dm-tx { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-	.dm-name { font-size: 14px; font-weight: 800; }
-	.dm-desc { font-size: 11.5px; color: var(--mut); line-height: 1.4; }
-	.dm-switch { flex: none; width: 40px; height: 22px; background: var(--line); border-radius: 999px; position: relative; transition: background 0.15s; }
-	.dm-switch.on { background: var(--brand); }
-	.dm-knob { position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; background: #fff; border-radius: 50%; transition: left 0.18s; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18); }
-	.dm-switch.on .dm-knob { left: 20px; }
 
 	/* 강의 발췌 */
 	.excerpt { margin-top: 12px; padding: 0; }

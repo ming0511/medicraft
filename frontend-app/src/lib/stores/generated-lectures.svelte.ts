@@ -4,6 +4,7 @@
 
 import { browser } from '$app/environment';
 import { lectureById, type Lecture } from '$lib/data/lectures';
+import { scheduleSync } from './sync';
 
 const KEY = 'medicraft.lectures.generated';
 // 내장(정적) 강의는 지울 수 없으니 "숨긴" id 만 따로 보관 → 목록에서 제외.
@@ -31,11 +32,17 @@ function load() {
 }
 
 function persist() {
-	if (browser) localStorage.setItem(KEY, JSON.stringify(generated));
+	if (browser) {
+		localStorage.setItem(KEY, JSON.stringify(generated));
+		scheduleSync();
+	}
 }
 
 function persistHidden() {
-	if (browser) localStorage.setItem(HIDDEN_KEY, JSON.stringify(hiddenBuiltins));
+	if (browser) {
+		localStorage.setItem(HIDDEN_KEY, JSON.stringify(hiddenBuiltins));
+		scheduleSync();
+	}
 }
 
 /** 사용자가 추출해 모은 강의들 (최신순). */

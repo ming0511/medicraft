@@ -3,41 +3,27 @@
 	import { onMount } from 'svelte';
 	import { loadProfile, type Profile } from '$lib/stores/profile.svelte';
 	import { loadProgress, type Progress } from '$lib/stores/progress.svelte';
+	import {
+		fetchLeaderboard,
+		syncStatsToServer,
+		type LeaderboardEntry
+	} from '$lib/stores/leaderboard.svelte';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Mascot from '$lib/components/Mascot.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 
-	type Entry = { nick: string; school: string; char: 0 | 1 | 2 | 3; xp: number; me?: boolean };
+	let { data } = $props();
 
-	// 베타 — 로컬 시뮬레이션. 실제 동기화는 Phase 2 (Supabase)에서.
-	const RIVALS: Entry[] = [
-		{ nick: '강심장', school: '서울대학교', char: 0, xp: 3240 },
-		{ nick: '뼈해커', school: '연세대학교', char: 3, xp: 2980 },
-		{ nick: '청진맨', school: '고려대학교', char: 2, xp: 2810 },
-		{ nick: '약손이', school: '서울대학교', char: 1, xp: 2540 },
-		{ nick: '나이팅이', school: '이화여자대학교', char: 1, xp: 2220 },
-		{ nick: '인턴김', school: '경희대학교', char: 0, xp: 1980 },
-		{ nick: '카르디오', school: '성균관대학교', char: 0, xp: 1810 },
-		{ nick: '뉴런왕', school: '한양대학교', char: 3, xp: 1640 },
-		{ nick: '간이좋아', school: '부산대학교', char: 2, xp: 1490 },
-		{ nick: '폐활량', school: '전남대학교', char: 0, xp: 1320 },
-		{ nick: '스크럽', school: '서울대학교', char: 1, xp: 1180 },
-		{ nick: '약사꿈', school: '중앙대학교', char: 2, xp: 1040 },
-		{ nick: 'CT킹', school: '연세대학교', char: 3, xp: 920 },
-		{ nick: '혈관미로', school: '울산대학교', char: 0, xp: 810 },
-		{ nick: '신장기', school: '인제대학교', char: 2, xp: 690 },
-		{ nick: '척수마니아', school: '영남대학교', char: 3, xp: 580 },
-		{ nick: '면역학', school: '경북대학교', char: 0, xp: 470 },
-		{ nick: '병리학생', school: '아주대학교', char: 0, xp: 360 },
-		{ nick: '내과지망', school: '단국대학교', char: 1, xp: 240 },
-		{ nick: '응급실', school: '한림대학교', char: 0, xp: 140 }
-	];
+	type Entry = LeaderboardEntry;
 
 	let profile = $state<Profile | null>(null);
 	let progress = $state<Progress>(loadProgress());
 	let tab = $state<'all' | 'school'>('all');
+	let entries = $state<Entry[]>([]);
+	let loading = $state(true);
+	let live = $state(false); // 실제 Supabase 데이터 사용 중인가
 
-	onMount(() => {
+	onMount(async () => {
 		const p = loadProfile();
 		if (!p) {
 			goto('/onboarding');
@@ -45,19 +31,37 @@
 		}
 		profile = p;
 		progress = loadProgress();
+		await loadBoard();
 		setTimeout(() => {
 			document.querySelector('.row.me')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-		}, 200);
+		}, 250);
 	});
 
-	const myEntry = $derived<Entry | null>(
-		profile
-			? { nick: profile.nickname || 'Guest', school: profile.school || '학교 미입력', char: profile.character, xp: progress.xp, me: true }
-			: null
-	);
-	const allRanked = $derived((myEntry ? [...RIVALS, myEntry] : RIVALS).slice().sort((a, b) => b.xp - a.xp));
+	async function loadBoard() {
+		loading = true;
+		try {
+			// 내 최신 로컬 점수를 서버에 먼저 반영한 뒤 전체를 가져온다.
+			await syncStatsToServer(profile!, progress, data.supabase);
+			const rows = await fetchLeaderboard(data.supabase);
+			if (rows && rows.length) {
+				entries = rows;
+				live = true;
+				return;
+			}
+		} catch {
+			// 네트워크/권한 실패
+		} finally {
+			loading = false;
+		}
+		// 실제 데이터 없음(게스트 / 미로그인 / Supabase 미설정) → 빈 상태
+		entries = [];
+		live = false;
+	}
+
+	const allRanked = $derived(entries.slice().sort((a, b) => b.xp - a.xp));
+	const showPodium = $derived(allRanked.length >= 3);
 	const podium = $derived(allRanked.slice(0, 3));
-	const rest = $derived(allRanked.slice(3));
+	const rest = $derived(showPodium ? allRanked.slice(3) : allRanked);
 
 	type SchoolEntry = { school: string; xp: number; members: number; mine: boolean };
 	const schoolRanked = $derived<() => SchoolEntry[]>(() => {
@@ -87,7 +91,7 @@
 <div class="page">
 	<header class="app-bar">
 		<button class="app-bar__btn" onclick={() => goto('/campus')} aria-label="캠퍼스"><Icon name="back" size={20} /></button>
-		<div class="app-bar__title">이번 주 랭킹</div>
+		<div class="app-bar__title">랭킹</div>
 		<div style="width:36px"></div>
 	</header>
 
@@ -97,8 +101,17 @@
 	</div>
 
 	<div class="scroll">
+		{#if loading}
+			<div class="loading">랭킹 불러오는 중…</div>
+		{:else}
 		{#if tab === 'all'}
-			{#if podium.length === 3}
+			{#if allRanked.length === 0}
+				<div class="empty-note empty-cta">
+					<div>아직 랭킹 데이터가 없어요.<br />로그인하면 전체 사용자와 XP 순위를 겨뤄요.</div>
+					<button class="pill-btn pill-btn--primary" onclick={() => goto('/')}>로그인하러 가기</button>
+				</div>
+			{/if}
+			{#if showPodium}
 				{@const p1 = podium[0]}
 				{@const p2 = podium[1]}
 				{@const p3 = podium[2]}
@@ -126,7 +139,7 @@
 
 			{#if rest.length}
 				<div class="list card">
-					{#each rest as entry, i (entry.nick + entry.xp)}
+					{#each rest as entry, i (entry.id)}
 						{@const rank = allRanked.indexOf(entry) + 1}
 						<div class="row" class:me={entry.me} class:divider={i > 0}>
 							<span class="rk">{medal(rank)}</span>
@@ -165,8 +178,11 @@
 			{/if}
 		{/if}
 
-		<div class="foot-note">베타 — 실시간 동기화는 Phase 2에서 정식 출시</div>
+		{#if live}
+			<div class="foot-note">전체 사용자 실시간 랭킹 · XP 순</div>
+		{/if}
 		<div class="bottom-space"></div>
+		{/if}
 	</div>
 
 	<BottomNav active="ranking" />
@@ -242,6 +258,7 @@
 	.rxp b { font-size: 14px; font-weight: 800; }
 	.rxp small { display: block; font-size: 9px; color: var(--mut); letter-spacing: 0.1em; }
 
+	.loading { text-align: center; font-size: 13px; color: var(--mut); padding: 48px 0; }
 	.foot-note { text-align: center; font-size: 11px; color: var(--mut); padding: 16px 0 4px; }
 	.bottom-space { height: 12px; }
 </style>

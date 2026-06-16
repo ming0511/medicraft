@@ -6,6 +6,7 @@
 import { morphemes } from '$lib/data/morphemes';
 import { terms } from '$lib/data/terms';
 import type { LectureSet, LectureTerm, LectureClassifiedPart } from '$lib/data/lectures';
+import { retrieveSources, type RagHit } from './lecture-rag';
 // scripts/ 의 워크리스트 JSON — Vite 가 번들에 포함.
 import nbk from '../../../scripts/nbk-ch1-wordparts.json';
 import candidateDraft from '../../../scripts/candidate-morphemes-draft.json';
@@ -44,8 +45,9 @@ function nbkSearch(surface: string): { bucket: string; entry: NbkEntry } | null 
 	return null;
 }
 
-// ── 분류 (스크립트 classifyParts 포팅) ────────────────────────────
-function classifyPart(id: string): LectureClassifiedPart {
+// ── 분류 (스크립트 classifyParts 포팅 + RAG) ──────────────────────
+// 우선순위: 검수됨 → 후보 → RAG 벡터검색(인용·유사도) → 로컬 정확매칭 폴백 → 출처없음.
+function classifyPart(id: string, ragHits?: Map<string, RagHit>): LectureClassifiedPart {
 	if (MORPH_IDS.has(id) && !UNVERIFIED_IDS.has(id)) {
 		return { id, status: 'verified' };
 	}
@@ -58,6 +60,20 @@ function classifyPart(id: string): LectureClassifiedPart {
 			meaning: cand.meaningKo ?? cand.meaning
 		};
 	}
+	// RAG 우선: 벡터 의미검색으로 출처를 찾았으면 인용·유사도 부착.
+	const rag = ragHits?.get(id);
+	if (rag) {
+		return {
+			id,
+			status: 'unverified-with-source',
+			source: rag.source,
+			nbkMeaning: rag.meaning,
+			bucket: rag.bucket,
+			citation: rag.citation,
+			similarity: rag.similarity
+		};
+	}
+	// 폴백: 로컬 정확매칭 (RAG 불가/미발견 시).
 	const hit = nbkSearch(id);
 	if (hit) {
 		return {
@@ -71,6 +87,18 @@ function classifyPart(id: string): LectureClassifiedPart {
 	return { id, status: 'unverified-no-source' };
 }
 
+/** verified/candidate 가 아닌(=출처 검색 대상) part id 만 추림. RAG 쿼리 최소화용. */
+function unknownIds(decomposed: Decomposed[]): string[] {
+	const out = new Set<string>();
+	for (const { parts } of decomposed) {
+		for (const id of parts) {
+			const verified = MORPH_IDS.has(id) && !UNVERIFIED_IDS.has(id);
+			if (!verified && !CANDIDATE_MAP.has(id)) out.add(id);
+		}
+	}
+	return [...out];
+}
+
 export type Decomposed = { term: string; parts: string[] };
 
 /**
@@ -80,14 +108,18 @@ export type Decomposed = { term: string; parts: string[] };
  * @param meta           fixture 메타 (제목/원문/출처/생성일/추출방식)
  * @param expectedTerms  라벨이 있으면 precision/recall 계산용 (없으면 0)
  */
-export function buildLectureSet(
+export async function buildLectureSet(
 	extractedTerms: string[],
 	decomposed: Decomposed[],
 	meta: { title: string; source: string; body: string; generated: string; runtime: string },
 	expectedTerms: string[] = []
-): LectureSet {
+): Promise<LectureSet> {
+	// ③ 출처대조: 미지 어근만 RAG(임베딩+pgvector)로 일괄 조회. 불가 시 정확매칭 폴백.
+	const rag = await retrieveSources(unknownIds(decomposed));
+	const retrieval = rag.used ? 'rag (gemini-embedding + pgvector)' : 'exact (local nbk)';
+
 	const results = decomposed.map(({ term, parts }) => {
-		const classified = parts.map(classifyPart);
+		const classified = parts.map((p) => classifyPart(p, rag.hits));
 		const alreadyInTerms = TERM_LABELS.has(term.toLowerCase());
 		const allVerified = classified.every((p) => p.status === 'verified');
 		const allSourced = classified.every((p) => p.status !== 'unverified-no-source');
@@ -115,13 +147,13 @@ export function buildLectureSet(
 	const autoRate = newTerms.length > 0 ? autoMerge.length / newTerms.length : null;
 
 	// 집계: 새 후보 어근 / 출처없는 어근
-	const newCandAgg = new Map<string, { id: string; bucket?: string; source: string; verified: false; nbkMeaning: string; usedIn: string[] }>();
+	const newCandAgg = new Map<string, { id: string; bucket?: string; source: string; verified: false; nbkMeaning: string; usedIn: string[]; citation?: string; similarity?: number }>();
 	const noSourceAgg = new Map<string, { id: string; usedIn: string[] }>();
 	for (const r of results) {
 		for (const p of r.newCandidates) {
 			const ex = newCandAgg.get(p.id);
 			if (ex) ex.usedIn.push(r.term);
-			else newCandAgg.set(p.id, { id: p.id, bucket: p.bucket, source: 'nbk-ch1', verified: false, nbkMeaning: p.nbkMeaning ?? '', usedIn: [r.term] });
+			else newCandAgg.set(p.id, { id: p.id, bucket: p.bucket, source: p.source ?? 'nbk-ch1', verified: false, nbkMeaning: p.nbkMeaning ?? '', usedIn: [r.term], citation: p.citation, similarity: p.similarity });
 		}
 		for (const p of r.unresolved) {
 			const ex = noSourceAgg.get(p.id);
@@ -150,6 +182,7 @@ export function buildLectureSet(
 			pipeline: '강의 텍스트 → ① 용어 추출 → ② 어근 분해 → ③ NBK RAG 대조 (서버 결정적)',
 			llm_runtime: meta.runtime,
 			llm_hook: 'lecture-extract.ts (deterministic | claude)',
+			retrieval,
 			next_step: '검수자가 needs_curator + candidate_morphemes 통과 처리 → morphemes.ts/terms.ts 머지'
 		},
 		fixture: { title: meta.title, source: meta.source, body: meta.body.trim() },

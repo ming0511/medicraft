@@ -1,3 +1,5 @@
+import { scheduleSync } from './sync';
+
 export type Progress = {
 	level: number;
 	xp: number;
@@ -60,6 +62,7 @@ export function loadProgress(): Progress {
 export function saveProgress(p: Progress) {
 	try {
 		localStorage.setItem(KEY, JSON.stringify(p));
+		scheduleSync();
 	} catch {
 		// ignore
 	}

@@ -12,6 +12,8 @@ import Anthropic from '@anthropic-ai/sdk';
 import { morphemes } from '$lib/data/morphemes';
 import { terms } from '$lib/data/terms';
 import type { Decomposed } from './lecture-harvest';
+import { resolveEngine, type EngineId } from './lecture-engines';
+import { recordLlmCall } from './llm-usage';
 
 export type ExtractResult = {
 	extracted: string[];
@@ -200,17 +202,23 @@ async function extractWithGemini(text: string, apiKey: string, model: string): P
 	return parseDecomposed(out);
 }
 
-/** 디스패처: 환경에 따라 결정적 또는 LLM(claude/gemini). UI/route 가 이걸 호출. */
-export async function extractAndDecompose(text: string): Promise<ExtractResult> {
-	const provider = env.LECTURE_LLM;
-	if (provider === 'claude' && env.ANTHROPIC_API_KEY) {
+/** 디스패처: 요청 엔진(없으면 env 기본)에 따라 결정적 또는 LLM(claude/gemini). UI/route 가 이걸 호출.
+ *  @param requested 화면에서 사용자가 고른 엔진. 키 없거나 미지정이면 서버 기본으로 폴백(resolveEngine). */
+export async function extractAndDecompose(
+	text: string,
+	requested?: string | null
+): Promise<ExtractResult> {
+	const engine: EngineId = resolveEngine(requested);
+	if (engine === 'claude' && env.ANTHROPIC_API_KEY) {
 		const model = env.LECTURE_LLM_MODEL || 'claude-opus-4-8';
 		const decomposed = await extractWithLLM(text, env.ANTHROPIC_API_KEY, model);
+		recordLlmCall('claude');
 		return { extracted: decomposed.map((d) => d.term), decomposed, runtime: `claude (${model})` };
 	}
-	if (provider === 'gemini' && env.GEMINI_API_KEY) {
+	if (engine === 'gemini' && env.GEMINI_API_KEY) {
 		const model = env.LECTURE_LLM_MODEL || 'gemini-2.0-flash';
 		const decomposed = await extractWithGemini(text, env.GEMINI_API_KEY, model);
+		recordLlmCall('gemini');
 		return { extracted: decomposed.map((d) => d.term), decomposed, runtime: `gemini (${model})` };
 	}
 	const decomposed = extractDeterministic(text);

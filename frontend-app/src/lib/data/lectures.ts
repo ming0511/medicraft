@@ -22,6 +22,10 @@ export type LectureClassifiedPart = {
 	meaning?: string;
 	nbkMeaning?: string;
 	bucket?: string;
+	/** RAG 검색으로 붙은 인용 (사람이 읽는 출처 + URL). 정확매칭 폴백 시 없음. */
+	citation?: string;
+	/** RAG 코사인 유사도 (0~1). 정확매칭 폴백 시 없음. */
+	similarity?: number;
 };
 
 /** 어근 분해 후 각 part의 분류 (스크립트 출력 형식과 동기). */
@@ -49,6 +53,10 @@ export type LectureCandidate = {
 	verified: false;
 	nbkMeaning: string;
 	usedIn: string[];
+	/** RAG 검색으로 붙은 인용. 정확매칭 폴백 시 없음. */
+	citation?: string;
+	/** RAG 코사인 유사도. 정확매칭 폴백 시 없음. */
+	similarity?: number;
 };
 
 export type LectureNeedsCurator = {
@@ -64,6 +72,8 @@ export type LectureSet = {
 		llm_runtime: string;
 		llm_hook: string;
 		next_step: string;
+		/** ③ 출처대조 방식: 'rag (gemini-embedding + pgvector)' | 'exact (local nbk)'. */
+		retrieval?: string;
 	};
 	fixture: {
 		title: string;

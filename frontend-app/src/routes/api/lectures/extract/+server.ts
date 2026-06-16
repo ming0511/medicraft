@@ -7,6 +7,8 @@ import { json, error } from '@sveltejs/kit';
 import { extractText, getDocumentProxy } from 'unpdf';
 import { extractAndDecompose } from '$lib/server/lecture-extract';
 import { buildLectureSet } from '$lib/server/lecture-harvest';
+import { resolveEngine } from '$lib/server/lecture-engines';
+import { usageFor } from '$lib/server/llm-usage';
 import type { RequestHandler } from './$types';
 
 const MAX_CHARS = 40_000;
@@ -28,6 +30,8 @@ export const POST: RequestHandler = async ({ request }) => {
 	const file = form.get('file');
 	const pastedText = (form.get('text') as string | null)?.trim() ?? '';
 	let title = (form.get('title') as string | null)?.trim() ?? '';
+	// 화면에서 고른 엔진(없으면 서버 기본). 키 없는 엔진을 요청하면 resolveEngine 이 폴백.
+	const engine = resolveEngine(form.get('engine') as string | null);
 
 	let body = pastedText;
 
@@ -49,13 +53,13 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	let result;
 	try {
-		result = await extractAndDecompose(body);
+		result = await extractAndDecompose(body, engine);
 	} catch (e) {
 		throw error(502, `용어 추출에 실패했습니다: ${(e as Error).message}`);
 	}
 
 	const generated = new Date().toISOString().slice(0, 10);
-	const set = buildLectureSet(result.extracted, result.decomposed, {
+	const set = await buildLectureSet(result.extracted, result.decomposed, {
 		title,
 		source: file instanceof File ? `업로드: ${file.name}` : '직접 붙여넣기',
 		body,
@@ -63,5 +67,15 @@ export const POST: RequestHandler = async ({ request }) => {
 		runtime: result.runtime
 	});
 
-	return json({ suggestedId: `${slugify(title)}-${generated}`, system: '', shortLabel: title, set });
+	// 이 호출 직후의 외부 LLM 일일 사용량(서버 전역) — 화면이 "오늘 N번 더" 갱신용.
+	const usage = engine === 'gemini' || engine === 'claude' ? usageFor(engine) : null;
+
+	return json({
+		suggestedId: `${slugify(title)}-${generated}`,
+		system: '',
+		shortLabel: title,
+		set,
+		engine,
+		usage
+	});
 };

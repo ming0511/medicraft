@@ -23,11 +23,14 @@
 > service_role 은 RLS를 우회하는 마스터 키 — 서버 전용. 절대 커밋/클라이언트 노출 금지.
 
 ### 1-3. 마이그레이션 적용 (테이블·RLS 생성)
-**SQL Editor → New query** 에 아래 두 파일 내용을 **순서대로** 붙여넣고 Run:
+**SQL Editor → New query** 에 아래 파일 내용을 **순서대로** 붙여넣고 Run:
 1. `frontend-app/supabase/migrations/0001_auth_consents.sql` (profiles, consents)
 2. `frontend-app/supabase/migrations/0002_payments.sql` (entitlements, payments)
+3. `frontend-app/supabase/migrations/0003_grants.sql` (테이블 권한)
+4. `frontend-app/supabase/migrations/0004_leaderboard.sql` (랭킹: profiles 점수 컬럼 + 전체 읽기 정책)
+5. `frontend-app/supabase/migrations/0005_user_state.sql` (학습 상태 크로스기기 동기화: user_state 블롭)
 
-생성되는 것: `profiles` `consents` `entitlements` `payments` 테이블 + RLS 정책(본인 행만 읽기, 결제 권한 쓰기는 service_role만) + 가입 트리거.
+생성되는 것: `profiles` `consents` `entitlements` `payments` `user_state` 테이블 + RLS 정책(본인 행만 쓰기, 결제 권한 쓰기는 service_role만) + 가입 트리거. 랭킹용으로 `profiles` 는 로그인 사용자 전체가 서로 읽을 수 있음(닉네임·학교·캐릭터·XP). `user_state` 는 진행도·SRS·통계 등 localStorage 학습 상태를 유저당 한 행(JSONB)에 미러링 → 다른 기기/캐시 삭제 후에도 복원.
 
 ---
 
@@ -96,7 +99,7 @@ https://<운영도메인>/api/payments/webhook
 
 ## 체크리스트
 - [ ] Supabase 프로젝트 생성 + URL/anon/service_role → `.env`
-- [ ] 마이그레이션 0001, 0002 SQL Editor 실행
+- [ ] 마이그레이션 0001, 0002, 0003, 0004, 0005 SQL Editor 실행
 - [ ] Google Cloud OAuth 클라이언트 + redirect URI(`.../auth/v1/callback`)
 - [ ] Supabase Google provider에 Client ID/Secret
 - [ ] Supabase Site URL + Redirect URLs(`localhost:5173/**`)

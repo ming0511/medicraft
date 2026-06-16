@@ -1,4 +1,5 @@
 import { terms } from '$lib/data/terms';
+import { scheduleSync } from './sync';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -44,6 +45,7 @@ function load<T>(key: string, fallback: T): T {
 function save(key: string, value: unknown) {
 	if (typeof localStorage === 'undefined') return;
 	localStorage.setItem(key, JSON.stringify(value));
+	scheduleSync();
 }
 
 // ── Reactive state ────────────────────────────────────────────────────────────

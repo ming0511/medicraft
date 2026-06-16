@@ -18,7 +18,7 @@
 		const { error } = await data.supabase.auth.signInWithOAuth({
 			provider: 'google',
 			options: {
-				redirectTo: `${page.url.origin}/auth/callback?next=/onboarding`
+				redirectTo: `${page.url.origin}/auth/callback`
 			}
 		});
 		if (error) {
@@ -55,10 +55,6 @@
 			<span class="blk">megaly</span>
 			<span class="op">＝</span>
 			<span class="ans">심장비대</span>
-		</div>
-
-		<div class="path">
-			<span class="chip"><Icon name="cap" size={13} /> 캠퍼스</span><i>───›</i><span class="chip"><Icon name="stethoscope" size={13} /> 병동</span>
 		</div>
 
 		<div class="cta">
@@ -186,15 +182,6 @@
 	}
 	.op { color: var(--mut); font-weight: 700; }
 	.ans { font-weight: 800; color: var(--brand-d); }
-	.path {
-		margin-top: 12px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 8px;
-		color: var(--mut);
-	}
-	.path i { font-style: normal; letter-spacing: 1px; }
 
 	.cta {
 		margin-top: auto;

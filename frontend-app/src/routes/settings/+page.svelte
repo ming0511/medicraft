@@ -4,9 +4,10 @@
 	import { loadProfile, saveProfile, type Profile } from '$lib/stores/profile.svelte';
 	import { loadProgress, type Progress } from '$lib/stores/progress.svelte';
 	import { resetAll } from '$lib/stores/srs.svelte';
+	import { wipeServerState, wipeLocalState } from '$lib/stores/sync';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Mascot from '$lib/components/Mascot.svelte';
-	import Icon, { type IconName } from '$lib/components/Icon.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import { SCHOOLS, SCHOOL_OTHER } from '$lib/data/schools';
 	import { SOURCES } from '$lib/data/morphemes';
 	import { hasEntitlement } from '$lib/stores/entitlements.svelte';
@@ -27,7 +28,15 @@
 	let character = $state<Profile['character']>(0);
 	let toast = $state<string | null>(null);
 	let confirmReset = $state(false);
+	let showWithdraw = $state(false);
+	let withdrawInput = $state('');
+	let withdrawing = $state(false);
 	let emergencyOwned = $state(false);
+
+	const loggedIn = $derived(!!data.user);
+	// 탈퇴 확인: 저장된 닉네임을 정확히 입력해야 활성화 (오발 방지 테스트)
+	const withdrawTarget = $derived(profile?.nickname?.trim() ?? '');
+	const canWithdraw = $derived(withdrawInput.trim() === withdrawTarget && withdrawTarget !== '');
 
 	const school = $derived(schoolChoice === SCHOOL_OTHER ? schoolOther.trim() : schoolChoice);
 	const dirty = $derived(
@@ -68,7 +77,7 @@
 		profile = next;
 		flash('저장됐어요');
 	}
-	function doReset() {
+	async function doReset() {
 		if (!confirmReset) {
 			confirmReset = true;
 			setTimeout(() => (confirmReset = false), 4000);
@@ -78,14 +87,54 @@
 			localStorage.removeItem('medicraft.profile');
 			localStorage.removeItem('medicraft.progress');
 			resetAll();
+			// 로그인 사용자면 서버에 미러된 학습상태/프로필도 삭제(안 하면 재로그인 시 복원됨)
+			await wipeServerState(data.supabase);
 		} catch {
 			// ignore
 		}
 		goto('/');
 	}
-	function doLogout() {
-		// 게스트 로그아웃 — 프로필만 비우고 진행도는 유지(재온보딩 시 이어짐).
+	function openWithdraw() {
+		withdrawInput = '';
+		showWithdraw = true;
+	}
+	function closeWithdraw() {
+		if (withdrawing) return;
+		showWithdraw = false;
+	}
+	function onScrimClick(e: MouseEvent) {
+		if (e.target === e.currentTarget) closeWithdraw();
+	}
+	function onScrimKey(e: KeyboardEvent) {
+		if (e.key === 'Escape') closeWithdraw();
+	}
+	async function doWithdraw() {
+		if (!canWithdraw || withdrawing) return;
+		withdrawing = true;
 		try {
+			// 서버: auth 계정 + 연관 데이터(cascade) 삭제. 실패 시 로컬은 건드리지 않음.
+			const res = await fetch('/api/account', { method: 'DELETE' });
+			if (!res.ok) {
+				flash('탈퇴 처리에 실패했어요. 잠시 후 다시 시도해 주세요');
+				withdrawing = false;
+				return;
+			}
+			// 로컬도 흔적 없이 정리
+			wipeLocalState();
+			resetAll();
+			localStorage.removeItem('medicraft.profile');
+			localStorage.removeItem('medicraft.progress');
+		} catch {
+			flash('탈퇴 처리에 실패했어요. 잠시 후 다시 시도해 주세요');
+			withdrawing = false;
+			return;
+		}
+		goto('/');
+	}
+	async function doLogout() {
+		// 로그인 사용자는 실제 세션을 끊고, 게스트는 프로필만 비운다. 진행도는 유지(재로그인 시 이어짐).
+		try {
+			if (loggedIn) await data.supabase?.auth.signOut();
 			localStorage.removeItem('medicraft.profile');
 		} catch {
 			// ignore
@@ -93,10 +142,6 @@
 		goto('/');
 	}
 
-	const PHASE2: { icon: IconName; name: string }[] = [
-		{ icon: 'bell', name: '학습 알림' },
-		{ icon: 'cloud', name: '구글 동기화' }
-	];
 </script>
 
 <div class="page">
@@ -176,18 +221,6 @@
 			</div>
 		{/if}
 
-		<!-- Phase 2 -->
-		<div class="sec-h">알림 · 데이터</div>
-		<div class="card list">
-			{#each PHASE2 as it, i (it.name)}
-				<div class="row" class:divider={i > 0}>
-					<span class="row-ic"><Icon name={it.icon} size={18} /></span>
-					<span class="row-name">{it.name}</span>
-					<span class="row-badge">Phase 2</span>
-				</div>
-			{/each}
-		</div>
-
 		<!-- 데이터 출처 -->
 		{#if dataSources.length}
 			<div class="sec-h">어원 데이터 출처</div>
@@ -206,15 +239,48 @@
 		<button class="logout" onclick={doLogout}>
 			<Icon name="logOut" size={15} /> 로그아웃
 		</button>
-		<div class="reset-cap">진행도는 보존되고, 다시 로그인하면 이어집니다</div>
 
-		<!-- 초기화 -->
-		<button class="reset" class:armed={confirmReset} onclick={doReset}>
-			{#if confirmReset}한 번 더 누르면 정말 초기화돼요{:else}<Icon name="trash" size={15} /> 모든 데이터 초기화{/if}
-		</button>
-		<div class="reset-cap">프로필 · 진행도 · SRS 큐가 모두 사라집니다</div>
+		{#if loggedIn}
+			<!-- 회원 탈퇴 (로그인 사용자) -->
+			<button class="reset" onclick={openWithdraw}>
+				<Icon name="trash" size={15} /> 회원 탈퇴
+			</button>
+		{:else}
+			<!-- 데이터 초기화 (게스트) -->
+			<button class="reset" class:armed={confirmReset} onclick={doReset}>
+				{#if confirmReset}한 번 더 누르면 정말 초기화돼요{:else}<Icon name="trash" size={15} /> 모든 데이터 초기화{/if}
+			</button>
+			<div class="reset-cap">프로필 · 진행도 · SRS 큐가 모두 사라집니다</div>
+		{/if}
 		<div class="bottom-space"></div>
 	</div>
+
+	{#if showWithdraw}
+		<div class="modal-scrim" onclick={onScrimClick} onkeydown={onScrimKey} role="presentation">
+			<div class="modal" role="dialog" aria-modal="true" aria-label="회원 탈퇴 확인" tabindex="-1">
+				<div class="modal-ic"><Icon name="trash" size={22} /></div>
+				<div class="modal-title">정말 탈퇴하시겠어요?</div>
+				<p class="modal-desc">계정과 모든 학습 데이터가 <b>영구 삭제</b>되며 복구할 수 없어요.</p>
+				<p class="modal-confirm-lbl">확인을 위해 닉네임 <b>{withdrawTarget}</b> 을(를) 입력하세요</p>
+				<input
+					type="text"
+					class="field"
+					bind:value={withdrawInput}
+					placeholder={withdrawTarget}
+					autocomplete="off"
+					autocapitalize="off"
+					spellcheck="false"
+					disabled={withdrawing}
+				/>
+				<div class="modal-actions">
+					<button class="m-btn ghost" onclick={closeWithdraw} disabled={withdrawing}>취소</button>
+					<button class="m-btn danger" onclick={doWithdraw} disabled={!canWithdraw || withdrawing}>
+						{withdrawing ? '처리 중…' : '탈퇴하기'}
+					</button>
+				</div>
+			</div>
+		</div>
+	{/if}
 
 	{#if toast}<div class="toast">{toast}</div>{/if}
 	<BottomNav active="settings" />
@@ -290,7 +356,6 @@
 
 	.list { padding: 2px 6px; }
 	.row { display: flex; align-items: center; gap: 12px; padding: 12px 10px; }
-	.row.divider { border-top: 1px solid var(--line); }
 	.row-ic { width: 38px; height: 38px; flex: none; display: flex; align-items: center; justify-content: center; font-size: 19px; background: var(--card); border-radius: 11px; }
 	.row-name { flex: 1; font-size: 14.5px; font-weight: 600; }
 	.row-badge { font-size: 11px; font-weight: 700; color: var(--mut); background: var(--card); border-radius: 999px; padding: 3px 9px; }
@@ -333,8 +398,60 @@
 		gap: 6px;
 	}
 	.reset.armed { background: #d14b4b; color: #fff; border-color: #d14b4b; }
+	.reset:disabled { opacity: 0.6; }
 	.reset-cap { margin-top: 8px; text-align: center; font-size: 11.5px; color: var(--mut); }
 	.bottom-space { height: 16px; }
+
+	.modal-scrim {
+		position: absolute;
+		inset: 0;
+		z-index: 60;
+		background: rgba(20, 28, 24, 0.42);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 24px;
+	}
+	.modal {
+		width: 100%;
+		max-width: 340px;
+		background: #fff;
+		border-radius: 20px;
+		padding: 24px 20px 18px;
+		box-shadow: var(--shadow-pop);
+		text-align: center;
+	}
+	.modal-ic {
+		width: 48px;
+		height: 48px;
+		margin: 0 auto 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 14px;
+		background: #fdf4f4;
+		color: #d14b4b;
+	}
+	.modal-title { font-size: 17px; font-weight: 800; color: var(--ink); }
+	.modal-desc { margin: 8px 0 16px; font-size: 13px; line-height: 1.55; color: var(--ink-2); }
+	.modal-desc b { color: #d14b4b; }
+	.modal-confirm-lbl { margin: 0 0 8px; font-size: 12.5px; color: var(--mut); text-align: left; }
+	.modal-confirm-lbl b { color: var(--ink); }
+	.modal-actions { display: flex; gap: 9px; margin-top: 16px; }
+	.m-btn {
+		flex: 1;
+		height: 46px;
+		border-radius: 13px;
+		font: inherit;
+		font-size: 14px;
+		font-weight: 700;
+		border: 1.5px solid var(--line);
+	}
+	.m-btn.ghost { background: #fff; color: var(--ink-2); }
+	.m-btn.ghost:active { background: var(--card); }
+	.m-btn.danger { background: #d14b4b; color: #fff; border-color: #d14b4b; }
+	.m-btn.danger:disabled { background: #e9b9b9; border-color: #e9b9b9; }
+	.m-btn:disabled { opacity: 0.9; }
 
 	.toast {
 		position: absolute;

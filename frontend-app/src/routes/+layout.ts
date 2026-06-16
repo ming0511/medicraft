@@ -6,7 +6,14 @@ export const load: LayoutLoad = async ({ data, depends, fetch }) => {
 	depends('supabase:auth');
 
 	if (!SUPABASE_ENABLED) {
-		return { supabase: null, session: null, user: null };
+		return {
+			supabase: null,
+			session: null,
+			user: null,
+			serverProfile: null,
+			serverState: null,
+			serverStateUpdatedAt: null
+		};
 	}
 
 	const supabase = isBrowser()
@@ -27,5 +34,13 @@ export const load: LayoutLoad = async ({ data, depends, fetch }) => {
 		data: { user }
 	} = await supabase.auth.getUser();
 
-	return { supabase, session, user };
+	// 서버 load(+layout.server.ts)가 내려준 프로필/학습상태를 컴포넌트로 통과시킨다.
+	return {
+		supabase,
+		session,
+		user,
+		serverProfile: data.serverProfile,
+		serverState: data.serverState,
+		serverStateUpdatedAt: data.serverStateUpdatedAt
+	};
 };

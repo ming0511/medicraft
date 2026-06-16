@@ -2,6 +2,8 @@
 // PRD 시나리오 B: "통과분이 그물에 합류". 사용자가 끄면 그 강의에서 처음 들어온 어근/용어가
 // 데일리 SRS 큐에서 빠짐. 강의 페이지 내 학습은 그대로 가능.
 
+import { scheduleSync } from './sync';
+
 const STORAGE_KEY = 'medicraft.lectures.dailyMerge';
 
 function load(): Record<string, boolean> {
@@ -16,6 +18,7 @@ function load(): Record<string, boolean> {
 function persist(map: Record<string, boolean>) {
 	if (typeof localStorage === 'undefined') return;
 	localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+	scheduleSync();
 }
 
 let dailyMergeMap = $state<Record<string, boolean>>(load());

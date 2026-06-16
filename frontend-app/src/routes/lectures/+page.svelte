@@ -2,6 +2,8 @@
 	import { goto } from '$app/navigation';
 	import { lectures, type Lecture } from '$lib/data/lectures';
 	import { generatedLectures, addGeneratedLecture, removeGeneratedLecture, hiddenBuiltinIds, hideBuiltinLecture } from '$lib/stores/generated-lectures.svelte';
+	import { selectedEngine, setSelectedEngine, engineParam, freeRemaining, canExtract, recordExtract, FREE_EXTRACTS, type SelectedEngine } from '$lib/stores/lecture-engine.svelte';
+	import { saveScope } from '$lib/stores/scope';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import type { PageData } from './$types';
@@ -14,6 +16,23 @@
 		gemini: 'Gemini AI가 강의에서 의학용어를 뽑아 어근으로 분해해요. 처음 보는 어근까지 인식합니다. (텍스트가 Google로 전송돼요)',
 		claude: 'Claude AI가 강의에서 의학용어를 뽑아 어근으로 분해해요. 처음 보는 어근까지 인식합니다.'
 	};
+
+	// 지금 적용될 엔진: 선택값이 가용하면 그것, 아니면 기본(결정적, LLM 없음)으로 폴백.
+	const activeEngineId = $derived.by(() => {
+		const sel = selectedEngine();
+		if (sel === 'deterministic') return 'deterministic';
+		const e = data.engines.find((x) => x.id === sel);
+		return e && e.available ? e.id : 'deterministic';
+	});
+	const activeEngine = $derived(data.engines.find((e) => e.id === activeEngineId) ?? null);
+	const engineChoice = $derived(selectedEngine());
+	function pickEngine(id: SelectedEngine) {
+		setSelectedEngine(id);
+	}
+	// 서버 일일 LLM 사용량(로드 시 스냅샷 → 추출 응답으로 갱신).
+	let liveUsage = $state<{ used: number; limit: number | null; remaining: number | null } | null>(null);
+	const engineUsage = $derived(liveUsage ?? activeEngine?.usage ?? null);
+	const remainFree = $derived(freeRemaining());
 
 	type UploadStage = 'idle' | 'processing' | 'done';
 	let uploadOpen = $state(false);
@@ -85,6 +104,10 @@
 
 	async function handleUpload() {
 		if (!hasInput || stage === 'processing') return;
+		if (!canExtract()) {
+			errorMsg = `무료 추출 ${FREE_EXTRACTS}회를 모두 사용했어요. 프로로 업그레이드하면 계속 추출할 수 있어요.`;
+			return;
+		}
 		errorMsg = '';
 		stage = 'processing';
 		stepIdx = 0;
@@ -101,6 +124,8 @@
 		const fd = new FormData();
 		if (attachedFile) fd.append('file', attachedFile);
 		else fd.append('text', pasteText);
+		const eng = engineParam();
+		if (eng) fd.append('engine', eng);
 
 		try {
 			const res = await fetch('/api/lectures/extract', { method: 'POST', body: fd });
@@ -116,6 +141,8 @@
 				set: data.set
 			};
 			addGeneratedLecture(lec);
+			recordExtract(); // 무료 잔여 1 감소
+			if (data.usage) liveUsage = data.usage; // 서버 일일 LLM 사용량 갱신
 			result = lec;
 			if (stepTimer) clearInterval(stepTimer);
 			stepIdx = STEPS.length;
@@ -138,7 +165,12 @@
 	function startLearning() {
 		const id = result?.id;
 		closeUpload();
-		if (id) goto(`/lectures/${id}/classroom`);
+		// 강의 추출은 연습 화면을 직접 갖지 않는다 — 이 강의를 활성 범위로 잡고
+		// 캠퍼스로 보내면 거기서 강의실·도서관(범위 따라 라우팅)으로 연습한다.
+		if (id) {
+			saveScope({ kind: 'lecture', lectureId: id });
+			goto('/campus');
+		}
 	}
 
 	function deleteLecture(e: MouseEvent, id: string, gen: boolean) {
@@ -159,11 +191,21 @@
 
 	<div class="scroll">
 		<!-- 추가 진입점 -->
-		<button class="add card" onclick={openUpload}>
+		<button class="add card" class:add--empty={remainFree === 0} onclick={openUpload}>
 			<span class="add-ic"><Icon name="plus" size={22} /></span>
 			<span class="add-tx">
 				<span class="add-name">강의자료 추가</span>
 				<span class="add-desc">텍스트 붙여넣기 → 의학용어 추출 + 어원 분해</span>
+			</span>
+			<span class="add-quota" class:add-quota--empty={remainFree === 0}>
+				<span class="add-quota-dots">
+					{#each Array(FREE_EXTRACTS) as _, i (i)}
+						<span class="add-quota-dot" class:on={i < remainFree}></span>
+					{/each}
+				</span>
+				<span class="add-quota-tx">
+					{#if remainFree === 0}무료 소진{:else}무료 {remainFree}/{FREE_EXTRACTS}회{/if}
+				</span>
 			</span>
 		</button>
 
@@ -190,17 +232,9 @@
 						</span>
 						<span class="lec-go"><Icon name="arrowRight" size={18} /></span>
 					</button>
-					<div class="lec-foot">
-						<button class="ft-btn" onclick={(e) => { e.stopPropagation(); goto(`/lectures/${lec.id}/classroom`); }}>
-							<Icon name="cap" size={14} /> 강의실
-						</button>
-						<button class="ft-btn" onclick={(e) => { e.stopPropagation(); goto(`/lectures/${lec.id}/library`); }}>
-							<Icon name="library" size={14} /> 도서관
-						</button>
-						<button class="ft-btn ft-del" onclick={(e) => deleteLecture(e, lec.id, gen)} aria-label={gen ? '삭제' : '숨기기'}>
-							<Icon name="x" size={14} />
-						</button>
-					</div>
+					<button class="lec-del" onclick={(e) => deleteLecture(e, lec.id, gen)} aria-label={gen ? '삭제' : '숨기기'}>
+						<Icon name="x" size={15} />
+					</button>
 				</div>
 			{/each}
 		</div>
@@ -274,17 +308,65 @@
 						bind:value={pasteText}
 						rows="6"
 					></textarea>
+
+					<!-- 추출 엔진(LLM 설정) — 업로드 직전에 고른다 -->
+					<div class="eng-pick">
+						<label class="eng-pick-h" for="eng-select"><Icon name="sparkles" size={13} /> 추출 엔진</label>
+						<div class="eng-select-wrap">
+							<select
+								id="eng-select"
+								class="eng-select"
+								value={engineChoice}
+								onchange={(e) => pickEngine(e.currentTarget.value as SelectedEngine)}
+							>
+								{#each data.engines as e (e.id)}
+									<option value={e.id} disabled={!e.available}>
+										{e.label}{e.free ? ' · 무료' : ' · 유료'}{e.id === 'deterministic' ? ' · 기본' : ''}{!e.available ? ' (키 없음)' : ''}
+									</option>
+								{/each}
+							</select>
+						</div>
+					</div>
+
 					<div class="m-note">
 						<Icon name="lightbulb" size={14} />
-						{EXTRACT_NOTE[data.extractMode]}
+						{EXTRACT_NOTE[activeEngineId]}
 					</div>
+
+					<!-- 사용량: 무료 추출 잔여(기기) + 외부 AI 일일 잔여(서버) -->
+					<div class="usage" class:usage--empty={remainFree === 0}>
+						<div class="usage-row">
+							<span class="usage-k"><Icon name="ticket" size={13} /> 무료 추출</span>
+							<span class="usage-v">
+								<span class="dots">
+									{#each Array(FREE_EXTRACTS) as _, i (i)}
+										<span class="dot" class:on={i < remainFree}></span>
+									{/each}
+								</span>
+								<b>{remainFree}/{FREE_EXTRACTS}</b> 남음
+							</span>
+						</div>
+						<div class="usage-row">
+							<span class="usage-k"><Icon name="sparkles" size={13} /> {activeEngine?.label ?? '엔진'}</span>
+							<span class="usage-v">
+								{#if engineUsage && engineUsage.limit != null}
+									오늘 <b>{engineUsage.remaining}</b>/{engineUsage.limit}회 가능
+								{:else if activeEngineId === 'deterministic'}
+									외부 호출 0 · 무제한
+								{:else}
+									호출당 과금 · 한도 없음
+								{/if}
+							</span>
+						</div>
+											</div>
+
 					{#if errorMsg}
 						<div class="m-error"><Icon name="x" size={14} /> {errorMsg}</div>
 					{/if}
 					<div class="m-actions">
 						<button class="pill-btn pill-btn--ghost" onclick={closeUpload}>취소</button>
-						<button class="pill-btn pill-btn--primary" onclick={handleUpload} disabled={!hasInput}>
-							추출하기
+						<button class="pill-btn pill-btn--primary" onclick={handleUpload} disabled={!hasInput || remainFree === 0}>
+							{remainFree === 0 ? '무료 횟수 소진' : '추출하기'}
 						</button>
 					</div>
 				{:else if stage === 'processing'}
@@ -314,6 +396,7 @@
 							<div>
 								<div class="m-result-title">{resultLecture.set.fixture.title}</div>
 								<div class="m-result-sub">{c.extracted}개 용어 추출 · {resultLecture.set._meta.llm_runtime}</div>
+								{#if resultLecture.set._meta.retrieval}<div class="m-result-sub">출처대조: {resultLecture.set._meta.retrieval}</div>{/if}
 							</div>
 						</div>
 						<div class="m-result-grid">
@@ -334,7 +417,7 @@
 					{/if}
 					<div class="m-actions">
 						<button class="pill-btn pill-btn--ghost" onclick={viewResult}>결과 보기</button>
-						<button class="pill-btn pill-btn--primary" onclick={startLearning} disabled={c.extracted === 0}>지금 학습 시작</button>
+						<button class="pill-btn pill-btn--primary" onclick={startLearning} disabled={c.extracted === 0}>이 범위로 학습</button>
 					</div>
 				{/if}
 			</div>
@@ -351,17 +434,29 @@
 	/* 추가 진입 */
 	.add { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 16px; border: 2px dashed var(--brand); background: var(--brand-l); transition: transform 0.08s; }
 	.add:active { transform: scale(0.99); }
+	.add--empty { border-color: #fca5a5; background: #fef2f2; }
 	.add-ic { width: 44px; height: 44px; flex: none; display: flex; align-items: center; justify-content: center; background: #fff; color: var(--brand-d); border-radius: 13px; }
+	.add--empty .add-ic { color: #b91c1c; }
 	.add-tx { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 	.add-name { font-size: 15px; font-weight: 800; color: var(--brand-d); }
+	.add--empty .add-name { color: #b91c1c; }
 	.add-desc { font-size: 11.5px; color: var(--ink-2); }
+
+	/* 무료 추출 잔여 뱃지 (목록 화면에 항상 노출) */
+	.add-quota { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
+	.add-quota-dots { display: inline-flex; gap: 3px; }
+	.add-quota-dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 1.5px var(--brand); }
+	.add-quota-dot.on { background: var(--brand); box-shadow: none; }
+	.add-quota--empty .add-quota-dot { box-shadow: inset 0 0 0 1.5px #fca5a5; background: #fff; }
+	.add-quota-tx { font-size: 10px; font-weight: 800; color: var(--brand-d); white-space: nowrap; }
+	.add-quota--empty .add-quota-tx { color: #b91c1c; }
 
 	.sec-h { margin: 22px 2px 10px; font-size: 14.5px; font-weight: 800; }
 
 	/* 강의 카드 */
 	.lec-list { display: flex; flex-direction: column; gap: 10px; }
-	.lec { padding: 0; overflow: hidden; }
-	.lec-body { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 14px; background: transparent; border: none; cursor: pointer; transition: transform 0.08s; }
+	.lec { padding: 0; overflow: hidden; display: flex; align-items: stretch; }
+	.lec-body { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; text-align: left; padding: 14px; background: transparent; border: none; cursor: pointer; transition: transform 0.08s; }
 	.lec-body:active { transform: scale(0.99); }
 	.lec-ic { width: 44px; height: 44px; flex: none; display: flex; align-items: center; justify-content: center; background: #eef4ff; color: #3b6dd0; border-radius: 13px; }
 	.lec-tx { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
@@ -372,11 +467,9 @@
 	.lec-cap { font-size: 11.5px; color: var(--mut); }
 	.lec-go { color: var(--mut); flex: none; display: flex; }
 
-	.lec-foot { display: flex; gap: 0; border-top: 1px solid var(--line); }
-	.ft-btn { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px; background: transparent; border: none; font: inherit; font-size: 13px; font-weight: 700; color: var(--brand-d); cursor: pointer; transition: background 0.12s; }
-	.ft-btn:first-child { border-right: 1px solid var(--line); }
-	.ft-btn:hover { background: var(--brand-l); }
-	.ft-btn:active { background: var(--brand-l); transform: scale(0.99); }
+	.lec-del { flex: 0 0 46px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; border-left: 1px solid var(--line); color: var(--mut); cursor: pointer; transition: background 0.12s, color 0.12s; }
+	.lec-del:hover { background: #fef2f2; color: #b91c1c; }
+	.lec-del:active { background: #fef2f2; transform: scale(0.97); }
 
 	.bottom-space { height: 16px; }
 
@@ -415,9 +508,25 @@
 	.m-paste:disabled { background: var(--card); }
 	.m-note { display: flex; align-items: flex-start; gap: 6px; margin-top: 12px; padding: 10px 12px; background: #fef9e7; color: #92400e; font-size: 11.5px; border-radius: 10px; line-height: 1.5; }
 	.m-error { display: flex; align-items: center; gap: 6px; margin-top: 12px; padding: 10px 12px; background: #fef2f2; color: #b91c1c; font-size: 12px; border-radius: 10px; }
+
+	/* 사용량 스트립 */
+	.usage { margin-top: 10px; padding: 11px 12px; border: 1.5px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; gap: 8px; }
+	.usage--empty { border-color: #fca5a5; background: #fef2f2; }
+	.usage-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; }
+	.usage-k { display: inline-flex; align-items: center; gap: 5px; font-weight: 700; color: var(--ink-2); }
+	.usage-v { display: inline-flex; align-items: center; gap: 6px; color: var(--mut); font-size: 11.5px; }
+	.usage-v b { color: var(--ink); font-weight: 800; }
+	.dots { display: inline-flex; gap: 3px; }
+	.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+	.dot.on { background: var(--brand); }
+	/* 추출 엔진 선택 드롭다운 */
+	.eng-pick { margin-top: 12px; display: flex; flex-direction: column; gap: 7px; }
+	.eng-pick-h { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 800; color: var(--ink-2); }
+	.eng-select-wrap { position: relative; display: block; }
+	.eng-select { width: 100%; appearance: none; -webkit-appearance: none; padding: 11px 36px 11px 12px; border: 1.5px solid var(--line); border-radius: 12px; background: #fff; font: inherit; font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; }
+	.eng-select:focus { outline: none; border-color: var(--brand); }
+	.eng-select-wrap::after { content: ''; position: absolute; right: 14px; top: 50%; width: 7px; height: 7px; border-right: 2px solid var(--mut); border-bottom: 2px solid var(--mut); transform: translateY(-65%) rotate(45deg); pointer-events: none; }
 	.ls-chip.ls-mine { color: #3b6dd0; background: #eef4ff; }
-	.ft-btn.ft-del { color: var(--mut); border-left: 1px solid var(--line); flex: 0 0 44px; }
-	.ft-btn.ft-del:hover { background: #fef2f2; color: #b91c1c; }
 	.m-eval { display: flex; gap: 14px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 11.5px; color: var(--mut); }
 	.m-eval b { color: var(--brand-d); }
 	.m-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }

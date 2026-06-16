@@ -475,7 +475,108 @@ const rawTerms: Term[] = [
 	{ id: 'pancytopenia', parts: ['pan', 'cyt', 'penia'], term: 'Pancytopenia', korean: '범혈구감소증', systems: ['hematology'], definition: 'A deficiency of all blood cell types.', definitionKo: '모든 혈구 수가 감소한 상태입니다.' },
 	{ id: 'pseudocyst', parts: ['pseudo', 'cyst'], term: 'Pseudocyst', korean: '가성낭종', systems: ['pathology'], definition: 'A fluid collection resembling a cyst but lacking a true lining.', definitionKo: '진짜 낭종과 비슷하지만 내벽이 없는 체액 주머니입니다.' },
 	{ id: 'orthopnea', parts: ['ortho', 'pnea'], term: 'Orthopnea', korean: '좌위호흡, 기좌호흡', systems: ['pulmonology'], definition: 'Difficulty breathing while lying flat, relieved by sitting up.', definitionKo: '누우면 숨쉬기 어렵고 앉으면 편해지는 호흡 곤란입니다.' },
-	{ id: 'infracostal', parts: ['infra', 'cost', 'al'], term: 'Infracostal', korean: '늑골하의', systems: ['musculoskeletal'], definition: 'Located below a rib.', definitionKo: '늑골 아래에 위치한 것을 뜻합니다.' }
+	{ id: 'infracostal', parts: ['infra', 'cost', 'al'], term: 'Infracostal', korean: '늑골하의', systems: ['musculoskeletal'], definition: 'Located below a rib.', definitionKo: '늑골 아래에 위치한 것을 뜻합니다.' },
+
+	// ═══════════ 보정사 14계통 그물 보강 (약한 계통 → 각 20+ 용어) ═══════════
+	// 신규 어근 추가 없이 기존 검수 어근 조합 우선 → 1회 어근을 2회+로 끌어올려 해금 그물 강화.
+
+	// ── 소화부속기(간담췌) hepatobiliary ──
+	{ id: 'hepatalgia', parts: ['hepat', 'algia'], term: 'Hepatalgia', korean: '간통증', systems: ['gastroenterology'], definitionKo: '간 부위에 느껴지는 통증입니다.' },
+	{ id: 'hepatopathy', parts: ['hepat', 'pathy'], term: 'Hepatopathy', korean: '간병증', systems: ['gastroenterology'], definitionKo: '간에 생기는 질환을 통칭합니다.' },
+	{ id: 'hepatocyte', parts: ['hepat', 'cyt'], term: 'Hepatocyte', korean: '간세포', systems: ['gastroenterology'], definitionKo: '간을 이루는 기본 세포입니다.' },
+	{ id: 'hepatology', parts: ['hepat', 'logy'], term: 'Hepatology', korean: '간장학', systems: ['gastroenterology'], definitionKo: '간과 담도 질환을 다루는 학문입니다.' },
+	{ id: 'hepatologist', parts: ['hepat', 'logist'], term: 'Hepatologist', korean: '간전문의', systems: ['gastroenterology'], definitionKo: '간 질환을 전문으로 보는 의사입니다.' },
+	{ id: 'perihepatitis', parts: ['peri', 'hepat', 'itis'], term: 'Perihepatitis', korean: '간주위염', systems: ['gastroenterology'], definitionKo: '간을 둘러싼 막에 생긴 염증입니다.' },
+	{ id: 'hepatosplenomegaly', parts: ['hepat', 'splen', 'megaly'], term: 'Hepatosplenomegaly', korean: '간비장비대', systems: ['gastroenterology'], definitionKo: '간과 비장이 함께 커진 상태입니다.' },
+	{ id: 'cholecystography', parts: ['chole', 'cyst', 'graphy'], term: 'Cholecystography', korean: '담낭조영술', systems: ['gastroenterology'], definitionKo: '조영제로 담낭을 촬영하는 검사입니다.' },
+	{ id: 'pancreatic', parts: ['pancreat', 'ic'], term: 'Pancreatic', korean: '췌장의', systems: ['gastroenterology'], definitionKo: '췌장에 관한 것을 뜻합니다.' },
+	{ id: 'pancreatopathy', parts: ['pancreat', 'pathy'], term: 'Pancreatopathy', korean: '췌장병증', systems: ['gastroenterology'], definitionKo: '췌장에 생기는 질환을 통칭합니다.' },
+	{ id: 'pancreatolithiasis', parts: ['pancreat', 'lith', 'iasis'], term: 'Pancreatolithiasis', korean: '췌석증', systems: ['gastroenterology'], definitionKo: '췌관에 결석이 생긴 상태입니다.' },
+
+	// ── 내분비계통 endocrine ──
+	{ id: 'thyromegaly', parts: ['thyroid', 'megaly'], term: 'Thyromegaly', korean: '갑상선비대', systems: ['endocrinology'], definitionKo: '갑상선이 비정상적으로 커진 상태입니다.' },
+	{ id: 'adrenitis', parts: ['adren', 'itis'], term: 'Adrenitis', korean: '부신염', systems: ['endocrinology'], definitionKo: '부신에 생긴 염증입니다.' },
+	{ id: 'adrenomegaly', parts: ['adren', 'megaly'], term: 'Adrenomegaly', korean: '부신비대', systems: ['endocrinology'], definitionKo: '부신이 비정상적으로 커진 상태입니다.' },
+	{ id: 'adenectomy', parts: ['aden', 'ectomy'], term: 'Adenectomy', korean: '샘절제술', systems: ['endocrinology'], definitionKo: '샘(선) 조직을 수술로 잘라내는 것입니다.' },
+	{ id: 'glycosuria', parts: ['glyc', 'uria'], term: 'Glycosuria', korean: '당뇨, 요당', systems: ['endocrinology'], definitionKo: '소변에 포도당이 섞여 나오는 상태입니다.' },
+	{ id: 'thymectomy', parts: ['thym', 'ectomy'], term: 'Thymectomy', korean: '흉선절제술', systems: ['endocrinology'], definitionKo: '흉선을 수술로 잘라내는 것입니다.' },
+
+	// ── 혈액·림프계통 blood-lymph ──
+	{ id: 'leukocyte', parts: ['leuk', 'cyt'], term: 'Leukocyte', korean: '백혈구', systems: ['hematology'], definitionKo: '몸을 지키는 면역 기능을 하는 흰 혈구입니다.' },
+	{ id: 'thrombocyte', parts: ['thromb', 'cyt'], term: 'Thrombocyte', korean: '혈소판', systems: ['hematology'], definitionKo: '피를 굳게 해 지혈을 돕는 혈구입니다.' },
+	{ id: 'leukopenia', parts: ['leuk', 'penia'], term: 'Leukopenia', korean: '백혈구감소증', systems: ['hematology'], definitionKo: '백혈구 수가 정상보다 줄어든 상태입니다.' },
+	{ id: 'thrombocytosis', parts: ['thromb', 'cyt', 'osis'], term: 'Thrombocytosis', korean: '혈소판증가증', systems: ['hematology'], definitionKo: '혈소판 수가 정상보다 늘어난 상태입니다.' },
+	{ id: 'lymphocyte', parts: ['lymph', 'cyt'], term: 'Lymphocyte', korean: '림프구', systems: ['hematology'], definitionKo: '면역을 담당하는 림프계 백혈구입니다.' },
+	{ id: 'hematology', parts: ['hemo', 'logy'], term: 'Hematology', korean: '혈액학', systems: ['hematology'], definitionKo: '혈액과 조혈기관 질환을 다루는 학문입니다.' },
+
+	// ── 임신·출산·신생아 obstetrics ──
+	{ id: 'amniotic', parts: ['amni', 'ic'], term: 'Amniotic', korean: '양막의', systems: ['obstetrics'], definitionKo: '태아를 둘러싼 양막에 관한 것을 뜻합니다.' },
+	{ id: 'amnionitis', parts: ['amni', 'itis'], term: 'Amnionitis', korean: '양막염', systems: ['obstetrics'], definitionKo: '양막에 생긴 염증입니다.' },
+	{ id: 'amniorrhea', parts: ['amni', 'rrhea'], term: 'Amniorrhea', korean: '양수누출', systems: ['obstetrics'], definitionKo: '양수가 새어 흐르는 상태입니다.' },
+	{ id: 'amniography', parts: ['amni', 'graphy'], term: 'Amniography', korean: '양막조영술', systems: ['obstetrics'], definitionKo: '조영제로 양막강을 촬영하는 검사입니다.' },
+	{ id: 'amnioscopy', parts: ['amni', 'scopy'], term: 'Amnioscopy', korean: '양막경검사', systems: ['obstetrics'], definitionKo: '기구로 양막과 양수를 들여다보는 검사입니다.' },
+	{ id: 'placentography', parts: ['placent', 'graphy'], term: 'Placentography', korean: '태반조영술', systems: ['obstetrics'], definitionKo: '태반의 위치를 영상으로 촬영하는 검사입니다.' },
+	{ id: 'neonatology', parts: ['neo', 'nat', 'logy'], term: 'Neonatology', korean: '신생아학', systems: ['obstetrics'], definitionKo: '신생아의 질환과 돌봄을 다루는 학문입니다.' },
+	{ id: 'neonatologist', parts: ['neo', 'nat', 'logist'], term: 'Neonatologist', korean: '신생아전문의', systems: ['obstetrics'], definitionKo: '신생아를 전문으로 보는 의사입니다.' },
+	{ id: 'embryology', parts: ['embry', 'logy'], term: 'Embryology', korean: '배아학', systems: ['obstetrics'], definitionKo: '수정란이 태아로 자라는 과정을 다루는 학문입니다.' },
+	{ id: 'embryogenesis', parts: ['embry', 'genesis'], term: 'Embryogenesis', korean: '배아발생', systems: ['obstetrics'], definitionKo: '수정란에서 배아가 형성되는 과정입니다.' },
+	{ id: 'fetal', parts: ['fet', 'al'], term: 'Fetal', korean: '태아의', systems: ['obstetrics'], definitionKo: '태아에 관한 것을 뜻합니다.' },
+	{ id: 'lactogenesis', parts: ['lact', 'genesis'], term: 'Lactogenesis', korean: '젖분비개시', systems: ['obstetrics'], definitionKo: '출산 무렵 젖(유즙) 생성이 시작되는 것입니다.' },
+	{ id: 'dystocia', parts: ['dys', 'toc', 'ia'], term: 'Dystocia', korean: '난산', systems: ['obstetrics'], definitionKo: '분만이 비정상적으로 어렵게 진행되는 상태입니다.' },
+
+	// ── 남성 생식계통 male-reproductive ──
+	{ id: 'orchialgia', parts: ['orchi', 'algia'], term: 'Orchialgia', korean: '고환통', systems: ['andrology'], definitionKo: '고환에 느껴지는 통증입니다.' },
+	{ id: 'orchiopathy', parts: ['orchi', 'pathy'], term: 'Orchiopathy', korean: '고환병증', systems: ['andrology'], definitionKo: '고환에 생기는 질환을 통칭합니다.' },
+	{ id: 'prostatic', parts: ['prostat', 'ic'], term: 'Prostatic', korean: '전립선의', systems: ['andrology'], definitionKo: '전립선에 관한 것을 뜻합니다.' },
+	{ id: 'prostatalgia', parts: ['prostat', 'algia'], term: 'Prostatalgia', korean: '전립선통', systems: ['andrology'], definitionKo: '전립선 부위에 느껴지는 통증입니다.' },
+	{ id: 'vasitis', parts: ['vas', 'itis'], term: 'Vasitis', korean: '정관염', systems: ['andrology'], definitionKo: '정관에 생긴 염증입니다.' },
+	{ id: 'vasotomy', parts: ['vas', 'otomy'], term: 'Vasotomy', korean: '정관절개술', systems: ['andrology'], definitionKo: '정관을 절개하는 수술입니다.' },
+	{ id: 'epididymectomy', parts: ['epididym', 'ectomy'], term: 'Epididymectomy', korean: '부고환절제술', systems: ['andrology'], definitionKo: '부고환을 수술로 잘라내는 것입니다.' },
+	{ id: 'spermatogenesis', parts: ['spermat', 'genesis'], term: 'Spermatogenesis', korean: '정자형성', systems: ['andrology'], definitionKo: '고환에서 정자가 만들어지는 과정입니다.' },
+	{ id: 'spermatocyte', parts: ['spermat', 'cyt'], term: 'Spermatocyte', korean: '정모세포', systems: ['andrology'], definitionKo: '정자로 분화하기 전 단계의 생식세포입니다.' },
+	{ id: 'scrotal', parts: ['scrot', 'al'], term: 'Scrotal', korean: '음낭의', systems: ['andrology'], definitionKo: '음낭에 관한 것을 뜻합니다.' },
+	{ id: 'balanorrhea', parts: ['balan', 'rrhea'], term: 'Balanorrhea', korean: '귀두분비', systems: ['andrology'], definitionKo: '귀두에서 분비물이 흘러나오는 상태입니다.' },
+
+	// ═══════════ 해금 그물 강화 — 1회만 쓰인 어근을 2회+로 (레버리지 체감) ═══════════
+	// 각 용어가 친숙한 어근 + 덜 쓰인 어근을 묶어 "아는 조각으로 새 용어가 읽히는" 경험을 늘림.
+	{ id: 'pleural', parts: ['pleur', 'al'], term: 'Pleural', korean: '흉막의', systems: ['pulmonology'], definitionKo: '폐를 둘러싼 흉막에 관한 것을 뜻합니다.' },
+	{ id: 'osteonecrosis', parts: ['oste', 'necr', 'osis'], term: 'Osteonecrosis', korean: '골괴사', systems: ['musculoskeletal'], definitionKo: '혈류 부족으로 뼈 조직이 죽는 상태입니다.' },
+	{ id: 'dysrhythmia', parts: ['dys', 'rhythm', 'ia'], term: 'Dysrhythmia', korean: '부정맥', systems: ['cardiology'], definitionKo: '심장 박동의 리듬이 비정상인 상태입니다.' },
+	{ id: 'musculotendinous', parts: ['muscul', 'tendin', 'ous'], term: 'Musculotendinous', korean: '근건의', systems: ['musculoskeletal'], definitionKo: '근육과 힘줄에 함께 관련된 것을 뜻합니다.' },
+	{ id: 'transcutaneous', parts: ['trans', 'cutane', 'ous'], term: 'Transcutaneous', korean: '경피의', systems: ['dermatology'], definitionKo: '피부를 통과해 이루어지는 것을 뜻합니다.' },
+	{ id: 'glomerular', parts: ['glomerul', 'ar'], term: 'Glomerular', korean: '사구체의', systems: ['nephrology'], definitionKo: '신장의 여과 단위인 사구체에 관한 것을 뜻합니다.' },
+	{ id: 'lymphedema', parts: ['lymph', 'edema'], term: 'Lymphedema', korean: '림프부종', systems: ['hematology'], definitionKo: '림프액이 고여 팔다리가 붓는 상태입니다.' },
+	{ id: 'gynecologist', parts: ['gynec', 'logist'], term: 'Gynecologist', korean: '부인과전문의', systems: ['gynecology'], definitionKo: '여성 생식기 질환을 전문으로 보는 의사입니다.' },
+	{ id: 'hysteroscopy', parts: ['hyster', 'scopy'], term: 'Hysteroscopy', korean: '자궁경검사', systems: ['gynecology'], definitionKo: '기구로 자궁 안을 들여다보는 검사입니다.' },
+	{ id: 'salpingectomy', parts: ['salping', 'ectomy'], term: 'Salpingectomy', korean: '난관절제술', systems: ['gynecology'], definitionKo: '난관(나팔관)을 수술로 잘라내는 것입니다.' },
+	{ id: 'pharyngoscopy', parts: ['pharyng', 'scopy'], term: 'Pharyngoscopy', korean: '인두경검사', systems: ['pulmonology'], definitionKo: '기구로 인두를 들여다보는 검사입니다.' },
+	{ id: 'hyperlipemia', parts: ['hyper', 'lip', 'emia'], term: 'Hyperlipemia', korean: '고지혈증', systems: ['cardiology'], definitionKo: '혈액 속 지방 농도가 비정상적으로 높은 상태입니다.' },
+	{ id: 'paronychia', parts: ['para', 'onych', 'ia'], term: 'Paronychia', korean: '조갑주위염', systems: ['dermatology'], definitionKo: '손발톱 주위 피부에 생긴 염증입니다.' },
+	{ id: 'colpitis', parts: ['colp', 'itis'], term: 'Colpitis', korean: '질염', systems: ['gynecology'], definitionKo: '질 점막에 생긴 염증입니다.' },
+	{ id: 'acrodermatitis', parts: ['acr', 'derm', 'itis'], term: 'Acrodermatitis', korean: '말단피부염', systems: ['dermatology'], definitionKo: '손발 등 말단 피부에 생긴 염증입니다.' },
+	{ id: 'atrioventricular', parts: ['atri', 'ventricul', 'ar'], term: 'Atrioventricular', korean: '방실의', systems: ['cardiology'], definitionKo: '심방과 심실 사이에 관한 것을 뜻합니다.' },
+	{ id: 'stomatology', parts: ['stomat', 'logy'], term: 'Stomatology', korean: '구강학', systems: ['gastroenterology'], definitionKo: '입과 구강 질환을 다루는 학문입니다.' },
+	{ id: 'gingivectomy', parts: ['gingiv', 'ectomy'], term: 'Gingivectomy', korean: '치은절제술', systems: ['gastroenterology'], definitionKo: '병든 잇몸 조직을 잘라내는 수술입니다.' },
+	{ id: 'uvulectomy', parts: ['uvul', 'ectomy'], term: 'Uvulectomy', korean: '목젖절제술', systems: ['gastroenterology'], definitionKo: '목젖(구개수)을 수술로 잘라내는 것입니다.' },
+	{ id: 'intervertebral', parts: ['inter', 'vertebr', 'al'], term: 'Intervertebral', korean: '척추사이의', systems: ['musculoskeletal'], definitionKo: '척추뼈 사이에 위치한 것을 뜻합니다.' },
+	{ id: 'conjunctival', parts: ['conjunctiv', 'al'], term: 'Conjunctival', korean: '결막의', systems: ['ophthalmology'], definitionKo: '눈을 덮는 결막에 관한 것을 뜻합니다.' },
+	{ id: 'anhidrosis', parts: ['a', 'hidr', 'osis'], term: 'Anhidrosis', korean: '무한증', systems: ['dermatology'], definitionKo: '땀이 나지 않는 상태입니다.' },
+	{ id: 'hypertrichosis', parts: ['hyper', 'trich', 'osis'], term: 'Hypertrichosis', korean: '다모증', systems: ['dermatology'], definitionKo: '털이 비정상적으로 많이 자라는 상태입니다.' },
+	{ id: 'audiologist', parts: ['audi', 'logist'], term: 'Audiologist', korean: '청각사', systems: ['otology'], definitionKo: '청력을 평가하고 재활을 돕는 전문가입니다.' },
+	{ id: 'histiocyte', parts: ['hist', 'cyt'], term: 'Histiocyte', korean: '조직구', systems: ['pathology'], definitionKo: '조직 내에 자리잡은 큰 포식 세포입니다.' },
+	{ id: 'fetoscopy', parts: ['fet', 'scopy'], term: 'Fetoscopy', korean: '태아경검사', systems: ['obstetrics'], definitionKo: '기구로 자궁 속 태아를 직접 들여다보는 검사입니다.' },
+	{ id: 'tocology', parts: ['toc', 'logy'], term: 'Tocology', korean: '분만학', systems: ['obstetrics'], definitionKo: '분만과 출산을 다루는 학문입니다.' },
+	{ id: 'scrotitis', parts: ['scrot', 'itis'], term: 'Scrotitis', korean: '음낭염', systems: ['andrology'], definitionKo: '음낭 피부에 생긴 염증입니다.' },
+	{ id: 'hydrocele', parts: ['hydr', 'cele'], term: 'Hydrocele', korean: '음낭수종', systems: ['andrology'], definitionKo: '음낭에 액체가 고여 부푸는 상태입니다.' },
+	{ id: 'subcostal', parts: ['sub', 'cost', 'al'], term: 'Subcostal', korean: '늑골하의', systems: ['musculoskeletal'], definitionKo: '늑골(갈비뼈) 아래에 위치한 것을 뜻합니다.' },
+	{ id: 'hemicolectomy', parts: ['hemi', 'col', 'ectomy'], term: 'Hemicolectomy', korean: '반결장절제술', systems: ['gastroenterology'], definitionKo: '대장(결장)의 절반을 잘라내는 수술입니다.' },
+	{ id: 'retrocardiac', parts: ['retro', 'cardi', 'ac'], term: 'Retrocardiac', korean: '심장후방의', systems: ['cardiology'], definitionKo: '심장 뒤쪽에 위치한 것을 뜻합니다.' },
+	{ id: 'anaplasia', parts: ['ana', 'plasia'], term: 'Anaplasia', korean: '역형성', systems: ['pathology'], definitionKo: '세포가 미분화 상태로 퇴행하는 것으로, 악성종양의 특징입니다.' },
+	{ id: 'polyphagia', parts: ['poly', 'phagia'], term: 'Polyphagia', korean: '다식증', systems: ['endocrinology'], definitionKo: '비정상적으로 많이 먹게 되는 상태입니다.' },
+	{ id: 'bronchiectasis', parts: ['bronch', 'ectasis'], term: 'Bronchiectasis', korean: '기관지확장증', systems: ['pulmonology'], definitionKo: '기관지가 비정상적으로 늘어나 굳어진 상태입니다.' },
+	{ id: 'nephroptosis', parts: ['nephr', 'ptosis'], term: 'Nephroptosis', korean: '신장하수', systems: ['nephrology'], definitionKo: '신장이 정상 위치보다 아래로 처진 상태입니다.' },
+	{ id: 'adipsia', parts: ['a', 'dipsia'], term: 'Adipsia', korean: '갈증소실', systems: ['endocrinology'], definitionKo: '갈증을 느끼지 못하는 상태입니다.' },
+	{ id: 'biventricular', parts: ['bi', 'ventricul', 'ar'], term: 'Biventricular', korean: '양심실의', systems: ['cardiology'], definitionKo: '좌우 두 심실 모두에 관련된 것을 뜻합니다.' }
 ];
 
 export const terms: MedicalTerm[] = rawTerms.map((t) => {

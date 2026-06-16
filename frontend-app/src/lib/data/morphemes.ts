@@ -312,7 +312,36 @@ export const morphemes: Morpheme[] = [
 	{ id: 'duoden', form: 'duoden/o', type: 'root', combiningVowel: 'o', meaning: 'duodenum', meaningKo: '십이지장', origin: 'L. duodeni', unit: 3, source: 'nbk-ch1' },
 	{ id: 'esophag', form: 'esophag/o', type: 'root', combiningVowel: 'o', meaning: 'esophagus', meaningKo: '식도', origin: 'Gk. oisophagos', unit: 2, source: 'nbk-ch1' },
 	// suffix
-	{ id: 'ac', form: '-ac', type: 'suffix', meaning: 'pertaining to', meaningKo: '~의, ~에 관한', origin: 'Gk. -akos', unit: 2, source: 'nbk-ch1' }
+	{ id: 'ac', form: '-ac', type: 'suffix', meaning: 'pertaining to', meaningKo: '~의, ~에 관한', origin: 'Gk. -akos', unit: 2, source: 'nbk-ch1' },
+	// ── 보정사 임신·출산/남성생식 계통 보강 어근 (그물 갭 채우기) ──
+	{ id: 'embry', form: 'embry/o', type: 'root', combiningVowel: 'o', meaning: 'embryo', meaningKo: '배아', origin: 'Gk. embryon', unit: 3 },
+	{ id: 'fet', form: 'fet/o', type: 'root', combiningVowel: 'o', meaning: 'fetus', meaningKo: '태아', origin: 'L. fetus', unit: 3 },
+	{ id: 'lact', form: 'lact/o', type: 'root', combiningVowel: 'o', meaning: 'milk', meaningKo: '젖, 유즙', origin: 'L. lac, lactis', unit: 3 },
+	{ id: 'toc', form: 'toc/o', type: 'root', combiningVowel: 'o', meaning: 'birth, labor', meaningKo: '분만, 진통', origin: 'Gk. tokos', unit: 3 },
+	{ id: 'spermat', form: 'spermat/o', type: 'root', combiningVowel: 'o', meaning: 'sperm, seed', meaningKo: '정자', origin: 'Gk. sperma', unit: 3 },
+	{ id: 'scrot', form: 'scrot/o', type: 'root', combiningVowel: 'o', meaning: 'scrotum', meaningKo: '음낭', origin: 'L. scrotum', unit: 3 },
+	// ── 용어집 커버리지 보강: 고빈도 누락 접미사 (분해율 레버) ──
+	{ id: 'lysis', form: '-lysis', type: 'suffix', meaning: 'breakdown, destruction', meaningKo: '분해, 파괴', origin: 'Gk. lysis', unit: 2 },
+	{ id: 'trophy', form: '-trophy', type: 'suffix', meaning: 'development, nourishment', meaningKo: '발육, 영양', origin: 'Gk. trophe', unit: 2 },
+	{ id: 'phasia', form: '-phasia', type: 'suffix', meaning: 'speech', meaningKo: '언어능력, 말하기', origin: 'Gk. phasis', unit: 2 },
+	{ id: 'opia', form: '-opia', type: 'suffix', meaning: 'vision condition', meaningKo: '시력 상태', origin: 'Gk. ops', unit: 2 },
+	{ id: 'stasis', form: '-stasis', type: 'suffix', meaning: 'standstill, stoppage', meaningKo: '정체, 멈춤', origin: 'Gk. stasis', unit: 2 },
+	{ id: 'blast', form: '-blast', type: 'suffix', meaning: 'immature cell', meaningKo: '미성숙 세포, 모세포', origin: 'Gk. blastos', unit: 2 },
+	{ id: 'spasm', form: '-spasm', type: 'suffix', meaning: 'sudden contraction', meaningKo: '경련', origin: 'Gk. spasmos', unit: 2 },
+	{ id: 'emesis', form: '-emesis', type: 'suffix', meaning: 'vomiting', meaningKo: '구토', origin: 'Gk. emesis', unit: 3 },
+	// ── 용어집 커버리지 보강: 고빈도 누락 어근 (가운데 root) ──
+	{ id: 'ren', form: 'ren/o', type: 'root', combiningVowel: 'o', meaning: 'kidney', meaningKo: '신장, 콩팥', origin: 'L. ren', unit: 2, note: 'nephr/o(Gk.)와 같은 뜻 — renal 등 라틴 계열' },
+	{ id: 'uter', form: 'uter/o', type: 'root', combiningVowel: 'o', meaning: 'uterus', meaningKo: '자궁', origin: 'L. uterus', unit: 2, note: 'hyster/o·metr/o와 같은 뜻 — 라틴 계열' },
+	{ id: 'rect', form: 'rect/o', type: 'root', combiningVowel: 'o', meaning: 'rectum', meaningKo: '직장', origin: 'L. rectum', unit: 2 },
+	{ id: 'nas', form: 'nas/o', type: 'root', combiningVowel: 'o', meaning: 'nose', meaningKo: '코', origin: 'L. nasus', unit: 2, note: 'rhin/o(Gk.)와 같은 뜻 — 라틴 계열' },
+	{ id: 'cervic', form: 'cervic/o', type: 'root', combiningVowel: 'o', meaning: 'neck, cervix', meaningKo: '목, 자궁경부', origin: 'L. cervix', unit: 2 },
+	{ id: 'vascul', form: 'vascul/o', type: 'root', combiningVowel: 'o', meaning: 'vessel', meaningKo: '혈관', origin: 'L. vasculum', unit: 2, note: 'angi/o(Gk.)와 같은 뜻 — vascular 등' },
+	{ id: 'cyan', form: 'cyan/o', type: 'root', combiningVowel: 'o', meaning: 'blue', meaningKo: '청색, 파란', origin: 'Gk. kyanos', unit: 2 },
+	{ id: 'lapar', form: 'lapar/o', type: 'root', combiningVowel: 'o', meaning: 'abdominal wall', meaningKo: '복벽, 배', origin: 'Gk. lapara', unit: 3 },
+	{ id: 'varic', form: 'varic/o', type: 'root', combiningVowel: 'o', meaning: 'dilated vein', meaningKo: '정맥류, 정맥확장', origin: 'L. varix', unit: 3 },
+	{ id: 'alveol', form: 'alveol/o', type: 'root', combiningVowel: 'o', meaning: 'alveolus', meaningKo: '폐포, 치조', origin: 'L. alveolus', unit: 3 },
+	{ id: 'cellul', form: 'cellul/o', type: 'root', combiningVowel: 'o', meaning: 'cell', meaningKo: '세포', origin: 'L. cellula', unit: 3, note: 'cyt/o(Gk.)와 같은 뜻 — cellular 등' },
+	{ id: 'py', form: 'py/o', type: 'root', combiningVowel: 'o', meaning: 'pus', meaningKo: '고름, 농', origin: 'Gk. pyon', unit: 3 }
 ];
 
 export const morphemeById: Record<string, Morpheme> = Object.fromEntries(morphemes.map((m) => [m.id, m]));
