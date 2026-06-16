@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "generated": "2026-05-26",
+    "fixture": "cardiology-week-3",
+    "pipeline": "강의 텍스트 → ① 용어 추출 (인라인 Claude) → ② 어근 분해 (인라인) → ③ NBK RAG 대조 (스크립트)",
+    "llm_runtime": "inline (Claude in conversation, hardcoded in INLINE_EXTRACTED/DECOMPOSED)",
+    "llm_hook": "LECTURE_LLM=claude → `claude -p` (미구현, 자리만 비워둠)",
+    "next_step": "검수자가 needs_curator + candidate_morphemes 통과 처리 → morphemes.ts/terms.ts 머지"
+  },
+  "fixture": {
+    "title": "Cardiology Week 3 — Common Pathologies",
+    "source": "임의 합성 (실제 강의자료 대용 PoC 픽스처)",
+    "body": "# Common Cardiovascular Pathologies\n\nThis week we cover several disorders of the heart and vascular system.\n\n## Rhythm and rate\n\nThe most common arrhythmia in our ED is **tachycardia**, often presenting alongside chest pain. **Bradycardia** may indicate sinus node dysfunction.\n\n## Inflammation\n\n**Endocarditis** (inflammation of the heart's inner lining) requires urgent antibiotic therapy. **Pericarditis** is similar but affects the surrounding sac.\n\n## Ischemic and structural disease\n\n**Myocardial infarction** is death of heart muscle tissue from coronary occlusion. **Atherosclerosis** — the buildup of fatty plaque in arteries — is the major risk factor. Long-standing **hypertension** often produces **cardiomegaly**. Right-sided heart failure can present with **hepatomegaly** and peripheral edema.\n\n## Diagnostics and management\n\n**Angiography** is the gold standard for visualizing coronary arteries. Patients with multiple risk factors are typically referred to a **cardiologist** for ongoing management. Common labs include screening for **hyperlipidemia** and **hyperglycemia**."
+  },
+  "extracted_terms": [
+    "arrhythmia",
+    "tachycardia",
+    "bradycardia",
+    "endocarditis",
+    "pericarditis",
+    "myocardial infarction",
+    "atherosclerosis",
+    "cardiomegaly",
+    "hypertension",
+    "angiography",
+    "hyperlipidemia",
+    "hyperglycemia",
+    "hepatomegaly",
+    "cardiologist"
+  ],
+  "eval": {
+    "extraction_precision": 1,
+    "extraction_recall": 1,
+    "decomposition_coverage": 0.895,
+    "citation_coverage": 0.947,
+    "auto_merge_rate": 0,
+    "counts": {
+      "extracted": 14,
+      "already_in_terms": 10,
+      "auto_mergeable": 0,
+      "after_candidate_promotion": 2,
+      "blocked_on_curator": 2
+    }
+  },
+  "terms": [
+    {
+      "term": "arrhythmia",
+      "parts": [
+        "a",
+        "rhythm",
+        "ia"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "a",
+          "status": "verified"
+        },
+        {
+          "id": "rhythm",
+          "status": "verified"
+        },
+        {
+          "id": "ia",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "tachycardia",
+      "parts": [
+        "tachy",
+        "cardi",
+        "ia"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "tachy",
+          "status": "verified"
+        },
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "ia",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "bradycardia",
+      "parts": [
+        "brady",
+        "cardi",
+        "ia"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "brady",
+          "status": "verified"
+        },
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "ia",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "endocarditis",
+      "parts": [
+        "endo",
+        "cardi",
+        "itis"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "endo",
+          "status": "verified"
+        },
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "itis",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "pericarditis",
+      "parts": [
+        "peri",
+        "cardi",
+        "itis"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "peri",
+          "status": "verified"
+        },
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "itis",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "myocardial infarction",
+      "parts": [
+        "my",
+        "cardi",
+        "al",
+        "infarction"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "my",
+          "status": "verified"
+        },
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "al",
+          "status": "verified"
+        },
+        {
+          "id": "infarction",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "atherosclerosis",
+      "parts": [
+        "ather",
+        "scler",
+        "osis"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "ather",
+          "status": "verified"
+        },
+        {
+          "id": "scler",
+          "status": "verified"
+        },
+        {
+          "id": "osis",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "cardiomegaly",
+      "parts": [
+        "cardi",
+        "megaly"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "megaly",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "hypertension",
+      "parts": [
+        "hyper",
+        "tension"
+      ],
+      "verified": false,
+      "already_in_terms": false,
+      "all_parts_verified": false,
+      "needs_curator": true,
+      "classified": [
+        {
+          "id": "hyper",
+          "status": "verified"
+        },
+        {
+          "id": "tension",
+          "status": "unverified-no-source"
+        }
+      ]
+    },
+    {
+      "term": "angiography",
+      "parts": [
+        "angi",
+        "graphy"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "angi",
+          "status": "verified"
+        },
+        {
+          "id": "graphy",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "hyperlipidemia",
+      "parts": [
+        "hyper",
+        "lipid",
+        "emia"
+      ],
+      "verified": false,
+      "already_in_terms": false,
+      "all_parts_verified": false,
+      "needs_curator": true,
+      "classified": [
+        {
+          "id": "hyper",
+          "status": "verified"
+        },
+        {
+          "id": "lipid",
+          "status": "unverified-no-source"
+        },
+        {
+          "id": "emia",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "hyperglycemia",
+      "parts": [
+        "hyper",
+        "glyc",
+        "emia"
+      ],
+      "verified": false,
+      "already_in_terms": false,
+      "all_parts_verified": false,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "hyper",
+          "status": "verified"
+        },
+        {
+          "id": "glyc",
+          "status": "candidate",
+          "source": "nbk-ch1",
+          "meaning": "당, 포도당"
+        },
+        {
+          "id": "emia",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "hepatomegaly",
+      "parts": [
+        "hepat",
+        "megaly"
+      ],
+      "verified": false,
+      "already_in_terms": true,
+      "all_parts_verified": true,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "hepat",
+          "status": "verified"
+        },
+        {
+          "id": "megaly",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "term": "cardiologist",
+      "parts": [
+        "cardi",
+        "logist"
+      ],
+      "verified": false,
+      "already_in_terms": false,
+      "all_parts_verified": false,
+      "needs_curator": false,
+      "classified": [
+        {
+          "id": "cardi",
+          "status": "verified"
+        },
+        {
+          "id": "logist",
+          "status": "candidate",
+          "source": "nbk-ch1",
+          "meaning": "~학자, ~과 전문의"
+        }
+      ]
+    }
+  ],
+  "candidate_morphemes": [],
+  "needs_curator": [
+    {
+      "id": "tension",
+      "usedIn": [
+        "hypertension"
+      ]
+    },
+    {
+      "id": "lipid",
+      "usedIn": [
+        "hyperlipidemia"
+      ]
+    }
+  ]
+}
