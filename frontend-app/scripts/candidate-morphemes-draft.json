@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "generated": "2026-05-19",
+    "source": "scripts/nbk-ch1-wordparts.json (NBK Open RN, CC-BY 4.0)",
+    "generator": "Claude (via Claude Code, Max subscription)",
+    "prompt_system": "당신은 의학용어 학습 앱의 데이터 큐레이션 어시스턴트입니다.\nNBK 의학교재(CC-BY 4.0)에서 추출한 어원 조각(morpheme)에 대해, 한국어 뜻과 사용 노트를 작성하세요.\n\n규칙:\n- meaningKo: 우리말로 직접 작성. 영어 뜻을 그대로 번역하지 말고 한국 의학용어에서 통용되는 표현으로.\n  예: \"Inflammation\" → \"염증\" (○), \"염증성\" (X — 형용사 접미라도 명사형으로)\n- note: 사용 시 주의점/조합 규칙/이형태가 있을 때만. 없으면 빈 문자열.\n  예: \"모음 앞에서는 hyp-, 자음 앞에서는 hypo-\"\n- combiningVowel: root 타입이고 결합형이 명시된 경우만 (대부분 'o'). 없으면 생략.\n- verified: false 고정 (사람 검수 대기).\n- source: 'nbk-ch1' 고정.\n\n출력은 morphemes.ts의 Morpheme 인터페이스를 따르는 JSON 객체.",
+    "selected_strategy": "기존 morphemes.ts 73개와 조합돼 즉시 새 용어 풀리는 고레버리지 15개",
+    "next_step": "사람 검수 → verified: true → morphemes.ts 머지"
+  },
+  "drafts": [
+    {
+      "id": "hyp",
+      "form": "hypo-, hyp-",
+      "type": "prefix",
+      "variants": [
+        "hyp",
+        "hypo"
+      ],
+      "meaning": "Below, beneath, deficient",
+      "meaningKo": "저-, 아래, 결핍",
+      "origin": "Gk. hypo",
+      "unit": 1,
+      "note": "자음 앞에서는 hypo-, 모음 앞에서는 hyp-. hyper- 의 짝(과↔저).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "anti",
+      "form": "anti-",
+      "type": "prefix",
+      "meaning": "Opposing, against",
+      "meaningKo": "~에 대항하는, 항-",
+      "origin": "Gk. anti",
+      "unit": 1,
+      "note": "antibody(항체), antibiotic(항생제) 등 약물·면역 용어에 빈출.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "aut",
+      "form": "auto-, aut-",
+      "type": "prefix",
+      "variants": [
+        "aut",
+        "auto"
+      ],
+      "meaning": "Self, by yourself",
+      "meaningKo": "자기-, 스스로",
+      "origin": "Gk. autos",
+      "unit": 2,
+      "note": "autoimmune(자가면역), autopsy(부검: 자기 눈으로 봄).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "dia",
+      "form": "dia-",
+      "type": "prefix",
+      "meaning": "Through, apart, across, between",
+      "meaningKo": "통과하여, 가로질러, ~를 통한",
+      "origin": "Gk. dia",
+      "unit": 2,
+      "note": "diabetes(당뇨: 통과해 흐름), dialysis(투석), diagnosis(진단).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "epi",
+      "form": "epi-, ep-",
+      "type": "prefix",
+      "variants": [
+        "ep",
+        "epi"
+      ],
+      "meaning": "Upon, over, on",
+      "meaningKo": "위에, 덮은",
+      "origin": "Gk. epi",
+      "unit": 2,
+      "note": "모음 앞에서는 ep-. epidermis(표피), epigastric(상복부).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "arthr",
+      "form": "arthr/o",
+      "type": "root",
+      "combiningVowel": "o",
+      "meaning": "Joint",
+      "meaningKo": "관절",
+      "origin": "Gk. arthron",
+      "unit": 2,
+      "note": "arthritis(관절염), arthroscopy(관절경) — 정형외과 핵심 어근.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "angi",
+      "form": "angi/o",
+      "type": "root",
+      "combiningVowel": "o",
+      "meaning": "Vessel",
+      "meaningKo": "혈관",
+      "origin": "Gk. angeion",
+      "unit": 2,
+      "note": "angiography(혈관조영술), angioplasty(혈관성형술). vessel(맥관).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "glyc",
+      "form": "glyc/o",
+      "type": "root",
+      "combiningVowel": "o",
+      "meaning": "Sugar",
+      "meaningKo": "당, 포도당",
+      "origin": "Gk. glykys",
+      "unit": 2,
+      "note": "hyperglycemia(고혈당), hypoglycemia(저혈당) — 내분비/대사 핵심.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "carcin",
+      "form": "carcin/o",
+      "type": "root",
+      "combiningVowel": "o",
+      "meaning": "Cancer",
+      "meaningKo": "암, 악성종양",
+      "origin": "Gk. karkinos",
+      "unit": 2,
+      "note": "carcinoma(암종), carcinogenic(발암성). 그리스어 \"게(crab)\" 에서 — 종양의 모양.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "erythr",
+      "form": "erythr/o",
+      "type": "root",
+      "combiningVowel": "o",
+      "meaning": "Red",
+      "meaningKo": "적색, 적-",
+      "origin": "Gk. erythros",
+      "unit": 2,
+      "note": "erythrocyte(적혈구), erythema(홍반). 혈액학에서 빈출.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "logy",
+      "form": "-logy",
+      "type": "suffix",
+      "meaning": "Study of",
+      "meaningKo": "~학(學), 학문",
+      "origin": "Gk. logos",
+      "unit": 1,
+      "note": "cardiology(심장학), neurology(신경학), nephrology(신장학) — 모든 장기 어근과 조합.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "logist",
+      "form": "-logist",
+      "type": "suffix",
+      "meaning": "Specialist who studies and treats disorders",
+      "meaningKo": "~학자, ~과 전문의",
+      "origin": "Gk. logos + -ist",
+      "unit": 1,
+      "note": "cardiologist(심장전문의), neurologist(신경과 전문의). -logy 의 사람 버전.",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "megaly",
+      "form": "-megaly",
+      "type": "suffix",
+      "meaning": "Enlargement",
+      "meaningKo": "비대, 거대",
+      "origin": "Gk. megas",
+      "unit": 1,
+      "note": "cardiomegaly(심비대), hepatomegaly(간비대), splenomegaly(비장비대).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "ectomy",
+      "form": "-ectomy",
+      "type": "suffix",
+      "meaning": "Surgical removal",
+      "meaningKo": "절제술, 적출",
+      "origin": "Gk. ek + tomē",
+      "unit": 1,
+      "note": "appendectomy(충수절제), nephrectomy(신장적출), hysterectomy(자궁적출).",
+      "source": "nbk-ch1",
+      "verified": false
+    },
+    {
+      "id": "cyte",
+      "form": "-cyte",
+      "type": "suffix",
+      "meaning": "Cell",
+      "meaningKo": "세포",
+      "origin": "Gk. kytos",
+      "unit": 1,
+      "note": "erythrocyte(적혈구), leukocyte(백혈구), lymphocyte(림프구). cyt/o(세포) 어근의 접미 형태.",
+      "source": "nbk-ch1",
+      "verified": false
+    }
+  ]
+}

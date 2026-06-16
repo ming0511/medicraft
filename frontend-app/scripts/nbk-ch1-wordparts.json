@@ -1,0 +1,1314 @@
+{
+	"source": "https://www.ncbi.nlm.nih.gov/books/NBK607453/ — Medical Terminology 2nd ed. (Open RN / Chippewa Valley Technical College), Ch.1 §1.3-1.5",
+	"license": "CC-BY 4.0 (attribution required)",
+	"fetched": "2026-05-12",
+	"counts": {
+		"prefixes": 70,
+		"roots": 34,
+		"suffixes": 49,
+		"total": 153
+	},
+	"prefixes": [
+		{
+			"forms": [
+				"a-",
+				"an-"
+			],
+			"primary": "a-",
+			"meaning": "Absence of, without, not",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ab-"
+			],
+			"primary": "ab-",
+			"meaning": "Away from, take away",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ad-"
+			],
+			"primary": "ad-",
+			"meaning": "Towards, to, near",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ambi-",
+				"ambo-"
+			],
+			"primary": "ambi-",
+			"meaning": "Both",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"amphi-"
+			],
+			"primary": "amphi-",
+			"meaning": "Double, both sides",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ana-"
+			],
+			"primary": "ana-",
+			"meaning": "Up, apart",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ante-"
+			],
+			"primary": "ante-",
+			"meaning": "Before, in front of, forward",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"anti-"
+			],
+			"primary": "anti-",
+			"meaning": "Opposing, against",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ap-",
+				"apo-"
+			],
+			"primary": "ap-",
+			"meaning": "Separated, derived from",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"aut-",
+				"auto-"
+			],
+			"primary": "aut-",
+			"meaning": "Self, by yourself",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"bi-"
+			],
+			"primary": "bi-",
+			"meaning": "Double, two, twice, both",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"brachy-"
+			],
+			"primary": "brachy-",
+			"meaning": "Short",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"brady-"
+			],
+			"primary": "brady-",
+			"meaning": "Slow",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"cata-"
+			],
+			"primary": "cata-",
+			"meaning": "Lower, down, against",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"circum-"
+			],
+			"primary": "circum-",
+			"meaning": "Around",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"co-",
+				"con-",
+				"com-"
+			],
+			"primary": "co-",
+			"meaning": "Together, with",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"contra-"
+			],
+			"primary": "contra-",
+			"meaning": "Against, opposed to",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"de-"
+			],
+			"primary": "de-",
+			"meaning": "Down, from",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"di-"
+			],
+			"primary": "di-",
+			"meaning": "Twice, two",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"dia-"
+			],
+			"primary": "dia-",
+			"meaning": "Through, apart, across, between",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"dis-"
+			],
+			"primary": "dis-",
+			"meaning": "Apart from, free from",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"dys-"
+			],
+			"primary": "dys-",
+			"meaning": "Bad, painful, difficult",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"e-",
+				"ec-",
+				"ex-"
+			],
+			"primary": "e-",
+			"meaning": "From, away from, out of",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ect-",
+				"exo-",
+				"ecto-"
+			],
+			"primary": "ect-",
+			"meaning": "Outside, outer, on",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"em-",
+				"en-"
+			],
+			"primary": "em-",
+			"meaning": "In",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"end-",
+				"endo-",
+				"ent-",
+				"ento-"
+			],
+			"primary": "end-",
+			"meaning": "Within, inner",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"epi-",
+				"ep-"
+			],
+			"primary": "epi-",
+			"meaning": "Upon, over, on",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"eu-"
+			],
+			"primary": "eu-",
+			"meaning": "Normal",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"extra-",
+				"extro-"
+			],
+			"primary": "extra-",
+			"meaning": "Beyond, outside of, outward",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"hemi-",
+				"semi-"
+			],
+			"primary": "hemi-",
+			"meaning": "Half, half of",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"hyper-"
+			],
+			"primary": "hyper-",
+			"meaning": "Above, excessive, beyond",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"hyp-",
+				"hypo-"
+			],
+			"primary": "hyp-",
+			"meaning": "Below, beneath, deficient",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"im-",
+				"in-"
+			],
+			"primary": "im-",
+			"meaning": "Intro, in, within",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"infra-"
+			],
+			"primary": "infra-",
+			"meaning": "Below, beneath",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"inter-"
+			],
+			"primary": "inter-",
+			"meaning": "Between",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"intra-"
+			],
+			"primary": "intra-",
+			"meaning": "Within, inside",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"intro-"
+			],
+			"primary": "intro-",
+			"meaning": "Into, within",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"iso-"
+			],
+			"primary": "iso-",
+			"meaning": "Same, equal",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"macro-"
+			],
+			"primary": "macro-",
+			"meaning": "Large",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"mal-"
+			],
+			"primary": "mal-",
+			"meaning": "Bad",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"mes-",
+				"meso-"
+			],
+			"primary": "mes-",
+			"meaning": "Middle",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"meta-"
+			],
+			"primary": "meta-",
+			"meaning": "Beyond, changing",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"micro-",
+				"micr-"
+			],
+			"primary": "micro-",
+			"meaning": "Tiny, small",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"mono-",
+				"uni-"
+			],
+			"primary": "mono-",
+			"meaning": "One",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"mult-",
+				"multi-"
+			],
+			"primary": "mult-",
+			"meaning": "Many, multiple",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"neo-"
+			],
+			"primary": "neo-",
+			"meaning": "New, recent",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"nulli-"
+			],
+			"primary": "nulli-",
+			"meaning": "None",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"oligo-"
+			],
+			"primary": "oligo-",
+			"meaning": "Small amount",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ortho-"
+			],
+			"primary": "ortho-",
+			"meaning": "Straight, normal",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"pan-"
+			],
+			"primary": "pan-",
+			"meaning": "All",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"para-"
+			],
+			"primary": "para-",
+			"meaning": "Beyond, beside, after",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"per-"
+			],
+			"primary": "per-",
+			"meaning": "Through",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"peri-"
+			],
+			"primary": "peri-",
+			"meaning": "Around",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"poly-"
+			],
+			"primary": "poly-",
+			"meaning": "Many, excessive",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"post-"
+			],
+			"primary": "post-",
+			"meaning": "After, following, behind",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"pre-",
+				"pro-"
+			],
+			"primary": "pre-",
+			"meaning": "In front of, before, preceding",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"presby-"
+			],
+			"primary": "presby-",
+			"meaning": "Old age",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"pseudo-"
+			],
+			"primary": "pseudo-",
+			"meaning": "False",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"quadri-"
+			],
+			"primary": "quadri-",
+			"meaning": "Four",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"re-"
+			],
+			"primary": "re-",
+			"meaning": "Backward, again",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"retro-"
+			],
+			"primary": "retro-",
+			"meaning": "Behind, backward",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"semi-"
+			],
+			"primary": "semi-",
+			"meaning": "Half, partial",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"sub-"
+			],
+			"primary": "sub-",
+			"meaning": "Under, beneath",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"super-",
+				"supra-"
+			],
+			"primary": "super-",
+			"meaning": "Above, excessive, superior",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"sym-",
+				"syn-"
+			],
+			"primary": "sym-",
+			"meaning": "With, together",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"tachy-"
+			],
+			"primary": "tachy-",
+			"meaning": "Rapid, fast",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"trans-"
+			],
+			"primary": "trans-",
+			"meaning": "Through, across",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"tri-"
+			],
+			"primary": "tri-",
+			"meaning": "Three",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"ultra-"
+			],
+			"primary": "ultra-",
+			"meaning": "Excessive, beyond",
+			"type": "prefix"
+		},
+		{
+			"forms": [
+				"uni-"
+			],
+			"primary": "uni-",
+			"meaning": "One",
+			"type": "prefix"
+		}
+	],
+	"roots": [
+		{
+			"forms": [
+				"abdomin/o"
+			],
+			"primary": "abdomin/o",
+			"meaning": "Abdomen",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"andr/o"
+			],
+			"primary": "andr/o",
+			"meaning": "Male",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"angi/o"
+			],
+			"primary": "angi/o",
+			"meaning": "Vessel",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"arteri/o"
+			],
+			"primary": "arteri/o",
+			"meaning": "Artery",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"arthr/o"
+			],
+			"primary": "arthr/o",
+			"meaning": "Joint",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"audi/o"
+			],
+			"primary": "audi/o",
+			"meaning": "Hearing",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"bronch/i",
+				"bronch/o"
+			],
+			"primary": "bronch/i",
+			"meaning": "Bronchus/lung",
+			"type": "root",
+			"combiningVowel": [
+				"i",
+				"o"
+			]
+		},
+		{
+			"forms": [
+				"carcin/o"
+			],
+			"primary": "carcin/o",
+			"meaning": "Cancer",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"cardi/o"
+			],
+			"primary": "cardi/o",
+			"meaning": "Heart",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"cholecyst/o"
+			],
+			"primary": "cholecyst/o",
+			"meaning": "Gallbladder",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"chrondr/i",
+				"chrondr/o"
+			],
+			"primary": "chrondr/i",
+			"meaning": "Cartilage",
+			"type": "root",
+			"combiningVowel": [
+				"i",
+				"o"
+			]
+		},
+		{
+			"forms": [
+				"col/o"
+			],
+			"primary": "col/o",
+			"meaning": "Colon cysti",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"cyst/o"
+			],
+			"primary": "cyst/o",
+			"meaning": "Bladder or cyst",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"cyt/o"
+			],
+			"primary": "cyt/o",
+			"meaning": "Cell",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"duoden/o"
+			],
+			"primary": "duoden/o",
+			"meaning": "Duodenum",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"encephal/o"
+			],
+			"primary": "encephal/o",
+			"meaning": "Brain",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"erythr/o"
+			],
+			"primary": "erythr/o",
+			"meaning": "Red",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"esophag/"
+			],
+			"primary": "esophag/",
+			"meaning": "Esophagus",
+			"type": "root",
+			"combiningVowel": null
+		},
+		{
+			"forms": [
+				"gastr/o"
+			],
+			"primary": "gastr/o",
+			"meaning": "Stomach",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"glyc/o"
+			],
+			"primary": "glyc/o",
+			"meaning": "Sugar",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"gynec/o"
+			],
+			"primary": "gynec/o",
+			"meaning": "Female reproductive system",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"hemat/o",
+				"hem/o"
+			],
+			"primary": "hemat/o",
+			"meaning": "Blood",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"hist/o"
+			],
+			"primary": "hist/o",
+			"meaning": "Tissue",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"hyster/o"
+			],
+			"primary": "hyster/o",
+			"meaning": "Uterus",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"laryng/o"
+			],
+			"primary": "laryng/o",
+			"meaning": "Larynx",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"leuk/o"
+			],
+			"primary": "leuk/o",
+			"meaning": "White",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"men/o"
+			],
+			"primary": "men/o",
+			"meaning": "Menstruation",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"my/o"
+			],
+			"primary": "my/o",
+			"meaning": "Muscle",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"nephr/o"
+			],
+			"primary": "nephr/o",
+			"meaning": "Kidney",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"neur/o"
+			],
+			"primary": "neur/o",
+			"meaning": "Nerve",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"opt/o"
+			],
+			"primary": "opt/o",
+			"meaning": "Vision",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"orch/o"
+			],
+			"primary": "orch/o",
+			"meaning": "Testis, testicle",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"pneum/o"
+			],
+			"primary": "pneum/o",
+			"meaning": "Lungs",
+			"type": "root",
+			"combiningVowel": "o"
+		},
+		{
+			"forms": [
+				"thorac/o"
+			],
+			"primary": "thorac/o",
+			"meaning": "Chest",
+			"type": "root",
+			"combiningVowel": "o"
+		}
+	],
+	"suffixes": [
+		{
+			"forms": [
+				"It is helpful to memorize these common suffixes as you build your knowledge of medical terminology. -ac"
+			],
+			"primary": "It is helpful to memorize these common suffixes as you build your knowledge of medical terminology. -ac",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ad"
+			],
+			"primary": "-ad",
+			"meaning": "Toward",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-al"
+			],
+			"primary": "-al",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-algia",
+				"-dynia"
+			],
+			"primary": "-algia",
+			"meaning": "Pain",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ar"
+			],
+			"primary": "-ar",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ary"
+			],
+			"primary": "-ary",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-cele"
+			],
+			"primary": "-cele",
+			"meaning": "Protrusion",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-centesis"
+			],
+			"primary": "-centesis",
+			"meaning": "Surgical withdrawal of fluid",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-cide",
+				"-cidal"
+			],
+			"primary": "-cide",
+			"meaning": "Kill, destroy",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-coccus"
+			],
+			"primary": "-coccus",
+			"meaning": "Berry shaped",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-cyte"
+			],
+			"primary": "-cyte",
+			"meaning": "Cell",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-eal"
+			],
+			"primary": "-eal",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ectomy"
+			],
+			"primary": "-ectomy",
+			"meaning": "Surgical removal",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-emia"
+			],
+			"primary": "-emia",
+			"meaning": "Pertaining to blood",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-esis"
+			],
+			"primary": "-esis",
+			"meaning": "Condition",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-gen"
+			],
+			"primary": "-gen",
+			"meaning": "Substance that produces/causes",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-genic"
+			],
+			"primary": "-genic",
+			"meaning": "Produced by",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-gram"
+			],
+			"primary": "-gram",
+			"meaning": "Record of",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-graph"
+			],
+			"primary": "-graph",
+			"meaning": "Instrument used to record",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-graphy"
+			],
+			"primary": "-graphy",
+			"meaning": "A process of recording",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ia"
+			],
+			"primary": "-ia",
+			"meaning": "Condition of, diseased state, abnormal state",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ic",
+				"-ior"
+			],
+			"primary": "-ic",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ism"
+			],
+			"primary": "-ism",
+			"meaning": "State of, condition, theory",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-itis"
+			],
+			"primary": "-itis",
+			"meaning": "Inflammation",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-logist"
+			],
+			"primary": "-logist",
+			"meaning": "Specialist who studies and treats disorders",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-logy"
+			],
+			"primary": "-logy",
+			"meaning": "Study of",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-lysis"
+			],
+			"primary": "-lysis",
+			"meaning": "Destruction, breakdown",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-megaly"
+			],
+			"primary": "-megaly",
+			"meaning": "Enlargement",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-meter"
+			],
+			"primary": "-meter",
+			"meaning": "Instrument used to measure",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-metry"
+			],
+			"primary": "-metry",
+			"meaning": "Process of measuring",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-oid"
+			],
+			"primary": "-oid",
+			"meaning": "Resembling",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-oma"
+			],
+			"primary": "-oma",
+			"meaning": "Tumor",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-opia"
+			],
+			"primary": "-opia",
+			"meaning": "Vision condition",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-opsy"
+			],
+			"primary": "-opsy",
+			"meaning": "To view",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-osis"
+			],
+			"primary": "-osis",
+			"meaning": "Abnormal condition",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ous"
+			],
+			"primary": "-ous",
+			"meaning": "Pertaining to",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-pathy"
+			],
+			"primary": "-pathy",
+			"meaning": "Disease, abnormality",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-penia"
+			],
+			"primary": "-penia",
+			"meaning": "Lack of, deficiency",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-pexy"
+			],
+			"primary": "-pexy",
+			"meaning": "Surgical fixation, suspension",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-phagia"
+			],
+			"primary": "-phagia",
+			"meaning": "Eating",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-phobia"
+			],
+			"primary": "-phobia",
+			"meaning": "Intense fear of",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-plasia"
+			],
+			"primary": "-plasia",
+			"meaning": "Formation, development",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-plasm"
+			],
+			"primary": "-plasm",
+			"meaning": "Growth, substance, formation",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-plasty"
+			],
+			"primary": "-plasty",
+			"meaning": "Surgical reconstruction",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-plegia"
+			],
+			"primary": "-plegia",
+			"meaning": "Paralysis",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-pnea"
+			],
+			"primary": "-pnea",
+			"meaning": "Breathing",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-poiesis",
+				"-poietic"
+			],
+			"primary": "-poiesis",
+			"meaning": "Production, manufacture of",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-ptosis"
+			],
+			"primary": "-ptosis",
+			"meaning": "Drooping",
+			"type": "suffix"
+		},
+		{
+			"forms": [
+				"-rrhage"
+			],
+			"primary": "-rrhage",
+			"meaning": "Excessive flow – rrhagia",
+			"type": "suffix"
+		}
+	]
+}

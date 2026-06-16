@@ -1,0 +1,9511 @@
+{
+	"source": "https://en.wikipedia.org/wiki/List_of_medical_roots_and_affixes",
+	"license": "CC-BY-SA 4.0 (attribution required)",
+	"fetched": "2026-05-12",
+	"counts": {
+		"affixes": 512,
+		"thematic_rows": 146,
+		"with_family": 100,
+		"langs": {
+			"Greek": 334,
+			"Latin": 162,
+			"": 11,
+			"New Latin": 2,
+			"French": 1,
+			"English": 1,
+			"Old English": 1
+		}
+	},
+	"affixes": [
+		{
+			"affix": "[[wikt:-algia, alg(i)-, alg(o)-",
+			"affixes": [
+				"[[wikt:-algia",
+				"alg(i)-",
+				"alg(o)-"
+			],
+			"meaning": "pain",
+			"lang": "Greek",
+			"origin": "Greek",
+			"examples": [
+				"myalgia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-graphy",
+			"affixes": [
+				"[[wikt:-graphy"
+			],
+			"meaning": "process of recording",
+			"lang": "Greek",
+			"origin": "Greek -γραφία, written, drawn, graphic interpretation",
+			"examples": [
+				"angiography"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-ine",
+			"affixes": [
+				"[[wikt:-ine"
+			],
+			"meaning": "of or pertaining to",
+			"lang": "Latin",
+			"origin": "Latin -īnus, of or pertaining to; cognate with Greek -ινος, added to form adjectives relating to material, time, and so on",
+			"examples": [
+				"morphine"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-ism",
+			"affixes": [
+				"[[wikt:-ism"
+			],
+			"meaning": "condition, state of things, sometimes (though not necessarily) disease",
+			"lang": "Greek",
+			"origin": "Greek -ισμός, suffix forming abstract nouns of state, condition, doctrine",
+			"examples": [
+				"bipedalism",
+				"organism",
+				"metabolism",
+				"giantism",
+				"dwarfism"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-logist",
+			"affixes": [
+				"[[wikt:-logist"
+			],
+			"meaning": "denotes someone who studies a certain field (the field of _____-logy); a specialist; one who treats",
+			"lang": "Greek",
+			"origin": "Greek λογιστής, studier, practitioner (lit., accountant)",
+			"examples": [
+				"oncologist",
+				"pathologist"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-lysis",
+			"affixes": [
+				"[[wikt:-lysis"
+			],
+			"meaning": "destruction, separation",
+			"lang": "Greek",
+			"origin": "Greek λῠ́σῐς, loosen, release",
+			"examples": [
+				"paralysis"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-meter",
+			"affixes": [
+				"[[wikt:-meter"
+			],
+			"meaning": "instrument used to measure or count",
+			"lang": "Greek",
+			"origin": "Greek μέτρον, measure or property, something used to measure",
+			"examples": [
+				"sphygmomanometer",
+				"thermometer"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-metry",
+			"affixes": [
+				"[[wikt:-metry"
+			],
+			"meaning": "process of measuring, -meter + -y (see -meter)",
+			"lang": "Greek",
+			"origin": "Greek μέτρον",
+			"examples": [
+				"optometry"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:-odynia",
+			"affixes": [
+				"[[wikt:-odynia"
+			],
+			"meaning": "pain",
+			"lang": "Greek",
+			"origin": "Greek ὀδύνη",
+			"examples": [
+				"vulvodynia"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:amnio-",
+			"affixes": [
+				"[[wikt:amnio-"
+			],
+			"meaning": "Pertaining to the membranous fetal sac (amnion)",
+			"lang": "Greek",
+			"origin": "Greek ἀμνίον",
+			"examples": [
+				"amniocentesis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:ana-",
+			"affixes": [
+				"[[wikt:ana-"
+			],
+			"meaning": "back, again, up",
+			"lang": "Greek",
+			"origin": "Greek ἀνα-",
+			"examples": [
+				"anaplasia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:myringo-",
+			"affixes": [
+				"[[wikt:myringo-"
+			],
+			"meaning": "eardrum",
+			"lang": "Latin",
+			"origin": "Latin myringa, eardrum",
+			"examples": [
+				"myringotomy"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:quadri-",
+			"affixes": [
+				"[[wikt:quadri-"
+			],
+			"meaning": "four",
+			"lang": "Latin",
+			"origin": "Latin quattuor",
+			"examples": [
+				"quadriceps"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "[[wikt:sinistro-",
+			"affixes": [
+				"[[wikt:sinistro-"
+			],
+			"meaning": "left, left side",
+			"lang": "Latin",
+			"origin": "Latin sinister",
+			"examples": [
+				"sinistrocardia"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "a-, an-",
+			"affixes": [
+				"a-",
+				"an-"
+			],
+			"meaning": "not, without (alpha privative)",
+			"lang": "Greek",
+			"origin": "Greek ἀ-/ἀν-, not, without",
+			"examples": [
+				"analgesic",
+				"apathy",
+				"anencephaly"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ab-",
+			"affixes": [
+				"ab-"
+			],
+			"meaning": "from; away from",
+			"lang": "Latin",
+			"origin": "Latin",
+			"examples": [
+				"abduction",
+				"abdomen"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "abdomin-",
+			"affixes": [
+				"abdomin-"
+			],
+			"meaning": "of or relating to the abdomen",
+			"lang": "Latin",
+			"origin": "Latin abdōmen, abdomen, fat around the belly",
+			"examples": [
+				"abdominoplasty"
+			],
+			"letter": "A",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"abdomen"
+			]
+		},
+		{
+			"affix": "-ac",
+			"affixes": [
+				"-ac"
+			],
+			"meaning": "pertaining to; one afflicted with",
+			"lang": "Greek",
+			"origin": "Greek -ακός",
+			"examples": [
+				"cardiac",
+				"celiac"
+			],
+			"letter": "A",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"sharp"
+			]
+		},
+		{
+			"affix": "acanth-",
+			"affixes": [
+				"acanth-"
+			],
+			"meaning": "thorn or spine",
+			"lang": "Greek",
+			"origin": "Greek ἄκανθα, thorn",
+			"examples": [
+				"acanthocyte",
+				"acanthoma"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "acou-",
+			"affixes": [
+				"acou-"
+			],
+			"meaning": "of or relating to hearing",
+			"lang": "Greek",
+			"origin": "Greek ἀκούειν, ἀκουστικός, of or for hearing",
+			"examples": [
+				"acoustician"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "acr-",
+			"affixes": [
+				"acr-"
+			],
+			"meaning": "extremity, topmost",
+			"lang": "Greek",
+			"origin": "Greek ἄκρον, highest or farthest point",
+			"examples": [
+				"acromegaly",
+				"acroosteolysis",
+				"acrosome"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-acusis",
+			"affixes": [
+				"-acusis"
+			],
+			"meaning": "hearing",
+			"lang": "Greek",
+			"origin": "Greek ἀκουστικός, of or for hearing",
+			"examples": [
+				"hyperacusis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ad",
+			"affixes": [
+				"-ad"
+			],
+			"meaning": "toward, in the direction of",
+			"lang": "Latin",
+			"origin": "Latin ad, toward, to",
+			"examples": [
+				"dorsad",
+				"ventrad"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ad-",
+			"affixes": [
+				"ad-"
+			],
+			"meaning": "at, increase, on, toward",
+			"lang": "Latin",
+			"origin": "Latin ad-, to",
+			"examples": [
+				"adduction"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "aden-",
+			"affixes": [
+				"aden-"
+			],
+			"meaning": "of or relating to a gland",
+			"lang": "Greek",
+			"origin": "Greek ἀδήν, ἀδέν-, an acorn; a gland",
+			"examples": [
+				"adenocarcinoma",
+				"adenology"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "adip-",
+			"affixes": [
+				"adip-"
+			],
+			"meaning": "of or relating to fat or fatty tissue",
+			"lang": "Latin",
+			"origin": "Latin adeps, adip-, fat",
+			"examples": [
+				"adipocyte"
+			],
+			"letter": "A",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"fat, fatty tissue"
+			]
+		},
+		{
+			"affix": "adren-",
+			"affixes": [
+				"adren-"
+			],
+			"meaning": "of or relating to the adrenal glands",
+			"lang": "Latin",
+			"origin": "Latin ad + rēnēs, kidneys",
+			"examples": [
+				"adrenal artery",
+				"adrenaline",
+				"adrenochrome"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-aemia, -ema, haemat- (BrE)",
+			"affixes": [
+				"-aemia",
+				"-ema",
+				"haemat- (BrE)"
+			],
+			"meaning": "blood condition",
+			"lang": "Greek",
+			"origin": "Greek ἀναιμία, without blood",
+			"examples": [
+				"anaemia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "aer(o)-",
+			"affixes": [
+				"aer(o)-"
+			],
+			"meaning": "air, gas",
+			"lang": "Greek",
+			"origin": "Greek ἀήρ, ἀέρος",
+			"examples": [
+				"aerosinusitis",
+				"aerophagia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "aesthesi- (BrE)",
+			"affixes": [
+				"aesthesi- (BrE)"
+			],
+			"meaning": "sensation",
+			"lang": "Greek",
+			"origin": "Greek αἴσθησις",
+			"examples": [
+				"anaesthesia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-al",
+			"affixes": [
+				"-al"
+			],
+			"meaning": "pertaining to",
+			"lang": "Latin",
+			"origin": "Latin -alis",
+			"examples": [
+				"abdominal",
+				"femoral"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "alb-",
+			"affixes": [
+				"alb-"
+			],
+			"meaning": "denoting a white or pale color",
+			"lang": "Latin",
+			"origin": "Latin albus, white",
+			"examples": [
+				"albino",
+				"tunica albuginea"
+			],
+			"letter": "A",
+			"family": [
+				"Roots of color"
+			],
+			"concept": [
+				"white"
+			]
+		},
+		{
+			"affix": "alge(si)-",
+			"affixes": [
+				"alge(si)-"
+			],
+			"meaning": "pain",
+			"lang": "Greek",
+			"origin": "Greek ἄλγος",
+			"examples": [
+				"analgesic"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "all-",
+			"affixes": [
+				"all-"
+			],
+			"meaning": "denoting something as different, or as an addition",
+			"lang": "Greek",
+			"origin": "Greek ἄλλος, another, other",
+			"examples": [
+				"alloantigen",
+				"allopathy"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ambi-",
+			"affixes": [
+				"ambi-"
+			],
+			"meaning": "denoting something as positioned on both sides; describing both of two",
+			"lang": "Latin",
+			"origin": "Latin ambi-, ambo, both, on both sides",
+			"examples": [
+				"ambidextrous"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "amph(i)-",
+			"affixes": [
+				"amph(i)-"
+			],
+			"meaning": "on both sides",
+			"lang": "Greek",
+			"origin": "Greek ἀμφί",
+			"examples": [
+				"amphismela",
+				"amphiarthrosis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "amyl(o)-",
+			"affixes": [
+				"amyl(o)-"
+			],
+			"meaning": "starchy, carbohydrate-related",
+			"lang": "Latin",
+			"origin": "Latin amylum, starch",
+			"examples": [
+				"amylase",
+				"amylophagia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "an-",
+			"affixes": [
+				"an-"
+			],
+			"meaning": "not, without (alpha privative)",
+			"lang": "Greek",
+			"origin": "Greek",
+			"examples": [
+				"analgesia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "an-",
+			"affixes": [
+				"an-"
+			],
+			"meaning": "anus",
+			"lang": "Latin",
+			"origin": "Latin",
+			"examples": [],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "andr-",
+			"affixes": [
+				"andr-"
+			],
+			"meaning": "pertaining to a man",
+			"lang": "Greek",
+			"origin": "Greek ἀνήρ, ἀνδρ-, male",
+			"examples": [
+				"android",
+				"andrology",
+				"androgen"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "angi-",
+			"affixes": [
+				"angi-"
+			],
+			"meaning": "blood vessel",
+			"lang": "Greek",
+			"origin": "Greek ἀγγεῖον",
+			"examples": [
+				"angiogram",
+				"angioplasty"
+			],
+			"letter": "A",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"blood vessel"
+			]
+		},
+		{
+			"affix": "aniso-",
+			"affixes": [
+				"aniso-"
+			],
+			"meaning": "describing something as unequal",
+			"lang": "Greek",
+			"origin": "Greek ἄνισος, unequal",
+			"examples": [
+				"anisocytosis",
+				"anisotropic"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ankyl-, ancyl-",
+			"affixes": [
+				"ankyl-",
+				"ancyl-"
+			],
+			"meaning": "denoting something as crooked or bent",
+			"lang": "Greek",
+			"origin": "Greek ἀγκύλος, crooked, curved",
+			"examples": [
+				"ankylosis"
+			],
+			"letter": "A",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"bent, crooked"
+			]
+		},
+		{
+			"affix": "ante-",
+			"affixes": [
+				"ante-"
+			],
+			"meaning": "describing something as positioned in front of another thing",
+			"lang": "Latin",
+			"origin": "Latin āntē, before, in front of",
+			"examples": [
+				"antepartum"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "anthropo-",
+			"affixes": [
+				"anthropo-"
+			],
+			"meaning": "human",
+			"lang": "Greek",
+			"origin": "Greek ἄνθρωπος, human",
+			"examples": [
+				"anthropology"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "anti-",
+			"affixes": [
+				"anti-"
+			],
+			"meaning": "describing something as 'against' or 'opposed to' another",
+			"lang": "Greek",
+			"origin": "Greek ἀντί, against",
+			"examples": [
+				"antibody",
+				"antipsychotic"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "apo-",
+			"affixes": [
+				"apo-"
+			],
+			"meaning": "away, separated from, derived from",
+			"lang": "Greek",
+			"origin": "Greek ἀπό",
+			"examples": [
+				"apoptosis",
+				"apocrine"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "archi-",
+			"affixes": [
+				"archi-"
+			],
+			"meaning": "first, primitive",
+			"lang": "Greek",
+			"origin": "Greek ἀρχι-",
+			"examples": [
+				"archinephros"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "arsen(o)-",
+			"affixes": [
+				"arsen(o)-"
+			],
+			"meaning": "of or pertaining to a male; masculine",
+			"lang": "Greek",
+			"origin": "Greek ἀρσενικός",
+			"examples": [],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "arteri(o)-",
+			"affixes": [
+				"arteri(o)-"
+			],
+			"meaning": "of or pertaining to an artery",
+			"lang": "Greek",
+			"origin": "Greek ἀρτηρία, a wind-pipe, artery (used distinctly versus a vein)",
+			"examples": [
+				"arteriole"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "arthr-",
+			"affixes": [
+				"arthr-"
+			],
+			"meaning": "of or pertaining to the joints, limbs",
+			"lang": "Greek",
+			"origin": "Greek ἄρθρον, a joint, limb",
+			"examples": [
+				"arthritis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "articul-",
+			"affixes": [
+				"articul-"
+			],
+			"meaning": "joint",
+			"lang": "Latin",
+			"origin": "Latin articulus",
+			"examples": [
+				"articulation"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ary",
+			"affixes": [
+				"-ary"
+			],
+			"meaning": "pertaining to",
+			"lang": "Latin",
+			"origin": "Latin -arius",
+			"examples": [
+				"biliary tract",
+				"coronary"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ase",
+			"affixes": [
+				"-ase"
+			],
+			"meaning": "enzyme",
+			"lang": "",
+			"origin": "from Greek διάστασις (δια- (, part, apart) + στάσις (, stand)), division",
+			"examples": [
+				"lactase"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-asthenia",
+			"affixes": [
+				"-asthenia"
+			],
+			"meaning": "weakness",
+			"lang": "Greek",
+			"origin": "Greek ἀσθένεια, sick, weak",
+			"examples": [
+				"myasthenia gravis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "atel(o)-",
+			"affixes": [
+				"atel(o)-"
+			],
+			"meaning": "imperfect or incomplete development",
+			"lang": "Greek",
+			"origin": "Greek ἀτελής, without end, incomplete",
+			"examples": [
+				"atelectasis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ather-",
+			"affixes": [
+				"ather-"
+			],
+			"meaning": "fatty deposit, soft gruel-like deposit",
+			"lang": "",
+			"origin": "ἀθάρη",
+			"examples": [
+				"atherosclerosis"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ation",
+			"affixes": [
+				"-ation"
+			],
+			"meaning": "process",
+			"lang": "Latin",
+			"origin": "Latin",
+			"examples": [
+				"medication",
+				"eburnation"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "atri-",
+			"affixes": [
+				"atri-"
+			],
+			"meaning": "an atrium (esp. heart atrium)",
+			"lang": "Latin",
+			"origin": "Latin",
+			"examples": [
+				"atrioventricular"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "aur-",
+			"affixes": [
+				"aur-"
+			],
+			"meaning": "of or pertaining to the ear",
+			"lang": "Latin",
+			"origin": "Latin auris, the ear",
+			"examples": [
+				"aural"
+			],
+			"letter": "A",
+			"family": [
+				"Roots of color"
+			],
+			"concept": [
+				"[[Gold (color)"
+			]
+		},
+		{
+			"affix": "aut-",
+			"affixes": [
+				"aut-"
+			],
+			"meaning": "self",
+			"lang": "Greek",
+			"origin": "Greek αὐτός, αὐτο-",
+			"examples": [
+				"autoimmune",
+				"autophagy"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "aux(o)-",
+			"affixes": [
+				"aux(o)-"
+			],
+			"meaning": "increase; growth",
+			"lang": "Greek",
+			"origin": "Greek αὐξάνω, αὔξω",
+			"examples": [
+				"auxotrophy",
+				"auxology"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "axill-",
+			"affixes": [
+				"axill-"
+			],
+			"meaning": "of or pertaining to the armpit (uncommon as a prefix)",
+			"lang": "Latin",
+			"origin": "Latin axilla, armpit",
+			"examples": [
+				"axilla"
+			],
+			"letter": "A",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"armpit"
+			]
+		},
+		{
+			"affix": "azo(to)-",
+			"affixes": [
+				"azo(to)-"
+			],
+			"meaning": "nitrogenous compound",
+			"lang": "French",
+			"origin": "French azote, nitrogen; from Greek άζωτικός ἀ- (, no, without) + ζωή (, life)), mephitic air",
+			"examples": [
+				"azotemia"
+			],
+			"letter": "A",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bacillo-",
+			"affixes": [
+				"bacillo-"
+			],
+			"meaning": "rod-shaped, typically referring to Bacillus spp.",
+			"lang": "Latin",
+			"origin": "Latin baculus, stick",
+			"examples": [
+				"bacillomycin"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bacteri-",
+			"affixes": [
+				"bacteri-"
+			],
+			"meaning": "Pertaining to bacteria",
+			"lang": "Latin",
+			"origin": "Latin bacterium; Greek βακτήριον, small staff",
+			"examples": [
+				"bacteriophage",
+				"bactericide"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "balan-",
+			"affixes": [
+				"balan-"
+			],
+			"meaning": "of the glans penis or glans clitoridis",
+			"lang": "Greek",
+			"origin": "Greek βάλανος, acorn, glans",
+			"examples": [
+				"balanitis"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bas-",
+			"affixes": [
+				"bas-"
+			],
+			"meaning": "of or pertaining to base",
+			"lang": "Greek",
+			"origin": "Greek βάσις, foundation, base",
+			"examples": [],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bi-",
+			"affixes": [
+				"bi-"
+			],
+			"meaning": "twice, double",
+			"lang": "Latin",
+			"origin": "Latin bi-",
+			"examples": [],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bil(i)-, chol(e)-",
+			"affixes": [
+				"bil(i)-",
+				"chol(e)-"
+			],
+			"meaning": "of or pertaining to bile",
+			"lang": "Greek",
+			"origin": "Greek χολή, bile",
+			"examples": [
+				"cholaemia",
+				"cholemia",
+				"cholecystitis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bio-",
+			"affixes": [
+				"bio-"
+			],
+			"meaning": "life",
+			"lang": "Greek",
+			"origin": "Greek βίος",
+			"examples": [
+				"biology"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "blast-",
+			"affixes": [
+				"blast-"
+			],
+			"meaning": "germinate or bud",
+			"lang": "Greek",
+			"origin": "Greek βλαστός",
+			"examples": [
+				"blastomere"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "blephar(o)-",
+			"affixes": [
+				"blephar(o)-"
+			],
+			"meaning": "of or pertaining to the eyelid",
+			"lang": "Greek",
+			"origin": "Greek βλέφαρον, eyelid",
+			"examples": [
+				"blepharoplasty"
+			],
+			"letter": "B",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eyelid"
+			]
+		},
+		{
+			"affix": "brachi(o)-",
+			"affixes": [
+				"brachi(o)-"
+			],
+			"meaning": "of or relating to the arm",
+			"lang": "Latin",
+			"origin": "Latin bracchium, from Greek βραχίων, arm",
+			"examples": [
+				"brachium of inferior colliculus"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "brachy-",
+			"affixes": [
+				"brachy-"
+			],
+			"meaning": "indicating 'short' or less commonly 'little'",
+			"lang": "Greek",
+			"origin": "Greek βραχύς, short, little, shallow",
+			"examples": [
+				"brachycephalic"
+			],
+			"letter": "B",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"short"
+			]
+		},
+		{
+			"affix": "brady-",
+			"affixes": [
+				"brady-"
+			],
+			"meaning": "slow",
+			"lang": "Greek",
+			"origin": "Greek βραδύς, slow",
+			"examples": [
+				"bradycardia",
+				"bradyzoite"
+			],
+			"letter": "B",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"slow"
+			]
+		},
+		{
+			"affix": "bronch(i)-",
+			"affixes": [
+				"bronch(i)-"
+			],
+			"meaning": "of or relating to the bronchus",
+			"lang": "Latin",
+			"origin": "Latin bronchus; Greek βρόγχος, windpipe",
+			"examples": [
+				"bronchitis",
+				"bronchiolitis obliterans"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "bucc(o)-",
+			"affixes": [
+				"bucc(o)-"
+			],
+			"meaning": "of or pertaining to the cheek",
+			"lang": "Latin",
+			"origin": "Latin bucca, cheek",
+			"examples": [],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "burs(o)-",
+			"affixes": [
+				"burs(o)-"
+			],
+			"meaning": "bursa (fluid sac between the bones)",
+			"lang": "Latin",
+			"origin": "Latin bursa, purse; Greek βύρσα, hide, wine-skin",
+			"examples": [
+				"bursa",
+				"bursitis"
+			],
+			"letter": "B",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "capill-",
+			"affixes": [
+				"capill-"
+			],
+			"meaning": "of or pertaining to hair",
+			"lang": "Latin",
+			"origin": "Latin capillus, hair",
+			"examples": [
+				"capillus"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"hair"
+			]
+		},
+		{
+			"affix": "capit-",
+			"affixes": [
+				"capit-"
+			],
+			"meaning": "pertaining to the head as a whole",
+			"lang": "Latin",
+			"origin": "Latin caput, capit-, the head",
+			"examples": [
+				"capitation"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "carcin-",
+			"affixes": [
+				"carcin-"
+			],
+			"meaning": "cancer",
+			"lang": "Greek",
+			"origin": "Greek καρκίνος, crab",
+			"examples": [
+				"carcinoma"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cardi-",
+			"affixes": [
+				"cardi-"
+			],
+			"meaning": "of or pertaining to the heart",
+			"lang": "Greek",
+			"origin": "Greek καρδία, heart",
+			"examples": [
+				"cardiology"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "carp-",
+			"affixes": [
+				"carp-"
+			],
+			"meaning": "of or pertaining to the wrist",
+			"lang": "Latin",
+			"origin": "Latin carpus < Greek καρπός, wrist; NOTE: This root should not be confused with the mirror root carp(o)- meaning fruit.",
+			"examples": [
+				"carpopedal spasm"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cata-",
+			"affixes": [
+				"cata-"
+			],
+			"meaning": "down, under",
+			"lang": "Greek",
+			"origin": "Greek κατά",
+			"examples": [
+				"catabolism",
+				"cataract"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-cele",
+			"affixes": [
+				"-cele"
+			],
+			"meaning": "pouching, hernia",
+			"lang": "Greek",
+			"origin": "Greek κήλη",
+			"examples": [
+				"hydrocele",
+				"varicocele"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-centesis",
+			"affixes": [
+				"-centesis"
+			],
+			"meaning": "surgical puncture for aspiration",
+			"lang": "Greek",
+			"origin": "Greek κέντησις",
+			"examples": [
+				"amniocentesis",
+				"thoracentesis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cephal(o)-",
+			"affixes": [
+				"cephal(o)-"
+			],
+			"meaning": "of or pertaining to the head (as a whole)",
+			"lang": "Greek",
+			"origin": "Greek κεφαλή, the head",
+			"examples": [
+				"cephalalgia",
+				"hydrocephalus"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"head"
+			]
+		},
+		{
+			"affix": "cerat(o)-",
+			"affixes": [
+				"cerat(o)-"
+			],
+			"meaning": "of or pertaining to the cornu; a horn",
+			"lang": "Greek",
+			"origin": "Greek κέρας, κερατ-, a horn",
+			"examples": [
+				"ceratoid"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"horn"
+			]
+		},
+		{
+			"affix": "cerebell(o)-",
+			"affixes": [
+				"cerebell(o)-"
+			],
+			"meaning": "of or pertaining to the cerebellum",
+			"lang": "Latin",
+			"origin": "Latin cerebellum, little brain",
+			"examples": [
+				"cerebellum"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cerebr(o)-",
+			"affixes": [
+				"cerebr(o)-"
+			],
+			"meaning": "of or pertaining to the brain",
+			"lang": "Latin",
+			"origin": "Latin cerebrum, brain",
+			"examples": [],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cervic-",
+			"affixes": [
+				"cervic-"
+			],
+			"meaning": "of or pertaining to the neck or the cervix",
+			"lang": "Latin",
+			"origin": "Latin cervix, cervīc-), neck, cervix",
+			"examples": [],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"neck"
+			]
+		},
+		{
+			"affix": "cheil-",
+			"affixes": [
+				"cheil-"
+			],
+			"meaning": "of or pertaining to the lips",
+			"lang": "Greek",
+			"origin": "Greek χεῖλος, lip, mouth, beak",
+			"examples": [
+				"angular cheilitis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "chem(o)-",
+			"affixes": [
+				"chem(o)-"
+			],
+			"meaning": "chemistry, drug",
+			"lang": "Greek",
+			"origin": "Greek χημεία",
+			"examples": [
+				"chemotherapy"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "chir-, cheir-",
+			"affixes": [
+				"chir-",
+				"cheir-"
+			],
+			"meaning": "of or pertaining to the hand",
+			"lang": "Greek",
+			"origin": "Greek χείρ, χειρο-, hand",
+			"examples": [
+				"chiropractor"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "chlor-",
+			"affixes": [
+				"chlor-"
+			],
+			"meaning": "denoting a green color",
+			"lang": "Greek",
+			"origin": "Greek χλωρός, green, yellow-green",
+			"examples": [
+				"chlorophyll"
+			],
+			"letter": "C",
+			"family": [
+				"Roots of color"
+			],
+			"concept": [
+				"green"
+			]
+		},
+		{
+			"affix": "cholecyst(o)-",
+			"affixes": [
+				"cholecyst(o)-"
+			],
+			"meaning": "of or pertaining to the gallbladder",
+			"lang": "Greek",
+			"origin": "Greek χοληκύστις, gallbladder < χολή, bile, gall + κύστις, bladder",
+			"examples": [
+				"cholecystectomy"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"gallbladder"
+			]
+		},
+		{
+			"affix": "chondr(i)-, chondr(o)-",
+			"affixes": [
+				"chondr(i)-",
+				"chondr(o)-"
+			],
+			"meaning": "cartilage, gristle, granule, granular",
+			"lang": "Greek",
+			"origin": "Greek χονδρός (khondrós)",
+			"examples": [
+				"chondrocalcinosis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "chrom(ato)-",
+			"affixes": [
+				"chrom(ato)-"
+			],
+			"meaning": "color",
+			"lang": "Greek",
+			"origin": "Greek χρῶμα",
+			"examples": [
+				"hemochromatosis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-cidal, -cide",
+			"affixes": [
+				"-cidal",
+				"-cide"
+			],
+			"meaning": "killing, destroying",
+			"lang": "Latin",
+			"origin": "Latin -cīda, cutter, killer",
+			"examples": [
+				"bacteriocidal"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cili-",
+			"affixes": [
+				"cili-"
+			],
+			"meaning": "of or pertaining to the cilia, the eyelashes; eyelids",
+			"lang": "Latin",
+			"origin": "Latin cilium, eyelash; eyelid",
+			"examples": [
+				"ciliary"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eyelid"
+			]
+		},
+		{
+			"affix": "circum-",
+			"affixes": [
+				"circum-"
+			],
+			"meaning": "denoting something as 'around' another",
+			"lang": "Latin",
+			"origin": "Latin circum, around",
+			"examples": [
+				"circumcision"
+			],
+			"letter": "C",
+			"family": [
+				"Roots of position"
+			],
+			"concept": [
+				"around, surrounding"
+			]
+		},
+		{
+			"affix": "cis-",
+			"affixes": [
+				"cis-"
+			],
+			"meaning": "on this side",
+			"lang": "Latin",
+			"origin": "Latin cis",
+			"examples": [
+				"cisgender"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-clast",
+			"affixes": [
+				"-clast"
+			],
+			"meaning": "break",
+			"lang": "Greek",
+			"origin": "Greek κλαστός, broken",
+			"examples": [
+				"osteoclast"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "clostr-",
+			"affixes": [
+				"clostr-"
+			],
+			"meaning": "spindle",
+			"lang": "Greek",
+			"origin": "Greek κλωστήρ, spindle, thread",
+			"examples": [
+				"Clostridium"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "co-",
+			"affixes": [
+				"co-"
+			],
+			"meaning": "with, together, in association",
+			"lang": "Latin",
+			"origin": "Latin co-",
+			"examples": [
+				"coenzymes"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-coccus, -coccal",
+			"affixes": [
+				"-coccus",
+				"-coccal"
+			],
+			"meaning": "round, spherical",
+			"lang": "Greek",
+			"origin": "Greek κόκκος, berry, seed",
+			"examples": [
+				"Streptococcus"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "col-, colo-, colono-",
+			"affixes": [
+				"col-",
+				"colo-",
+				"colono-"
+			],
+			"meaning": "colon",
+			"lang": "Greek",
+			"origin": "Greek κόλον",
+			"examples": [
+				"colonoscopy"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "colp-",
+			"affixes": [
+				"colp-"
+			],
+			"meaning": "of or pertaining to the vagina",
+			"lang": "Greek",
+			"origin": "Greek κόλπος, bosom, womb; hollow, depth",
+			"examples": [
+				"colposcopy"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "com-",
+			"affixes": [
+				"com-"
+			],
+			"meaning": "with, together",
+			"lang": "Latin",
+			"origin": "Latin cum",
+			"examples": [],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "contra-",
+			"affixes": [
+				"contra-"
+			],
+			"meaning": "against",
+			"lang": "Latin",
+			"origin": "Latin contrā",
+			"examples": [
+				"contraindication"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cor-",
+			"affixes": [
+				"cor-"
+			],
+			"meaning": "with, together",
+			"lang": "Latin",
+			"origin": "Latin cor-",
+			"examples": [],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"pupil (of the eye)"
+			]
+		},
+		{
+			"affix": "cor-",
+			"affixes": [
+				"cor-"
+			],
+			"meaning": "of or pertaining to the eye's pupil",
+			"lang": "Greek",
+			"origin": "Greek κόρη, girl, doll; pupil of the eye",
+			"examples": [
+				"corectomy"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"pupil (of the eye)"
+			]
+		},
+		{
+			"affix": "cord(i)-",
+			"affixes": [
+				"cord(i)-"
+			],
+			"meaning": "of or pertaining to the heart (uncommon as a prefix)",
+			"lang": "Latin",
+			"origin": "Latin cor, heart",
+			"examples": [
+				"commotio cordis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cornu-",
+			"affixes": [
+				"cornu-"
+			],
+			"meaning": "applied to describing processes and parts of the body as likened or similar to horns",
+			"lang": "Latin",
+			"origin": "Latin cornū, horn",
+			"examples": [
+				"greater cornu"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"horn"
+			]
+		},
+		{
+			"affix": "coron-",
+			"affixes": [
+				"coron-"
+			],
+			"meaning": "pertaining to the heart",
+			"lang": "Latin",
+			"origin": "Latin corōna",
+			"examples": [
+				"coronary heart disease"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cortic-",
+			"affixes": [
+				"cortic-"
+			],
+			"meaning": "cortex, outer region",
+			"lang": "Latin",
+			"origin": "Latin cortex, bark of a tree",
+			"examples": [
+				"corticosteroid"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cost-",
+			"affixes": [
+				"cost-"
+			],
+			"meaning": "of or pertaining to the ribs",
+			"lang": "Latin",
+			"origin": "Latin costa, rib",
+			"examples": [
+				"costochondral"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cox-",
+			"affixes": [
+				"cox-"
+			],
+			"meaning": "of or relating to the hip, haunch, or hip-joint",
+			"lang": "Latin",
+			"origin": "Latin coxa, hip",
+			"examples": [
+				"coxopodite"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"hip, hip-joint"
+			]
+		},
+		{
+			"affix": "crani(o)-",
+			"affixes": [
+				"crani(o)-"
+			],
+			"meaning": "belonging or relating to the cranium",
+			"lang": "Latin",
+			"origin": "Latin cranium, from Greek κρᾱνίον, cranium, skull, bones enclosing the brain",
+			"examples": [
+				"craniology"
+			],
+			"letter": "C",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"skull"
+			]
+		},
+		{
+			"affix": "-crine, crin(o)-",
+			"affixes": [
+				"-crine",
+				"crin(o)-"
+			],
+			"meaning": "to secrete",
+			"lang": "Greek",
+			"origin": "Greek κρίνω, separate, divide, discern",
+			"examples": [
+				"endocrine"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cry(o)-",
+			"affixes": [
+				"cry(o)-"
+			],
+			"meaning": "cold",
+			"lang": "Greek",
+			"origin": "Greek κρύος, cold, frost",
+			"examples": [
+				"cryoablation"
+			],
+			"letter": "C",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"cold"
+			]
+		},
+		{
+			"affix": "cutane-",
+			"affixes": [
+				"cutane-"
+			],
+			"meaning": "skin",
+			"lang": "Latin",
+			"origin": "Latin cutis",
+			"examples": [
+				"subcutaneous"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cyan(o)-",
+			"affixes": [
+				"cyan(o)-"
+			],
+			"meaning": "having a blue color",
+			"lang": "Greek",
+			"origin": "Greek κύανος, κυάνεος (, blue, of the color blue)",
+			"examples": [
+				"cyanopsia",
+				"cyanosis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cycl-",
+			"affixes": [
+				"cycl-"
+			],
+			"meaning": "circle, cycle",
+			"lang": "Greek",
+			"origin": "Greek κύκλος",
+			"examples": [
+				"cyclosis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cyph(o)-",
+			"affixes": [
+				"cyph(o)-"
+			],
+			"meaning": "denotes something as bent (uncommon as a prefix)",
+			"lang": "Greek",
+			"origin": "Greek κυφός, bent, hunchback",
+			"examples": [
+				"cyphosis"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cyst(o)-, cyst(i)-",
+			"affixes": [
+				"cyst(o)-",
+				"cyst(i)-"
+			],
+			"meaning": "of or pertaining to the urinary bladder",
+			"lang": "Greek",
+			"origin": "Greek κύστις, bladder, cyst",
+			"examples": [
+				"cystostomy"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "cyt(o)-, -cyte",
+			"affixes": [
+				"cyt(o)-",
+				"-cyte"
+			],
+			"meaning": "cell",
+			"lang": "Greek",
+			"origin": "Greek κύτος, a hollow, vessel",
+			"examples": [
+				"cytokine",
+				"leukocyte",
+				"cytoplasm"
+			],
+			"letter": "C",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dacry(o)-",
+			"affixes": [
+				"dacry(o)-"
+			],
+			"meaning": "of or pertaining to tears",
+			"lang": "Greek",
+			"origin": "Greek δάκρυ, tear",
+			"examples": [
+				"dacryoadenitis",
+				"dacryocystitis"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-dactyl(o)-",
+			"affixes": [
+				"-dactyl(o)-"
+			],
+			"meaning": "of or pertaining to a finger, toe",
+			"lang": "Greek",
+			"origin": "Greek δάκτυλος, finger, toe",
+			"examples": [
+				"dactylology",
+				"polydactyly"
+			],
+			"letter": "D",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"finger",
+				"toe"
+			]
+		},
+		{
+			"affix": "de-",
+			"affixes": [
+				"de-"
+			],
+			"meaning": "from, down, or away from",
+			"lang": "Latin",
+			"origin": "Latin de-",
+			"examples": [
+				"dehydrate"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dent-",
+			"affixes": [
+				"dent-"
+			],
+			"meaning": "of or pertaining to teeth",
+			"lang": "Latin",
+			"origin": "Latin dens, dentis, tooth",
+			"examples": [
+				"dentifrice",
+				"dentist",
+				"dentition"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dermat(o)-, derm(o)-",
+			"affixes": [
+				"dermat(o)-",
+				"derm(o)-"
+			],
+			"meaning": "of or pertaining to the skin",
+			"lang": "Greek",
+			"origin": "Greek δέρμα, δέρματος, skin, human skin",
+			"examples": [
+				"dermatology"
+			],
+			"letter": "D",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"skin"
+			]
+		},
+		{
+			"affix": "-desis",
+			"affixes": [
+				"-desis"
+			],
+			"meaning": "binding",
+			"lang": "Greek",
+			"origin": "Greek δέσις",
+			"examples": [
+				"arthrodesis"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dextr(o)-",
+			"affixes": [
+				"dextr(o)-"
+			],
+			"meaning": "right, on the right side",
+			"lang": "Latin",
+			"origin": "Latin dexter",
+			"examples": [
+				"dextrocardia"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "di-",
+			"affixes": [
+				"di-"
+			],
+			"meaning": "two",
+			"lang": "Greek",
+			"origin": "Greek δι-",
+			"examples": [
+				"diplopia"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "di-, dif-, dis-",
+			"affixes": [
+				"di-",
+				"dif-",
+				"dis-"
+			],
+			"meaning": "apart, separation, taking apart",
+			"lang": "Latin",
+			"origin": "Latin dis-, dif-, di-",
+			"examples": [
+				"dissection"
+			],
+			"letter": "D",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"twice"
+			]
+		},
+		{
+			"affix": "dia-",
+			"affixes": [
+				"dia-"
+			],
+			"meaning": "through, during, across",
+			"lang": "Greek",
+			"origin": "Greek διά, through, during, across",
+			"examples": [
+				"dialysis"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "digit-",
+			"affixes": [
+				"digit-"
+			],
+			"meaning": "of or pertaining to the finger [rare as a root]",
+			"lang": "Latin",
+			"origin": "Latin digitus, finger, toe",
+			"examples": [
+				"digit"
+			],
+			"letter": "D",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"finger",
+				"toe"
+			]
+		},
+		{
+			"affix": "diplo-",
+			"affixes": [
+				"diplo-"
+			],
+			"meaning": "twofold",
+			"lang": "Greek",
+			"origin": "Greek διπλόος",
+			"examples": [
+				"diploid"
+			],
+			"letter": "D",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"double"
+			]
+		},
+		{
+			"affix": "-dipsia",
+			"affixes": [
+				"-dipsia"
+			],
+			"meaning": "(condition of) thirst",
+			"lang": "Greek",
+			"origin": "Greek δίψα",
+			"examples": [
+				"dipsomania",
+				"hydroadipsia",
+				"oligodipsia",
+				"polydipsia"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dors(o)-, dors(i)-",
+			"affixes": [
+				"dors(o)-",
+				"dors(i)-"
+			],
+			"meaning": "of or pertaining to the back",
+			"lang": "Latin",
+			"origin": "Latin dorsum, back",
+			"examples": [
+				"dorsal",
+				"dorsocephalad"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "drom(o)-, drom(e)-",
+			"affixes": [
+				"drom(o)-",
+				"drom(e)-"
+			],
+			"meaning": "running, conduction, course",
+			"lang": "Greek",
+			"origin": "Greek δρόμος",
+			"examples": [
+				"dromotropic",
+				"syndrome"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "duodeno-",
+			"affixes": [
+				"duodeno-"
+			],
+			"meaning": "twelve",
+			"lang": "Latin",
+			"origin": "Latin duodeni",
+			"examples": [
+				"duodenal atresia",
+				"duodenum"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dura-",
+			"affixes": [
+				"dura-"
+			],
+			"meaning": "hard",
+			"lang": "Latin",
+			"origin": "Latin durus",
+			"examples": [
+				"dura mater"
+			],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dynam(o)-",
+			"affixes": [
+				"dynam(o)-"
+			],
+			"meaning": "force, energy, power",
+			"lang": "Greek",
+			"origin": "Greek δύναμις",
+			"examples": [],
+			"letter": "D",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "dys-",
+			"affixes": [
+				"dys-"
+			],
+			"meaning": "bad, difficult, defective, abnormal",
+			"lang": "Greek",
+			"origin": "Greek δυσ-",
+			"examples": [
+				"dysentery",
+				"dysphagia",
+				"dysphasia"
+			],
+			"letter": "D",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"bad, incorrect"
+			]
+		},
+		{
+			"affix": "-eal (see -al)",
+			"affixes": [
+				"-eal (see -al)"
+			],
+			"meaning": "pertaining to",
+			"lang": "English",
+			"origin": "English -al, from Latin -ālis",
+			"examples": [
+				"corneal",
+				"esophageal",
+				"perineal"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ec-",
+			"affixes": [
+				"ec-"
+			],
+			"meaning": "out, away",
+			"lang": "Greek",
+			"origin": "Greek ἐκ, out of, from",
+			"examples": [
+				"ectopia",
+				"ectopic pregnancy"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ect(o)-",
+			"affixes": [
+				"ect(o)-"
+			],
+			"meaning": "outer, outside",
+			"lang": "Greek",
+			"origin": "Greek ἐκτός",
+			"examples": [
+				"ectoblast",
+				"ectoderm"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ectasia, -ectasis",
+			"affixes": [
+				"-ectasia",
+				"-ectasis"
+			],
+			"meaning": "expansion, dilation",
+			"lang": "Greek",
+			"origin": "Greek ἔκτασις",
+			"examples": [
+				"bronchiectasis",
+				"telangiectasia"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ectomy",
+			"affixes": [
+				"-ectomy"
+			],
+			"meaning": "denotes a surgical operation or removal of a body part; resection, excision",
+			"lang": "Greek",
+			"origin": "Greek ἐκτομή, excision",
+			"examples": [
+				"mastectomy"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-edema",
+			"affixes": [
+				"-edema"
+			],
+			"meaning": "swelling",
+			"lang": "Greek",
+			"origin": "Greek οἴδημα, swelling",
+			"examples": [
+				"lymphedema",
+				"lipedema"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-emesis",
+			"affixes": [
+				"-emesis"
+			],
+			"meaning": "vomiting condition",
+			"lang": "Greek",
+			"origin": "Greek ἕμεσις",
+			"examples": [
+				"hematemesis"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-emia",
+			"affixes": [
+				"-emia"
+			],
+			"meaning": "blood condition (Am. Engl.)",
+			"lang": "Greek",
+			"origin": "Greek αἷμα, \"blood\"",
+			"examples": [
+				"anemia"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "encephal(o)-",
+			"affixes": [
+				"encephal(o)-"
+			],
+			"meaning": "of or pertaining to the brain; see also cerebro-",
+			"lang": "Greek",
+			"origin": "Greek ἐγκέφαλος, the brain",
+			"examples": [
+				"encephalogram"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "endo-",
+			"affixes": [
+				"endo-"
+			],
+			"meaning": "denotes something as inside or within",
+			"lang": "Greek",
+			"origin": "Greek ἔνδον, inside, internal",
+			"examples": [
+				"endocrinology",
+				"endospore"
+			],
+			"letter": "E",
+			"family": [
+				"Roots of position"
+			],
+			"concept": [
+				"internal, within"
+			]
+		},
+		{
+			"affix": "enter(o)-",
+			"affixes": [
+				"enter(o)-"
+			],
+			"meaning": "of or pertaining to the intestine",
+			"lang": "Greek",
+			"origin": "Greek ἔντερον, intestine",
+			"examples": [
+				"gastroenterology"
+			],
+			"letter": "E",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"intestine"
+			]
+		},
+		{
+			"affix": "eosin(o)-",
+			"affixes": [
+				"eosin(o)-"
+			],
+			"meaning": "having a red color",
+			"lang": "Greek",
+			"origin": "Greek ἠώς, dawn, daybreak, morning red, goddess of the dawn (Ἠώς, )",
+			"examples": [
+				"eosinophil granulocyte"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "epi-",
+			"affixes": [
+				"epi-"
+			],
+			"meaning": "on, upon",
+			"lang": "Greek",
+			"origin": "Greek ἐπι-, before, upon, on, outside, outside of",
+			"examples": [
+				"epicardium",
+				"epidermis",
+				"epidural",
+				"episclera",
+				"epistaxis"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "episi(o)-",
+			"affixes": [
+				"episi(o)-"
+			],
+			"meaning": "of or pertaining to the pubic region, the loins",
+			"lang": "Greek",
+			"origin": "Greek ἐπίσιον, the pubic area, loins; vulva",
+			"examples": [
+				"episiotomy"
+			],
+			"letter": "E",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"loins, pubic region",
+				"vulva"
+			]
+		},
+		{
+			"affix": "erythr(o)-",
+			"affixes": [
+				"erythr(o)-"
+			],
+			"meaning": "having a red color",
+			"lang": "Greek",
+			"origin": "Greek ἐρυθρός, red",
+			"examples": [
+				"erythrocyte"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-esophageal, -esophago-",
+			"affixes": [
+				"-esophageal",
+				"-esophago-"
+			],
+			"meaning": "gullet (AmE)",
+			"lang": "Greek",
+			"origin": "Greek οἰσοφάγος",
+			"examples": [
+				"esophagus"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "esthesio-",
+			"affixes": [
+				"esthesio-"
+			],
+			"meaning": "sensation (AmE)",
+			"lang": "Greek",
+			"origin": "Greek αἴσθησις, to perceive",
+			"examples": [
+				"esthesioneuroblastoma",
+				"esthesia"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "eu-",
+			"affixes": [
+				"eu-"
+			],
+			"meaning": "true, good, well, normal",
+			"lang": "",
+			"origin": "εὖ",
+			"examples": [
+				"eukaryote",
+				"euglycemia"
+			],
+			"letter": "E",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"good, well"
+			]
+		},
+		{
+			"affix": "ex-",
+			"affixes": [
+				"ex-"
+			],
+			"meaning": "out of, away from, to remove",
+			"lang": "Latin",
+			"origin": "Latin ex-",
+			"examples": [
+				"excision",
+				"exsanguination"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "exo-",
+			"affixes": [
+				"exo-"
+			],
+			"meaning": "denotes something as \"outside\" another",
+			"lang": "Greek",
+			"origin": "Greek ἔξω, outside of, external",
+			"examples": [
+				"exophthalmos",
+				"exoskeleton"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "extra-",
+			"affixes": [
+				"extra-"
+			],
+			"meaning": "outside",
+			"lang": "Latin",
+			"origin": "Latin extra, outside of, beyond",
+			"examples": [
+				"extradural hematoma"
+			],
+			"letter": "E",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "faci-",
+			"affixes": [
+				"faci-"
+			],
+			"meaning": "of or pertaining to the face",
+			"lang": "Latin",
+			"origin": "Latin faciēs, the face, countenance",
+			"examples": [
+				"faciocardiorenal syndrome"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "fibr-",
+			"affixes": [
+				"fibr-"
+			],
+			"meaning": "fiber",
+			"lang": "Latin",
+			"origin": "Latin fibra, fiber, filament, entrails",
+			"examples": [
+				"fibrin",
+				"fibrinous pericarditis",
+				"fibroblast"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "fil-",
+			"affixes": [
+				"fil-"
+			],
+			"meaning": "fine, hair-like",
+			"lang": "Latin",
+			"origin": "Latin fīlum, thread",
+			"examples": [
+				"myofilament",
+				"filum terminale"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "foramino-",
+			"affixes": [
+				"foramino-"
+			],
+			"meaning": "hole, opening, or aperture, particularly in bone",
+			"lang": "Latin",
+			"origin": "Latin forāmen",
+			"examples": [
+				"foraminotomy"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "fore-",
+			"affixes": [
+				"fore-"
+			],
+			"meaning": "before or ahead",
+			"lang": "Old English",
+			"origin": "Old English fōr(e)-, before, in front of",
+			"examples": [
+				"foregut"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-form",
+			"affixes": [
+				"-form"
+			],
+			"meaning": "used to form adjectives indicating \"having the form of\"",
+			"lang": "Latin",
+			"origin": "Latin fōrma, form, shape",
+			"examples": [
+				"cuneiform"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "front-",
+			"affixes": [
+				"front-"
+			],
+			"meaning": "of or pertaining to the forehead",
+			"lang": "Latin",
+			"origin": "Latin frōns, front-, the forehead",
+			"examples": [
+				"frontotemporal dementia"
+			],
+			"letter": "F",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "galact-",
+			"affixes": [
+				"galact-"
+			],
+			"meaning": "milk",
+			"lang": "Greek",
+			"origin": "Greek γάλα, γαλακτ-",
+			"examples": [
+				"galactorrhea"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gastr-",
+			"affixes": [
+				"gastr-"
+			],
+			"meaning": "of or pertaining to the stomach",
+			"lang": "Greek",
+			"origin": "Greek γαστήρ, γαστρ-, stomach, belly",
+			"examples": [
+				"gastroenterology",
+				"gastropod"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-gen",
+			"affixes": [
+				"-gen"
+			],
+			"meaning": "*born in, from",
+			"lang": "Greek",
+			"origin": "Greek -γενής, from γεν-νάειν, to be born",
+			"examples": [
+				"endogen"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-genic",
+			"affixes": [
+				"-genic"
+			],
+			"meaning": "formative; pertaining to producing",
+			"lang": "Greek",
+			"origin": "Greek -γενής",
+			"examples": [
+				"cardiogenic shock"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "genu-",
+			"affixes": [
+				"genu-"
+			],
+			"meaning": "of or pertaining to the knee",
+			"lang": "Latin",
+			"origin": "Latin genū, knee",
+			"examples": [
+				"genu valgum"
+			],
+			"letter": "G",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"knee"
+			]
+		},
+		{
+			"affix": "-geusia",
+			"affixes": [
+				"-geusia"
+			],
+			"meaning": "taste",
+			"lang": "Greek",
+			"origin": "Greek γεῦσις",
+			"examples": [
+				"ageusia",
+				"dysgeusia",
+				"hypergeusia",
+				"hypogeusia",
+				"parageusia"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gingiv-",
+			"affixes": [
+				"gingiv-"
+			],
+			"meaning": "of or pertaining to the gums",
+			"lang": "Latin",
+			"origin": "Latin gingīva, gum",
+			"examples": [
+				"gingivitis"
+			],
+			"letter": "G",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"gums"
+			]
+		},
+		{
+			"affix": "glauc(o)-",
+			"affixes": [
+				"glauc(o)-"
+			],
+			"meaning": "Having a grey or bluish-grey colour",
+			"lang": "Greek",
+			"origin": "Greek γλαυκός, grey, bluish-grey",
+			"examples": [
+				"glaucoma"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gloss(o)-, glott(o)-",
+			"affixes": [
+				"gloss(o)-",
+				"glott(o)-"
+			],
+			"meaning": "of or pertaining to the tongue",
+			"lang": "Greek",
+			"origin": "Greek γλῶσσα, γλῶττα, tongue",
+			"examples": [
+				"glossology"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gluco-",
+			"affixes": [
+				"gluco-"
+			],
+			"meaning": "sweet",
+			"lang": "Greek",
+			"origin": "Greek γλυκύς, sweet",
+			"examples": [
+				"glucocorticoid"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "glyc-",
+			"affixes": [
+				"glyc-"
+			],
+			"meaning": "sugar",
+			"lang": "Greek",
+			"origin": "Greek γλυκύς, sweet",
+			"examples": [
+				"glycolysis"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gnath-",
+			"affixes": [
+				"gnath-"
+			],
+			"meaning": "of or pertaining to the jaw",
+			"lang": "Greek",
+			"origin": "Greek γνάθος, jaw",
+			"examples": [
+				"gnathodynamometer"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-gnosis",
+			"affixes": [
+				"-gnosis"
+			],
+			"meaning": "knowledge",
+			"lang": "Greek",
+			"origin": "Greek γνῶσις, inquiry, knowledge",
+			"examples": [
+				"diagnosis",
+				"prognosis"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gon-",
+			"affixes": [
+				"gon-"
+			],
+			"meaning": "seed, semen; reproductive",
+			"lang": "Greek",
+			"origin": "Greek γόνος, fruit, seed, procreating",
+			"examples": [
+				"gonorrhea"
+			],
+			"letter": "G",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"knee"
+			]
+		},
+		{
+			"affix": "-gram, -gramme",
+			"affixes": [
+				"-gram",
+				"-gramme"
+			],
+			"meaning": "record or picture",
+			"lang": "Greek",
+			"origin": "Greek γράμμα, picture, letter, writing",
+			"examples": [
+				"angiogram",
+				"sonogram"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-graph",
+			"affixes": [
+				"-graph"
+			],
+			"meaning": "instrument used to record data or picture",
+			"lang": "Greek",
+			"origin": "Greek -γραφία, written, drawn, graphic interpretation",
+			"examples": [
+				"electrocardiograph",
+				"electromyograph"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "gyno-, gynaeco- (BrE), gyneco- (AmE)",
+			"affixes": [
+				"gyno-",
+				"gynaeco- (BrE)",
+				"gyneco- (AmE)"
+			],
+			"meaning": "woman",
+			"lang": "Greek",
+			"origin": "Greek γυνή, γυναικ",
+			"examples": [
+				"gynaecology",
+				"gynecomastia",
+				"gynoecium"
+			],
+			"letter": "G",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "halluc-",
+			"affixes": [
+				"halluc-"
+			],
+			"meaning": "to wander in mind",
+			"lang": "Latin",
+			"origin": "Latin ālūcinor, to wander in mind",
+			"examples": [
+				"hallucinosis"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hem(at)-, haem(ato)-",
+			"affixes": [
+				"hem(at)-",
+				"haem(ato)-"
+			],
+			"meaning": "of or pertaining to blood",
+			"lang": "Latin",
+			"origin": "Latin hæma, from Greek αἷμα, αἱματ-, blood",
+			"examples": [
+				"hematology",
+				"haematology"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hema-, hemo-",
+			"affixes": [
+				"hema-",
+				"hemo-"
+			],
+			"meaning": "blood (AmE)",
+			"lang": "Greek",
+			"origin": "Greek αἷμα, blood",
+			"examples": [
+				"hemoglobin"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hemangi(o)-",
+			"affixes": [
+				"hemangi(o)-"
+			],
+			"meaning": "blood vessels",
+			"lang": "Greek",
+			"origin": "Greek αἷμα, blood, + ἀγγεῖον, vessel, urn",
+			"examples": [
+				"hemangioma"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hemi-",
+			"affixes": [
+				"hemi-"
+			],
+			"meaning": "one-half",
+			"lang": "Greek",
+			"origin": "Greek ἡμι-, half",
+			"examples": [
+				"cerebral hemisphere"
+			],
+			"letter": "H",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"half"
+			]
+		},
+		{
+			"affix": "hepat-, hepatic-",
+			"affixes": [
+				"hepat-",
+				"hepatic-"
+			],
+			"meaning": "of or pertaining to the liver",
+			"lang": "Greek",
+			"origin": "Greek ἧπαρ, ἠπᾰτ-, the liver",
+			"examples": [
+				"hepatology",
+				"hepatitis"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "heter(o)-",
+			"affixes": [
+				"heter(o)-"
+			],
+			"meaning": "denotes something as \"the other\" (of two), as an addition, or different",
+			"lang": "Greek",
+			"origin": "Greek ἕτερος, the other (of two), another; different",
+			"examples": [
+				"heterogeneous"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hidr(o)-",
+			"affixes": [
+				"hidr(o)-"
+			],
+			"meaning": "sweat",
+			"lang": "Greek",
+			"origin": "Greek ἱδρώς, ἱδρωτ-, sweat, perspiration",
+			"examples": [
+				"hyperhidrosis"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hist(o)-, histio-",
+			"affixes": [
+				"hist(o)-",
+				"histio-"
+			],
+			"meaning": "tissue",
+			"lang": "Greek",
+			"origin": "Greek ἱστός, web, tissue",
+			"examples": [
+				"histology"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hom(o)-",
+			"affixes": [
+				"hom(o)-"
+			],
+			"meaning": "denotes something as \"the same\" as another or common",
+			"lang": "Greek",
+			"origin": "Greek ὁμός, the same, common",
+			"examples": [
+				"homosexuality",
+				"homozygote"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "home(o)-",
+			"affixes": [
+				"home(o)-"
+			],
+			"meaning": "similar",
+			"lang": "Greek",
+			"origin": "Greek ὅμοιος, like, resembling, similar",
+			"examples": [
+				"homeopathy"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "humer(o)-",
+			"affixes": [
+				"humer(o)-"
+			],
+			"meaning": "of or pertaining to the shoulder (or [rarely] the upper arm)",
+			"lang": "Latin",
+			"origin": "Latin umerus, shoulder",
+			"examples": [
+				"humerus"
+			],
+			"letter": "H",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"shoulder"
+			]
+		},
+		{
+			"affix": "hydr(o)-",
+			"affixes": [
+				"hydr(o)-"
+			],
+			"meaning": "water",
+			"lang": "Greek",
+			"origin": "Greek ὕδωρ, water",
+			"examples": [
+				"hydrophobe"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hyp(o)-",
+			"affixes": [
+				"hyp(o)-"
+			],
+			"meaning": "below",
+			"lang": "Greek",
+			"origin": "Greek ὑπό, ὑπο-, below, under",
+			"examples": [
+				"hypovolemia",
+				"hypoxia",
+				"hypoglossal nerve"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hyper-",
+			"affixes": [
+				"hyper-"
+			],
+			"meaning": "extreme or beyond normal",
+			"lang": "Greek",
+			"origin": "Greek ὑπέρ, over, above; beyond, to the extreme",
+			"examples": [
+				"hypertension",
+				"hypertrichosis"
+			],
+			"letter": "H",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "hyster(o)-",
+			"affixes": [
+				"hyster(o)-"
+			],
+			"meaning": "of or pertaining to the womb or the uterus",
+			"lang": "Greek",
+			"origin": "Greek ὑστέρα, womb",
+			"examples": [
+				"hysterectomy",
+				"hysteria"
+			],
+			"letter": "H",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"uterus",
+				"womb"
+			]
+		},
+		{
+			"affix": "-ia",
+			"affixes": [
+				"-ia"
+			],
+			"meaning": "indicates a disease or abnormal condition",
+			"lang": "Latin",
+			"origin": "Latin and Greek",
+			"examples": [],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-iasis",
+			"affixes": [
+				"-iasis"
+			],
+			"meaning": "condition, formation, or presence of",
+			"lang": "Latin",
+			"origin": "Latin -iasis, pathological condition or process; from Greek ἴασις, cure, repair, mend",
+			"examples": [
+				"mydriasis"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "iatr(o)-",
+			"affixes": [
+				"iatr(o)-"
+			],
+			"meaning": "of or pertaining to medicine or a physician (uncommon as a prefix but common as a suffix; see -iatry)",
+			"lang": "Greek",
+			"origin": "Greek ἰατρός, healer, physician",
+			"examples": [
+				"iatrochemistry",
+				"iatrogenesis"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ic",
+			"affixes": [
+				"-ic"
+			],
+			"meaning": "pertaining to",
+			"lang": "Greek",
+			"origin": "Greek -ικός",
+			"examples": [
+				"hepatic artery"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ics",
+			"affixes": [
+				"-ics"
+			],
+			"meaning": "organized knowledge, treatment",
+			"lang": "Latin",
+			"origin": "Latin -icus, collection of related things, theme; cognate with Greek -ικός, of, pertaining to",
+			"examples": [
+				"obstetrics"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "idio-",
+			"affixes": [
+				"idio-"
+			],
+			"meaning": "self, one's own",
+			"lang": "Greek",
+			"origin": "Greek ἴδιος, one's own",
+			"examples": [
+				"idiopathic"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ileo-",
+			"affixes": [
+				"ileo-"
+			],
+			"meaning": "ileum",
+			"lang": "Greek",
+			"origin": "Greek εἰλεός, to shut in, intestinal obstruction",
+			"examples": [
+				"ileocecal valve"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ilio-",
+			"affixes": [
+				"ilio-"
+			],
+			"meaning": "ilium",
+			"lang": "Latin",
+			"origin": "Latin groin or flank",
+			"examples": [
+				"iliocostalis"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "infra-",
+			"affixes": [
+				"infra-"
+			],
+			"meaning": "below",
+			"lang": "Latin",
+			"origin": "Latin īnfrā, below",
+			"examples": [
+				"infrahyoid muscles"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "inter-",
+			"affixes": [
+				"inter-"
+			],
+			"meaning": "between, among",
+			"lang": "Latin",
+			"origin": "Latin inter",
+			"examples": [
+				"interarticular ligament"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "intra-",
+			"affixes": [
+				"intra-"
+			],
+			"meaning": "within",
+			"lang": "Latin",
+			"origin": "Latin intrā",
+			"examples": [
+				"intramural"
+			],
+			"letter": "I",
+			"family": [
+				"Roots of position"
+			],
+			"concept": [
+				"internal, within"
+			]
+		},
+		{
+			"affix": "ipsi-",
+			"affixes": [
+				"ipsi-"
+			],
+			"meaning": "same",
+			"lang": "Latin",
+			"origin": "Latin ipsi-",
+			"examples": [
+				"ipsilateral"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "irid(o)-",
+			"affixes": [
+				"irid(o)-"
+			],
+			"meaning": "of or pertaining to the iris",
+			"lang": "Latin",
+			"origin": "Latin īrīs, rainbow; from Greek ἶρις, rainbow",
+			"examples": [
+				"iridectomy"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "isch-",
+			"affixes": [
+				"isch-"
+			],
+			"meaning": "restriction",
+			"lang": "Greek",
+			"origin": "Greek ἴσχω, hold back, restrain",
+			"examples": [
+				"ischemia"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ischio-",
+			"affixes": [
+				"ischio-"
+			],
+			"meaning": "of or pertaining to the ischium, the hip-joint",
+			"lang": "Greek",
+			"origin": "Greek ἰσχίον, hip-joint, ischium",
+			"examples": [
+				"ischioanal fossa"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ismus",
+			"affixes": [
+				"-ismus"
+			],
+			"meaning": "spasm, contraction",
+			"lang": "Greek",
+			"origin": "Greek -ισμός",
+			"examples": [
+				"hemiballismus"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "iso-",
+			"affixes": [
+				"iso-"
+			],
+			"meaning": "equal",
+			"lang": "Greek",
+			"origin": "Greek ἴσος, equal",
+			"examples": [
+				"isotonic"
+			],
+			"letter": "I",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"equal"
+			]
+		},
+		{
+			"affix": "-ist",
+			"affixes": [
+				"-ist"
+			],
+			"meaning": "one who specializes in",
+			"lang": "Greek",
+			"origin": "Greek -ιστής, agent noun, one who practices",
+			"examples": [
+				"pathologist"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ite",
+			"affixes": [
+				"-ite"
+			],
+			"meaning": "the nature of, resembling",
+			"lang": "Latin",
+			"origin": "Latin -ītēs, those belonging to, from Greek -ίτης",
+			"examples": [
+				"dendrite"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-itis",
+			"affixes": [
+				"-itis"
+			],
+			"meaning": "inflammation",
+			"lang": "Greek",
+			"origin": "Greek -ῖτις fem. form of -ίτης, pertaining to, because it was used with the feminine noun νόσος (, disease), thus, disease of the, disease pertaining to",
+			"examples": [
+				"tonsillitis"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ium",
+			"affixes": [
+				"-ium"
+			],
+			"meaning": "structure, tissue",
+			"lang": "Latin",
+			"origin": "Latin -ium, aggregation or mass of (such as tissue)",
+			"examples": [
+				"pericardium"
+			],
+			"letter": "I",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "juxta-",
+			"affixes": [
+				"juxta-"
+			],
+			"meaning": "near to, alongside, or next to",
+			"lang": "Latin",
+			"origin": "Latin iuxta",
+			"examples": [
+				"juxtaglomerular apparatus"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "kal-",
+			"affixes": [
+				"kal-"
+			],
+			"meaning": "potassium",
+			"lang": "New Latin",
+			"origin": "New Latin kalium, potassium",
+			"examples": [
+				"hyperkalemia"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "kary-",
+			"affixes": [
+				"kary-"
+			],
+			"meaning": "nucleus",
+			"lang": "Greek",
+			"origin": "Greek κάρυον, nut",
+			"examples": [
+				"eukaryote"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "kerat-",
+			"affixes": [
+				"kerat-"
+			],
+			"meaning": "cornea (eye or skin)",
+			"lang": "Greek",
+			"origin": "Greek κέρας, horn",
+			"examples": [
+				"keratoscope"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "kine-",
+			"affixes": [
+				"kine-"
+			],
+			"meaning": "movement",
+			"lang": "Greek",
+			"origin": "Greek κινέω, to move, to change",
+			"examples": [
+				"akinetopsia",
+				"kinesthesia"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "koil-",
+			"affixes": [
+				"koil-"
+			],
+			"meaning": "hollow",
+			"lang": "Greek",
+			"origin": "Greek κοῖλος",
+			"examples": [
+				"koilocyte"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "kyph-",
+			"affixes": [
+				"kyph-"
+			],
+			"meaning": "humped",
+			"lang": "Greek",
+			"origin": "Greek κυφός, bent forward, stooping, hunchbacked",
+			"examples": [
+				"kyphoscoliosis"
+			],
+			"letter": "J–K",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "labi-",
+			"affixes": [
+				"labi-"
+			],
+			"meaning": "of or pertaining to the lip",
+			"lang": "Latin",
+			"origin": "Latin labia, labium, lip",
+			"examples": [
+				"labiodental"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lacrim(o)-",
+			"affixes": [
+				"lacrim(o)-"
+			],
+			"meaning": "tear",
+			"lang": "Latin",
+			"origin": "Latin lacrima, tear from crying",
+			"examples": [
+				"Lacrimal canaliculi"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lact(i)-, lact(o)",
+			"affixes": [
+				"lact(i)-",
+				"lact(o)"
+			],
+			"meaning": "milk",
+			"lang": "Latin",
+			"origin": "Latin lac, milk",
+			"examples": [
+				"lactation",
+				"lactose"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lapar(o)-",
+			"affixes": [
+				"lapar(o)-"
+			],
+			"meaning": "of or pertaining to the abdominal wall, flank",
+			"lang": "Greek",
+			"origin": "Greek λαπάρα, flank",
+			"examples": [
+				"laparotomy"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "laryng(o)-",
+			"affixes": [
+				"laryng(o)-"
+			],
+			"meaning": "of or pertaining to the larynx, the lower throat cavity where the voice box is",
+			"lang": "Greek",
+			"origin": "Greek λᾰ́ρυγξ, throat, gullet",
+			"examples": [
+				"laryngoscopy"
+			],
+			"letter": "L",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"throat (lower throat cavity/voice box)"
+			]
+		},
+		{
+			"affix": "latero-",
+			"affixes": [
+				"latero-"
+			],
+			"meaning": "lateral",
+			"lang": "Latin",
+			"origin": "Latin laterālis, lateral, of or belonging to the side",
+			"examples": [
+				"lateral pectoral nerve"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lei(o)-",
+			"affixes": [
+				"lei(o)-"
+			],
+			"meaning": "smooth",
+			"lang": "Greek",
+			"origin": "Greek λεῖος, smooth",
+			"examples": [
+				"leiomyoma"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-lepsis, [[wikt:-lepsy, -leps-",
+			"affixes": [
+				"-lepsis",
+				"[[wikt:-lepsy",
+				"-leps-"
+			],
+			"meaning": "attack, seizure",
+			"lang": "Greek",
+			"origin": "Greek λῆψις, seizure",
+			"examples": [
+				"epilepsy",
+				"narcolepsy"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lept(o)-",
+			"affixes": [
+				"lept(o)-"
+			],
+			"meaning": "light, slender",
+			"lang": "Greek",
+			"origin": "Greek λεπτός, thin, lean",
+			"examples": [],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "leuc(o)-, leuk(o)-",
+			"affixes": [
+				"leuc(o)-",
+				"leuk(o)-"
+			],
+			"meaning": "denoting a white color",
+			"lang": "Greek",
+			"origin": "Greek λευκός, white, bright, pale",
+			"examples": [
+				"leukocyte"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lingu(a)-, lingu(o)-",
+			"affixes": [
+				"lingu(a)-",
+				"lingu(o)-"
+			],
+			"meaning": "of or pertaining to the tongue",
+			"lang": "Latin",
+			"origin": "Latin lingua, tongue, speech, language",
+			"examples": [
+				"linguistics"
+			],
+			"letter": "L",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"tongue"
+			]
+		},
+		{
+			"affix": "lip(o)-",
+			"affixes": [
+				"lip(o)-"
+			],
+			"meaning": "fat",
+			"lang": "Greek",
+			"origin": "Greek λίπος, fat, lard",
+			"examples": [
+				"liposuction"
+			],
+			"letter": "L",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"fat, fatty tissue"
+			]
+		},
+		{
+			"affix": "liss(os)-",
+			"affixes": [
+				"liss(os)-"
+			],
+			"meaning": "smooth",
+			"lang": "Greek",
+			"origin": "Greek Λισσός, smooth",
+			"examples": [
+				"lissencephaly"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lith(o)-",
+			"affixes": [
+				"lith(o)-"
+			],
+			"meaning": "stone, calculus",
+			"lang": "Greek",
+			"origin": "Greek λῐ́θος",
+			"examples": [
+				"lithotripsy"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "log(o)-",
+			"affixes": [
+				"log(o)-"
+			],
+			"meaning": "speech",
+			"lang": "Greek",
+			"origin": "Greek λόγος",
+			"examples": [
+				"Logopenic progressive aphasia"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-logy",
+			"affixes": [
+				"-logy"
+			],
+			"meaning": "denotes the academic study or practice of a certain field; the study of",
+			"lang": "Greek",
+			"origin": "Greek -λογῐ́ᾱ base noun for the study of something",
+			"examples": [
+				"hematology",
+				"urology"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lumb(o)-, lumb(a)-",
+			"affixes": [
+				"lumb(o)-",
+				"lumb(a)-"
+			],
+			"meaning": "of or relating to the part of the trunk between the lowest ribs and the pelvis.",
+			"lang": "Latin",
+			"origin": "Latin lumbus or lumbaris, loin",
+			"examples": [
+				"lumbosacral plexus"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lymph(o)-",
+			"affixes": [
+				"lymph(o)-"
+			],
+			"meaning": "lymph",
+			"lang": "Latin",
+			"origin": "Latin lympha, water",
+			"examples": [
+				"lymphedema"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "lys(o)-, [[wikt:-lytic",
+			"affixes": [
+				"lys(o)-",
+				"[[wikt:-lytic"
+			],
+			"meaning": "dissolution",
+			"lang": "Greek",
+			"origin": "Greek λῠ́σῐς, loosen, release, + -ic",
+			"examples": [
+				"lysosome"
+			],
+			"letter": "L",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "macr(o)-",
+			"affixes": [
+				"macr(o)-"
+			],
+			"meaning": "large, long",
+			"lang": "Greek",
+			"origin": "Greek μᾰκρός, long, tall",
+			"examples": [
+				"macrophage"
+			],
+			"letter": "M",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"long"
+			]
+		},
+		{
+			"affix": "-malacia",
+			"affixes": [
+				"-malacia"
+			],
+			"meaning": "softening",
+			"lang": "Greek",
+			"origin": "Greek μαλακία, soft, weak, self-indulgent",
+			"examples": [
+				"osteomalacia"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mamm(o)-",
+			"affixes": [
+				"mamm(o)-"
+			],
+			"meaning": "of or pertaining to the breast",
+			"lang": "Latin",
+			"origin": "Latin mamma, breast, udder",
+			"examples": [
+				"mammogram"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mammill(o)-",
+			"affixes": [
+				"mammill(o)-"
+			],
+			"meaning": "of or pertaining to the nipple",
+			"lang": "Latin",
+			"origin": "Latin mammilla, nipple",
+			"examples": [
+				"mammillaplasty",
+				"mammillitis"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "manu-",
+			"affixes": [
+				"manu-"
+			],
+			"meaning": "of or pertaining to the hand",
+			"lang": "Latin",
+			"origin": "Latin manus, hand",
+			"examples": [
+				"manufacture"
+			],
+			"letter": "M",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"hands"
+			]
+		},
+		{
+			"affix": "mast(o)-",
+			"affixes": [
+				"mast(o)-"
+			],
+			"meaning": "of or pertaining to the breast",
+			"lang": "Greek",
+			"origin": "Greek μαστός, breast, woman's breast, man's pectoral muscle",
+			"examples": [
+				"mastectomy"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "meg(a)-, megal(o)-, -megaly",
+			"affixes": [
+				"meg(a)-",
+				"megal(o)-",
+				"-megaly"
+			],
+			"meaning": "enlargement, million",
+			"lang": "Greek",
+			"origin": "Greek μέγᾰς, big, large, great, mighty",
+			"examples": [
+				"splenomegaly",
+				"megameter"
+			],
+			"letter": "M",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"big",
+				"great",
+				"huge"
+			]
+		},
+		{
+			"affix": "melan(o)-",
+			"affixes": [
+				"melan(o)-"
+			],
+			"meaning": "having a black color",
+			"lang": "Greek",
+			"origin": "Greek μέλᾱς, μελανο-, black, dark",
+			"examples": [
+				"melanin"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "melos",
+			"affixes": [
+				"melos"
+			],
+			"meaning": "extremity",
+			"lang": "Greek",
+			"origin": "Greek μέλος, part of a body, limb, member",
+			"examples": [
+				"erythromelalgia"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "men-",
+			"affixes": [
+				"men-"
+			],
+			"meaning": "month, menstrual cycle",
+			"lang": "Greek",
+			"origin": "Greek μήν, month",
+			"examples": [
+				"menopause",
+				"menorrhagia"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mening(o)-",
+			"affixes": [
+				"mening(o)-"
+			],
+			"meaning": "membrane",
+			"lang": "Greek",
+			"origin": "Greek μῆνῐγξ",
+			"examples": [
+				"meninges",
+				"meningitis"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mer(o)-",
+			"affixes": [
+				"mer(o)-"
+			],
+			"meaning": "part",
+			"lang": "Greek",
+			"origin": "Greek μέρος, part, component, region",
+			"examples": [
+				"merocrine",
+				"meroblastic"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mes-",
+			"affixes": [
+				"mes-"
+			],
+			"meaning": "middle",
+			"lang": "Greek",
+			"origin": "Greek μέσος, middle, between, half",
+			"examples": [
+				"mesoderm",
+				"mesothelium"
+			],
+			"letter": "M",
+			"family": [
+				"Roots of position"
+			],
+			"concept": [
+				"middle"
+			]
+		},
+		{
+			"affix": "met(a)-",
+			"affixes": [
+				"met(a)-"
+			],
+			"meaning": "after, beside, beyond or change",
+			"lang": "Greek",
+			"origin": "Greek μετᾰ́, with, among, along with, in common with",
+			"examples": [
+				"metacarpal",
+				"metacarpus",
+				"metanephros",
+				"metatheria"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "metr-",
+			"affixes": [
+				"metr-"
+			],
+			"meaning": "pertaining to conditions or instruments of the uterus",
+			"lang": "Greek",
+			"origin": "Greek μήτρᾱ, womb, uterus",
+			"examples": [
+				"metrorrhagia"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "micr-",
+			"affixes": [
+				"micr-"
+			],
+			"meaning": "millionth; denoting something as small, relating to smallness",
+			"lang": "Greek",
+			"origin": "Greek μῑκρός, small",
+			"examples": [
+				"microscope"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "milli-",
+			"affixes": [
+				"milli-"
+			],
+			"meaning": "thousandth",
+			"lang": "Latin",
+			"origin": "Latin mille, thousand",
+			"examples": [
+				"milliliter"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "mon-",
+			"affixes": [
+				"mon-"
+			],
+			"meaning": "single",
+			"lang": "Greek",
+			"origin": "Greek μονός",
+			"examples": [
+				"infectious mononucleosis"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "morph-",
+			"affixes": [
+				"morph-"
+			],
+			"meaning": "form, shape",
+			"lang": "Greek",
+			"origin": "Greek μορφή",
+			"examples": [
+				"morphology"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "muscul(o)-",
+			"affixes": [
+				"muscul(o)-"
+			],
+			"meaning": "muscle",
+			"lang": "Latin",
+			"origin": "Latin mūsculus, muscle (lit. mouse-like, due to mouse-shaped appearance of some muscles; loanword from Greek μῦς, mouse, + Latin -culus, diminutive suffix)",
+			"examples": [
+				"musculoskeletal system"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "my(o)-",
+			"affixes": [
+				"my(o)-"
+			],
+			"meaning": "of or relating to muscle",
+			"lang": "Greek",
+			"origin": "Greek μῦς, μυ-, muscle, mouse, mussel",
+			"examples": [
+				"myoblast"
+			],
+			"letter": "M",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"muscle"
+			]
+		},
+		{
+			"affix": "myc(o)-",
+			"affixes": [
+				"myc(o)-"
+			],
+			"meaning": "fungus",
+			"lang": "Greek",
+			"origin": "Greek μύκης, μυκητ-, mushroom or fungus",
+			"examples": [
+				"onychomycosis",
+				"otomycosis"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "myel(o)-",
+			"affixes": [
+				"myel(o)-"
+			],
+			"meaning": "of or relating to bone marrow or the spinal cord",
+			"lang": "Greek",
+			"origin": "Greek μυελός, marrow, bone-marrow",
+			"examples": [
+				"myelin sheath",
+				"myeloblast"
+			],
+			"letter": "M",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"marrow, bone marrow"
+			]
+		},
+		{
+			"affix": "myl(o)-",
+			"affixes": [
+				"myl(o)-"
+			],
+			"meaning": "of or relating to molar teeth or the lower jaw",
+			"lang": "Greek",
+			"origin": "Greek μῠ́λη (, mill, grind, molars",
+			"examples": [
+				"mylohyoid nerve"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "myx(o)-",
+			"affixes": [
+				"myx(o)-"
+			],
+			"meaning": "mucus",
+			"lang": "Greek",
+			"origin": "Greek μύξᾰ, mucus, nasal discharge",
+			"examples": [
+				"myxoma"
+			],
+			"letter": "M",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "nan(o)-",
+			"affixes": [
+				"nan(o)-"
+			],
+			"meaning": "dwarf, small",
+			"lang": "Greek",
+			"origin": "Greek νᾶνος, dwarf",
+			"examples": [
+				"nanogram",
+				"nanosecond"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "narc(o)-",
+			"affixes": [
+				"narc(o)-"
+			],
+			"meaning": "numb, sleep",
+			"lang": "Greek",
+			"origin": "Greek νάρκη, numbess, torpor",
+			"examples": [
+				"narcolepsy"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "nas(o)-",
+			"affixes": [
+				"nas(o)-"
+			],
+			"meaning": "of or pertaining to the nose",
+			"lang": "Latin",
+			"origin": "Latin nāsus, nose",
+			"examples": [],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "nat(o)-",
+			"affixes": [
+				"nat(o)-"
+			],
+			"meaning": "birth",
+			"lang": "Latin",
+			"origin": "Latin nātus, born, arisen, made",
+			"examples": [
+				"neonatology"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "necr(o)-",
+			"affixes": [
+				"necr(o)-"
+			],
+			"meaning": "death",
+			"lang": "Greek",
+			"origin": "Greek νεκρός, dead body, corpse, dying person",
+			"examples": [
+				"necrosis",
+				"necrotizing fasciitis"
+			],
+			"letter": "N",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"dead"
+			]
+		},
+		{
+			"affix": "neo-",
+			"affixes": [
+				"neo-"
+			],
+			"meaning": "new",
+			"lang": "Greek",
+			"origin": "Greek νέος, young, youthful, new, fresh",
+			"examples": [
+				"neoplasm"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "nephr(o)-",
+			"affixes": [
+				"nephr(o)-"
+			],
+			"meaning": "of or pertaining to the kidney",
+			"lang": "Greek",
+			"origin": "Greek νεφρός, kidney",
+			"examples": [
+				"nephrology"
+			],
+			"letter": "N",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"kidney"
+			]
+		},
+		{
+			"affix": "nerv-",
+			"affixes": [
+				"nerv-"
+			],
+			"meaning": "of or pertaining to nerves and the nervous system (uncommon as a root: neuro- mostly always used)",
+			"lang": "Latin",
+			"origin": "Latin nervus, tendon, nerve; cognate with Greek νεῦρον, tendon, string, nerve",
+			"examples": [
+				"nerve",
+				"nervous system"
+			],
+			"letter": "N",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"nerve; the nervous system"
+			]
+		},
+		{
+			"affix": "neur-",
+			"affixes": [
+				"neur-"
+			],
+			"meaning": "of or pertaining to nerves and the nervous system",
+			"lang": "Greek",
+			"origin": "Greek νεῦρον, tendon, sinew, nerve",
+			"examples": [
+				"neurofibromatosis"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "noci-",
+			"affixes": [
+				"noci-"
+			],
+			"meaning": "pain, injury, hurt",
+			"lang": "Latin",
+			"origin": "Latin noceō",
+			"examples": [
+				"nociception"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "norm-, normo-",
+			"affixes": [
+				"norm-",
+				"normo-"
+			],
+			"meaning": "normal",
+			"lang": "Latin",
+			"origin": "Latin nōrma, norm or standard; lit. carpenter's square",
+			"examples": [
+				"normocapnia"
+			],
+			"letter": "N",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ocul-",
+			"affixes": [
+				"ocul-"
+			],
+			"meaning": "of or pertaining to the eye",
+			"lang": "Latin",
+			"origin": "Latin oculus, the eye",
+			"examples": [
+				"oculist"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "odont-",
+			"affixes": [
+				"odont-"
+			],
+			"meaning": "of or pertaining to teeth",
+			"lang": "Greek",
+			"origin": "Greek ὀδούς, ὀδοντ-, tooth",
+			"examples": [
+				"orthodontist"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-odyn-",
+			"affixes": [
+				"-odyn-"
+			],
+			"meaning": "pain",
+			"lang": "Greek",
+			"origin": "Greek ὀδύνη",
+			"examples": [
+				"allodynia"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-oesophageal, oesophago- (BrE)",
+			"affixes": [
+				"-oesophageal",
+				"oesophago- (BrE)"
+			],
+			"meaning": "gullet",
+			"lang": "Greek",
+			"origin": "Greek οἰσοφᾰ́γος",
+			"examples": [
+				"oesophagogastroduodenoscopy"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-oid",
+			"affixes": [
+				"-oid"
+			],
+			"meaning": "resemblance to",
+			"lang": "Greek",
+			"origin": "Greek -ειδής, like, connected to, pertaining to",
+			"examples": [
+				"sarcoidosis"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ole",
+			"affixes": [
+				"-ole"
+			],
+			"meaning": "small or little",
+			"lang": "Latin",
+			"origin": "Latin -olus, suffix to form a diminutive of the noun",
+			"examples": [
+				"arteriole"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "olig-",
+			"affixes": [
+				"olig-"
+			],
+			"meaning": "having little, having few",
+			"lang": "Greek",
+			"origin": "Greek ὀλῐ́γος, few",
+			"examples": [
+				"oligotrophy"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "om(o)-",
+			"affixes": [
+				"om(o)-"
+			],
+			"meaning": "shoulder",
+			"lang": "Greek",
+			"origin": "Greek ὦμος, shoulder",
+			"examples": [
+				"omohyoid muscle"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"shoulder"
+			]
+		},
+		{
+			"affix": "-oma (singular), -omata (plural)",
+			"affixes": [
+				"-oma (singular)",
+				"-omata (plural)"
+			],
+			"meaning": "tumor, mass, fluid collection",
+			"lang": "Greek",
+			"origin": "Greek -μα, suffix added to verbs to form nouns indicating the result of a process or action; cf. English -tion",
+			"examples": [
+				"sarcoma",
+				"teratoma",
+				"mesothelioma"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "omphal(o)-",
+			"affixes": [
+				"omphal(o)-"
+			],
+			"meaning": "of or pertaining to the navel, the umbilicus",
+			"lang": "Greek",
+			"origin": "Greek ὀμφαλός, navel, belly-button",
+			"examples": [
+				"omphalotomy"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"navel"
+			]
+		},
+		{
+			"affix": "onco-",
+			"affixes": [
+				"onco-"
+			],
+			"meaning": "tumor, bulk, volume",
+			"lang": "Greek",
+			"origin": "Greek ὄγκος",
+			"examples": [
+				"oncology"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-one",
+			"affixes": [
+				"-one"
+			],
+			"meaning": "",
+			"lang": "",
+			"origin": "",
+			"examples": [
+				"hormone"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "onych(o)-",
+			"affixes": [
+				"onych(o)-"
+			],
+			"meaning": "of or pertaining to the nail (of a finger or toe)",
+			"lang": "Greek",
+			"origin": "Greek ὄνυξ, ὀνυχο-, nail; claw; talon",
+			"examples": [
+				"onychophagy"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"nail"
+			]
+		},
+		{
+			"affix": "oo-",
+			"affixes": [
+				"oo-"
+			],
+			"meaning": "of or pertaining to an (egg), a woman's egg, the ovum",
+			"lang": "Greek",
+			"origin": "Greek ᾠόν, ᾠο-, egg, ovum",
+			"examples": [
+				"oogenesis"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eggs, ova"
+			]
+		},
+		{
+			"affix": "oophor(o)-",
+			"affixes": [
+				"oophor(o)-"
+			],
+			"meaning": "of or pertaining to the woman's (ovary)",
+			"lang": "",
+			"origin": "Neoclassical Greek ᾠοφόρον, ovary, egg-bearing",
+			"examples": [
+				"oophorectomy"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"ovary"
+			]
+		},
+		{
+			"affix": "ophthalm(o)-",
+			"affixes": [
+				"ophthalm(o)-"
+			],
+			"meaning": "of or pertaining to the (eye)",
+			"lang": "Greek",
+			"origin": "Greek ὀφθαλμός, the eye",
+			"examples": [
+				"ophthalmology"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eye"
+			]
+		},
+		{
+			"affix": "opistho-",
+			"affixes": [
+				"opistho-"
+			],
+			"meaning": "back, behind, rear",
+			"lang": "Greek",
+			"origin": "Greek ὄπῐσθεν, behind, at the back",
+			"examples": [
+				"opisthotonus"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-opsy",
+			"affixes": [
+				"-opsy"
+			],
+			"meaning": "examination or inspection",
+			"lang": "Greek",
+			"origin": "Greek ὄψῐς, view",
+			"examples": [
+				"biopsy",
+				"autopsy"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "optic(o)-",
+			"affixes": [
+				"optic(o)-"
+			],
+			"meaning": "of or relating to chemical properties of the eye",
+			"lang": "",
+			"origin": "Middle French optique; from Greek ὀπτῐκός ; cognate with Latin oculus, relating to the eye",
+			"examples": [],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-or",
+			"affixes": [
+				"-or"
+			],
+			"meaning": "one who, agent noun–forming suffix",
+			"lang": "",
+			"origin": "generally appended where Latin would do it—to the root of a Latin-type perfect passive participle. Cf. -er",
+			"examples": [],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"mouth"
+			]
+		},
+		{
+			"affix": "or(o)-",
+			"affixes": [
+				"or(o)-"
+			],
+			"meaning": "of or pertaining to the mouth",
+			"lang": "Latin",
+			"origin": "Latin ōs, ōris, mouth",
+			"examples": [
+				"oral"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "orchi(o)-, orchid(o)-, orch(o)-",
+			"affixes": [
+				"orchi(o)-",
+				"orchid(o)-",
+				"orch(o)-"
+			],
+			"meaning": "testis",
+			"lang": "Greek",
+			"origin": "Greek ὄρχις, testicle, ovary",
+			"examples": [
+				"orchiectomy",
+				"orchidectomy"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"testis"
+			]
+		},
+		{
+			"affix": "orth(o)-",
+			"affixes": [
+				"orth(o)-"
+			],
+			"meaning": "denoting something as straight or correct",
+			"lang": "Greek",
+			"origin": "Greek ὀρθός, straight, correct, normal",
+			"examples": [
+				"orthodontist"
+			],
+			"letter": "O",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"normal, correct",
+				"straight"
+			]
+		},
+		{
+			"affix": "-osis",
+			"affixes": [
+				"-osis"
+			],
+			"meaning": "a condition, disease, process or increase",
+			"lang": "Greek",
+			"origin": "Greek -ωσις, state, abnormal condition, action",
+			"examples": [
+				"Harlequin type ichthyosis",
+				"psychosis",
+				"osteoporosis",
+				"phagocytosis"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ossi-, osse-",
+			"affixes": [
+				"ossi-",
+				"osse-"
+			],
+			"meaning": "bone, bony",
+			"lang": "Latin",
+			"origin": "Latin os, bone",
+			"examples": [
+				"peripheral ossifying fibroma",
+				"osseous"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"bone"
+			]
+		},
+		{
+			"affix": "ost(e)-, oste(o)-",
+			"affixes": [
+				"ost(e)-",
+				"oste(o)-"
+			],
+			"meaning": "bone",
+			"lang": "Greek",
+			"origin": "Greek ὀστέον, bone",
+			"examples": [
+				"osteoporosis",
+				"osteoarthritis"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ot(o)-",
+			"affixes": [
+				"ot(o)-"
+			],
+			"meaning": "of or pertaining to the ear",
+			"lang": "Greek",
+			"origin": "Greek οὖς, ὠτ-, the ear",
+			"examples": [
+				"otology",
+				"otosclerosis"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"ear"
+			]
+		},
+		{
+			"affix": "-ous",
+			"affixes": [
+				"-ous"
+			],
+			"meaning": "pertaining to",
+			"lang": "Latin",
+			"origin": "Latin -ōsus, full of, prone to",
+			"examples": [
+				"porous"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ovari(o)-",
+			"affixes": [
+				"ovari(o)-"
+			],
+			"meaning": "of or pertaining to the ovaries",
+			"lang": "Latin",
+			"origin": "Latin ōvarium, ovary",
+			"examples": [
+				"ovariectomy"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"ovary"
+			]
+		},
+		{
+			"affix": "ovo-, ovi-, ov-",
+			"affixes": [
+				"ovo-",
+				"ovi-",
+				"ov-"
+			],
+			"meaning": "of or pertaining to the eggs, the ovum",
+			"lang": "Latin",
+			"origin": "Latin ōvum, egg, ovum",
+			"examples": [
+				"ovogenesis",
+				"ovoviviparity"
+			],
+			"letter": "O",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eggs, ova"
+			]
+		},
+		{
+			"affix": "oxo-, -ox(i)-",
+			"affixes": [
+				"oxo-",
+				"-ox(i)-"
+			],
+			"meaning": "oxygen",
+			"lang": "Greek",
+			"origin": "Greek ὀξύς, sharp, acid",
+			"examples": [
+				"oxidative phosphorylation"
+			],
+			"letter": "O",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "oxy-",
+			"affixes": [
+				"oxy-"
+			],
+			"meaning": "sharp, acid, acute; oxygen",
+			"lang": "",
+			"origin": "borrowed from French oxygène (originally principe oxigine, 'acidifying principle', referring to oxygen's role in the formation of acids, from Greek ὀξύς, sharp, pointed + γένος, birth)",
+			"examples": [
+				"oxytocin",
+				"oxycodone"
+			],
+			"letter": "O",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"sharp"
+			]
+		},
+		{
+			"affix": "pachy-",
+			"affixes": [
+				"pachy-"
+			],
+			"meaning": "thick",
+			"lang": "Greek",
+			"origin": "Greek πᾰχῠ́ς, thick, large, stout",
+			"examples": [
+				"pachyderma",
+				"pachymeningitis"
+			],
+			"letter": "P",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"thick"
+			]
+		},
+		{
+			"affix": "-pagus",
+			"affixes": [
+				"-pagus"
+			],
+			"meaning": "Indicates conjoined twins, with the first part denoting the organs fused",
+			"lang": "Greek",
+			"origin": "Greek πάγος, fixed, set, fastened",
+			"examples": [
+				"xiphopagus",
+				"parapagus dicephalus",
+				"craniopagus parasiticus"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "palpebr-",
+			"affixes": [
+				"palpebr-"
+			],
+			"meaning": "of or pertaining to the eyelid (uncommon as a root)",
+			"lang": "Latin",
+			"origin": "Latin palpebra, eyelid",
+			"examples": [
+				"palpebration"
+			],
+			"letter": "P",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"eyelid"
+			]
+		},
+		{
+			"affix": "pan-, pant(o)-",
+			"affixes": [
+				"pan-",
+				"pant(o)-"
+			],
+			"meaning": "complete or containing everything, all",
+			"lang": "Greek",
+			"origin": "Greek πᾶς, παν-, all, every",
+			"examples": [
+				"panophobia",
+				"panopticon",
+				"pancytopenia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "papill-",
+			"affixes": [
+				"papill-"
+			],
+			"meaning": "of or pertaining to the nipple (of the chest/breast)",
+			"lang": "Latin",
+			"origin": "Latin papilla, nipple; diminutive of papula (see below)",
+			"examples": [
+				"papillitis"
+			],
+			"letter": "P",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"nipple, teat"
+			]
+		},
+		{
+			"affix": "papul(o)-",
+			"affixes": [
+				"papul(o)-"
+			],
+			"meaning": "small elevation or swelling in the skin, a pimple, swelling",
+			"lang": "Latin",
+			"origin": "Latin papula, pimple, pustle; a small elevation or swelling in the skin",
+			"examples": [
+				"papulation"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "para-",
+			"affixes": [
+				"para-"
+			],
+			"meaning": "alongside of",
+			"lang": "Greek",
+			"origin": "Greek πᾰρᾰ́",
+			"examples": [
+				"parathyroid"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-paresis",
+			"affixes": [
+				"-paresis"
+			],
+			"meaning": "slight paralysis",
+			"lang": "Greek",
+			"origin": "Greek πάρεσις",
+			"examples": [
+				"hemiparesis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "parvo-",
+			"affixes": [
+				"parvo-"
+			],
+			"meaning": "small",
+			"lang": "Latin",
+			"origin": "Latin parvus, small, little, unimportant",
+			"examples": [
+				"Parvovirus"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "path(o)-",
+			"affixes": [
+				"path(o)-"
+			],
+			"meaning": "disease",
+			"lang": "Greek",
+			"origin": "Greek πᾰ́θος, pain, suffering, condition",
+			"examples": [
+				"pathology"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-pathy",
+			"affixes": [
+				"-pathy"
+			],
+			"meaning": "disease or disorder",
+			"lang": "Greek",
+			"origin": "Greek πᾰ́θος, suffering, accident",
+			"examples": [
+				"sociopathy",
+				"neuropathy"
+			],
+			"letter": "P",
+			"family": [
+				"Roots of bodily concepts"
+			],
+			"concept": [
+				"disease"
+			]
+		},
+		{
+			"affix": "pauci-",
+			"affixes": [
+				"pauci-"
+			],
+			"meaning": "Few",
+			"lang": "Latin",
+			"origin": "Latin paucus",
+			"examples": [
+				"pauci-immune"
+			],
+			"letter": "P",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"few"
+			]
+		},
+		{
+			"affix": "pector-",
+			"affixes": [
+				"pector-"
+			],
+			"meaning": "breast or chest",
+			"lang": "Latin",
+			"origin": "Latin pectus",
+			"examples": [
+				"expectorant",
+				"pectoriloquy"
+			],
+			"letter": "P",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"chest"
+			]
+		},
+		{
+			"affix": "ped-, -ped-, -pes",
+			"affixes": [
+				"ped-",
+				"-ped-",
+				"-pes"
+			],
+			"meaning": "of or pertaining to the foot; -footed",
+			"lang": "Latin",
+			"origin": "Latin pēs, pēd-, foot",
+			"examples": [
+				"pedoscope",
+				"orthopedic"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ped-, pedo-",
+			"affixes": [
+				"ped-",
+				"pedo-"
+			],
+			"meaning": "of or pertaining to the child",
+			"lang": "Greek",
+			"origin": "Greek παῖς, παιδός, child",
+			"examples": [
+				"pediatrics",
+				"pedophilia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pelv(i)-, pelv(o)-",
+			"affixes": [
+				"pelv(i)-",
+				"pelv(o)-"
+			],
+			"meaning": "hip bone",
+			"lang": "Latin",
+			"origin": "Latin pelvis, basin",
+			"examples": [
+				"abdominopelvic cavity"
+			],
+			"letter": "P",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"pelvis"
+			]
+		},
+		{
+			"affix": "-penia",
+			"affixes": [
+				"-penia"
+			],
+			"meaning": "deficiency",
+			"lang": "Greek",
+			"origin": "Greek πενῐ́ᾱ, poverty, indigence",
+			"examples": [
+				"osteopenia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "peo-",
+			"affixes": [
+				"peo-"
+			],
+			"meaning": "of or pertaining to the penis",
+			"lang": "Greek",
+			"origin": "Greek πέος",
+			"examples": [
+				"peotomy"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-pepsia",
+			"affixes": [
+				"-pepsia"
+			],
+			"meaning": "relating to digestion or the digestive tract.",
+			"lang": "Greek",
+			"origin": "Greek πεπτός, cooked, digested < πέσσω, I boil, cook; digest",
+			"examples": [
+				"dyspepsia"
+			],
+			"letter": "P",
+			"family": [
+				"Roots of bodily concepts"
+			],
+			"concept": [
+				"digestion"
+			]
+		},
+		{
+			"affix": "per-",
+			"affixes": [
+				"per-"
+			],
+			"meaning": "through",
+			"lang": "Latin",
+			"origin": "Latin per, through, by means of",
+			"examples": [
+				"percutaneous"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "peri-",
+			"affixes": [
+				"peri-"
+			],
+			"meaning": "surrounding or around",
+			"lang": "Greek",
+			"origin": "Greek περῐ́, around, about, concerning",
+			"examples": [
+				"periodontal"
+			],
+			"letter": "P",
+			"family": [
+				"Roots of position"
+			],
+			"concept": [
+				"around, surrounding"
+			]
+		},
+		{
+			"affix": "-pexy",
+			"affixes": [
+				"-pexy"
+			],
+			"meaning": "fixation",
+			"lang": "Greek",
+			"origin": "Greek πῆξις, fixing in place, fastening",
+			"examples": [
+				"nephropexy"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phaco-",
+			"affixes": [
+				"phaco-"
+			],
+			"meaning": "lens-shaped",
+			"lang": "Greek",
+			"origin": "Greek φᾰκός, lentil-bean",
+			"examples": [
+				"phacolysis",
+				"phacoemulsification"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phage",
+			"affixes": [
+				"-phage"
+			],
+			"meaning": "eating or ingestion",
+			"lang": "Greek",
+			"origin": "Greek φαγία eating < φᾰγεῖν, to eat",
+			"examples": [
+				"trichophagia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phagist-",
+			"affixes": [
+				"phagist-"
+			],
+			"meaning": "eater of",
+			"lang": "Greek",
+			"origin": "Greek φαγιστής eater; see -phagia",
+			"examples": [
+				"geophagist"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phago-",
+			"affixes": [
+				"-phago-"
+			],
+			"meaning": "eating, devouring",
+			"lang": "Greek",
+			"origin": "Greek -φᾰ́γος, eater of, eating",
+			"examples": [
+				"phagocyte"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phagy",
+			"affixes": [
+				"-phagy"
+			],
+			"meaning": "feeding on",
+			"lang": "Greek",
+			"origin": "Greek φαγία (phagia) eating; see -phagia",
+			"examples": [
+				"hematophagy"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phall-",
+			"affixes": [
+				"phall-"
+			],
+			"meaning": "phallus",
+			"lang": "Greek",
+			"origin": "Greek φαλλός, penis",
+			"examples": [
+				"aphallia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pharmac-",
+			"affixes": [
+				"pharmac-"
+			],
+			"meaning": "drug, medication",
+			"lang": "Greek",
+			"origin": "Greek φάρμᾰκον, witchcraft, drug",
+			"examples": [
+				"pharmacology"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pharyng-",
+			"affixes": [
+				"pharyng-"
+			],
+			"meaning": "pertaining to the pharynx",
+			"lang": "Greek",
+			"origin": "Greek φᾰ́ρῠγξ, φαρυγγ-, throat, windpipe; chasm",
+			"examples": [
+				"pharyngitis",
+				"pharyngotonsillitis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phil(ia)",
+			"affixes": [
+				"-phil(ia)"
+			],
+			"meaning": "attraction for",
+			"lang": "Greek",
+			"origin": "Greek φῐλῐ́ᾱ, friendship, love, affection",
+			"examples": [
+				"hemophilia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phleb-",
+			"affixes": [
+				"phleb-"
+			],
+			"meaning": "of or pertaining to the (blood) veins, a vein",
+			"lang": "Greek",
+			"origin": "Greek φλέψ, φλεβ-, blood-vessel, vein",
+			"examples": [
+				"phlebography",
+				"phlebotomy"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phobia",
+			"affixes": [
+				"-phobia"
+			],
+			"meaning": "exaggerated fear, sensitivity, aversion",
+			"lang": "Greek",
+			"origin": "Greek φόβος, terror, fear, flight, panic",
+			"examples": [
+				"arachnophobia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phon-",
+			"affixes": [
+				"phon-"
+			],
+			"meaning": "sound",
+			"lang": "Greek",
+			"origin": "Greek φωνή",
+			"examples": [
+				"phonocardiogram"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phos-",
+			"affixes": [
+				"phos-"
+			],
+			"meaning": "of or pertaining to light or its chemical properties, now historic and used rarely. See the common root [[#phot- below.",
+			"lang": "Greek",
+			"origin": "Greek φῶς, φᾰ́ος, φωτ-, light",
+			"examples": [
+				"phosphene"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phren-, phrenic-",
+			"affixes": [
+				"phren-",
+				"phrenic-"
+			],
+			"meaning": "the mind",
+			"lang": "Greek",
+			"origin": "Greek φρήν, intellect, wits, mind",
+			"examples": [
+				"phrenic nerve",
+				"schizophrenia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "phyllo-",
+			"affixes": [
+				"phyllo-"
+			],
+			"meaning": "leaf-like",
+			"lang": "Greek",
+			"origin": "Greek φῠ́λλον, leaf, foliage, plant",
+			"examples": [
+				"phyllodes tumour",
+				"theophylline"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-phyte, phyto-",
+			"affixes": [
+				"-phyte",
+				"phyto-"
+			],
+			"meaning": "to grow",
+			"lang": "Greek",
+			"origin": "Greek φῠτόν, plant, tree",
+			"examples": [
+				"enthesophyte"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "piri-",
+			"affixes": [
+				"piri-"
+			],
+			"meaning": "pear-shaped",
+			"lang": "Latin",
+			"origin": "Latin pirum, cognate with Greek ἄπιον, pear",
+			"examples": [
+				"piriformis muscle"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-plasia",
+			"affixes": [
+				"-plasia"
+			],
+			"meaning": "formation, development",
+			"lang": "Greek",
+			"origin": "Greek πλᾰ́σῐς, moulding, conformation",
+			"examples": [
+				"achondroplasia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-plasty",
+			"affixes": [
+				"-plasty"
+			],
+			"meaning": "surgical repair, reconstruction",
+			"lang": "Greek",
+			"origin": "Greek πλαστός, molded, formed",
+			"examples": [
+				"rhinoplasty"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-plegia",
+			"affixes": [
+				"-plegia"
+			],
+			"meaning": "paralysis",
+			"lang": "Greek",
+			"origin": "Greek πληγή, stroke (from a sword), from πληγή, to strike or smite",
+			"examples": [
+				"paraplegia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pleio-",
+			"affixes": [
+				"pleio-"
+			],
+			"meaning": "more, excessive, multiple",
+			"lang": "Greek",
+			"origin": "Greek πλεῖον, more",
+			"examples": [
+				"pleiotropic"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pleur-",
+			"affixes": [
+				"pleur-"
+			],
+			"meaning": "of or pertaining to the ribs",
+			"lang": "Greek",
+			"origin": "Greek πλευρᾱ́, rib, side of the body",
+			"examples": [
+				"pleuropneumonia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-plexy",
+			"affixes": [
+				"-plexy"
+			],
+			"meaning": "stroke or seizure",
+			"lang": "Greek",
+			"origin": "Greek πλήσσω, πλήσσειν, to strike or smite",
+			"examples": [
+				"cataplexy"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pne-, pneum-",
+			"affixes": [
+				"pne-",
+				"pneum-"
+			],
+			"meaning": "air, breath, lung",
+			"lang": "Greek",
+			"origin": "Greek πνεῖν, πνεῦμα, πνεύματος, πνεύμων",
+			"examples": [
+				"apnea",
+				"pneumatology",
+				"pneumonocyte",
+				"pneumonia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pod-, -pod-, -pus",
+			"affixes": [
+				"pod-",
+				"-pod-",
+				"-pus"
+			],
+			"meaning": "of or pertaining to the foot, -footed",
+			"lang": "Greek",
+			"origin": "Greek πούς, ποδ-, foot",
+			"examples": [
+				"podiatry"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-poiesis",
+			"affixes": [
+				"-poiesis"
+			],
+			"meaning": "production",
+			"lang": "Greek",
+			"origin": "Greek ποίησις, poetry, poem, creation",
+			"examples": [
+				"hematopoiesis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "polio-",
+			"affixes": [
+				"polio-"
+			],
+			"meaning": "having a grey color",
+			"lang": "Greek",
+			"origin": "Greek πολῐός, grey, grizzled",
+			"examples": [
+				"poliomyelitis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "poly-",
+			"affixes": [
+				"poly-"
+			],
+			"meaning": "many",
+			"lang": "Greek",
+			"origin": "Greek πολῠ́ς, many, a lot of, large, great",
+			"examples": [
+				"polymyositis"
+			],
+			"letter": "P",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"many, much"
+			]
+		},
+		{
+			"affix": "por-",
+			"affixes": [
+				"por-"
+			],
+			"meaning": "pore, porous",
+			"lang": "Greek",
+			"origin": "Greek πόρος, passage, passageway",
+			"examples": [
+				"osteoporosis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "porphyr-",
+			"affixes": [
+				"porphyr-"
+			],
+			"meaning": "purple color",
+			"lang": "Greek",
+			"origin": "Greek πορφύρα, Tyrian purple, royal purple",
+			"examples": [
+				"porphyria"
+			],
+			"letter": "P",
+			"family": [
+				"Roots of color"
+			],
+			"concept": [
+				"purple"
+			]
+		},
+		{
+			"affix": "post-",
+			"affixes": [
+				"post-"
+			],
+			"meaning": "after or behind",
+			"lang": "Latin",
+			"origin": "Latin post, after, behind",
+			"examples": [
+				"postprandial",
+				"postmortem"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pre-",
+			"affixes": [
+				"pre-"
+			],
+			"meaning": "before in position or time",
+			"lang": "",
+			"origin": "Middle English pre-, from Medieval Latin pre- < (Classical) Latin prae-, before, in front of",
+			"examples": [
+				"premature birth"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "presby-",
+			"affixes": [
+				"presby-"
+			],
+			"meaning": "old age",
+			"lang": "Greek",
+			"origin": "Greek πρέσβυς, old man, elder",
+			"examples": [
+				"presbyopia",
+				"presbycusis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "prim-",
+			"affixes": [
+				"prim-"
+			],
+			"meaning": "first or most important",
+			"lang": "Latin",
+			"origin": "Latin prīmus, first, most important",
+			"examples": [
+				"primiparous"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pro-",
+			"affixes": [
+				"pro-"
+			],
+			"meaning": "before",
+			"lang": "Greek",
+			"origin": "Greek πρό-, before, in front of",
+			"examples": [
+				"prodromal"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "proct-",
+			"affixes": [
+				"proct-"
+			],
+			"meaning": "anus, rectum",
+			"lang": "Greek",
+			"origin": "Greek πρωκτός, anus",
+			"examples": [
+				"proctology"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "prosop-",
+			"affixes": [
+				"prosop-"
+			],
+			"meaning": "face",
+			"lang": "Greek",
+			"origin": "Greek πρόσωπον, face, visage, mask",
+			"examples": [
+				"prosopagnosia"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "prot-",
+			"affixes": [
+				"prot-"
+			],
+			"meaning": "first or most important",
+			"lang": "Greek",
+			"origin": "Greek πρωτος, first; principal, most important",
+			"examples": [
+				"protoplasm"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pseud-",
+			"affixes": [
+				"pseud-"
+			],
+			"meaning": "false or fake",
+			"lang": "Greek",
+			"origin": "Greek ψεύδω, to lie or deceive",
+			"examples": [
+				"pseudoephedrine"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "psor-",
+			"affixes": [
+				"psor-"
+			],
+			"meaning": "Itching",
+			"lang": "Greek",
+			"origin": "Greek ψώρα, itch, mange, scurvy",
+			"examples": [
+				"psoriasis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "psych-",
+			"affixes": [
+				"psych-"
+			],
+			"meaning": "of or pertaining to the mind",
+			"lang": "Greek",
+			"origin": "Greek ψυχή, breath, life, soul",
+			"examples": [
+				"psychology",
+				"psychiatry"
+			],
+			"letter": "P",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"mind"
+			]
+		},
+		{
+			"affix": "ptero-, ptery-, pterygo-",
+			"affixes": [
+				"ptero-",
+				"ptery-",
+				"pterygo-"
+			],
+			"meaning": "Pertaining to a wing",
+			"lang": "Greek",
+			"origin": "Greek πτερόν, wing, feather",
+			"examples": [
+				"lateral pterygoid plate"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ptosis",
+			"affixes": [
+				"-ptosis"
+			],
+			"meaning": "falling, drooping, downward placement, prolapse",
+			"lang": "Greek",
+			"origin": "Greek πτῶσῐς, falling",
+			"examples": [
+				"apoptosis",
+				"nephroptosis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ptyal-, ptyalo-",
+			"affixes": [
+				"-ptyal-",
+				"ptyalo-"
+			],
+			"meaning": "saliva, salivary glands",
+			"lang": "",
+			"origin": "",
+			"examples": [
+				"ptyalolithiasis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ptysis",
+			"affixes": [
+				"-ptysis"
+			],
+			"meaning": "spitting",
+			"lang": "Greek",
+			"origin": "Greek πτῡ́ω, to spit up, disgorge; + -σις .",
+			"examples": [
+				"hemoptysis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pulmon-, pulmo-",
+			"affixes": [
+				"pulmon-",
+				"pulmo-"
+			],
+			"meaning": "of or relating to the lungs",
+			"lang": "Latin",
+			"origin": "Latin pulmō, a lung",
+			"examples": [
+				"pulmonary"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "py-",
+			"affixes": [
+				"py-"
+			],
+			"meaning": "pus",
+			"lang": "Greek",
+			"origin": "Greek πύον, pus",
+			"examples": [
+				"pyometra"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pyel-",
+			"affixes": [
+				"pyel-"
+			],
+			"meaning": "pelvis",
+			"lang": "Greek",
+			"origin": "Greek πύελος, pelvis, wash basin",
+			"examples": [
+				"pyelonephritis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pykno-",
+			"affixes": [
+				"pykno-"
+			],
+			"meaning": "to thicken (as the nucleus does in early stages of cell death)",
+			"lang": "Greek",
+			"origin": "Greek πύκνωσις, thickening",
+			"examples": [
+				"pyknosis"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pylor-",
+			"affixes": [
+				"pylor-"
+			],
+			"meaning": "gate",
+			"lang": "Greek",
+			"origin": "Greek πυλωρός, gate keeper; lower orifice of the stomach",
+			"examples": [
+				"pyloric sphincter"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "pyr-",
+			"affixes": [
+				"pyr-"
+			],
+			"meaning": "fever",
+			"lang": "Greek",
+			"origin": "Greek πῦρ, πυρετός, fire, heat, fever",
+			"examples": [
+				"antipyretic"
+			],
+			"letter": "P",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "radi-",
+			"affixes": [
+				"radi-"
+			],
+			"meaning": "radiation",
+			"lang": "Latin",
+			"origin": "Latin radiō, I radiate, emit beams; from radius, ray of light, spoke of a wheel",
+			"examples": [
+				"radiowave"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "radic-",
+			"affixes": [
+				"radic-"
+			],
+			"meaning": "referring to the beginning, or the root, of a structure, usually a nerve or a vein",
+			"lang": "Latin",
+			"origin": "Latin rādīx, root",
+			"examples": [
+				"radiculopathy"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "re-",
+			"affixes": [
+				"re-"
+			],
+			"meaning": "again, back",
+			"lang": "Latin",
+			"origin": "Latin re-",
+			"examples": [
+				"relapse"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "rect-",
+			"affixes": [
+				"rect-"
+			],
+			"meaning": "rectum",
+			"lang": "",
+			"origin": "abbr. of New Latin rectum intestinum ('straight intestine') < Latin rēctus, straight",
+			"examples": [
+				"rectal",
+				"rectum",
+				"rectus femoris"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ren(o)-",
+			"affixes": [
+				"ren(o)-"
+			],
+			"meaning": "of or pertaining to the kidney",
+			"lang": "Latin",
+			"origin": "Latin rēn, rēnes, kidney",
+			"examples": [
+				"renal"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "reticul(o)-",
+			"affixes": [
+				"reticul(o)-"
+			],
+			"meaning": "net",
+			"lang": "Latin",
+			"origin": "Latin rēticulum",
+			"examples": [
+				"reticulocyte"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "retro-",
+			"affixes": [
+				"retro-"
+			],
+			"meaning": "backward, behind",
+			"lang": "Latin",
+			"origin": "Latin retro",
+			"examples": [
+				"retroversion"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "rhabd(o)-",
+			"affixes": [
+				"rhabd(o)-"
+			],
+			"meaning": "rod shaped, striated",
+			"lang": "Greek",
+			"origin": "Greek ῥᾰ́βδος, wand, stick, stripe",
+			"examples": [
+				"rhabdomyolysis"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "rhachi(o)-",
+			"affixes": [
+				"rhachi(o)-"
+			],
+			"meaning": "spine",
+			"lang": "Greek",
+			"origin": "Greek ῥάχις, spine or backbone",
+			"examples": [],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "rhin(o)-",
+			"affixes": [
+				"rhin(o)-"
+			],
+			"meaning": "of or pertaining to the nose",
+			"lang": "Greek",
+			"origin": "Greek ῥίς, ῥῑνο-, nose",
+			"examples": [
+				"rhinoceros",
+				"rhinoplasty",
+				"rhinovirus"
+			],
+			"letter": "Q–R",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"nose"
+			]
+		},
+		{
+			"affix": "rhod(o)-",
+			"affixes": [
+				"rhod(o)-"
+			],
+			"meaning": "denoting a rose-red color",
+			"lang": "Greek",
+			"origin": "Greek ῥόδον, rose",
+			"examples": [
+				"rhodophyte"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rrhage, -rrhagia",
+			"affixes": [
+				"-rrhage",
+				"-rrhagia"
+			],
+			"meaning": "burst forth, rapid flow (of blood, usually)",
+			"lang": "Greek",
+			"origin": "Greek -ραγία, to break, to burst",
+			"examples": [
+				"hemorrhage",
+				"menorrhagia"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rrhaphy",
+			"affixes": [
+				"-rrhaphy"
+			],
+			"meaning": "surgical suturing",
+			"lang": "Greek",
+			"origin": "Greek ῥαφή",
+			"examples": [
+				"hymenorrhaphy"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rrhea (AmE)",
+			"affixes": [
+				"-rrhea (AmE)"
+			],
+			"meaning": "flowing, discharge",
+			"lang": "Greek",
+			"origin": "Greek ῥοίᾱ, flow, flux",
+			"examples": [
+				"galactorrhea",
+				"diarrhea"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rrhexis",
+			"affixes": [
+				"-rrhexis"
+			],
+			"meaning": "rupture",
+			"lang": "Greek",
+			"origin": "Greek ῥῆξῐς, breaking, bursting, discharge",
+			"examples": [
+				"karyorrhexis"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rrhoea (BrE)",
+			"affixes": [
+				"-rrhoea (BrE)"
+			],
+			"meaning": "flowing, discharge",
+			"lang": "Greek",
+			"origin": "Greek ῥοίᾱ, flow, flux",
+			"examples": [
+				"diarrhoea"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "rubr(o)-",
+			"affixes": [
+				"rubr(o)-"
+			],
+			"meaning": "of or pertaining to the red nucleus of the brain",
+			"lang": "Latin",
+			"origin": "Latin ruber, red",
+			"examples": [
+				"rubrospinal"
+			],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-rupt",
+			"affixes": [
+				"-rupt"
+			],
+			"meaning": "break or burst",
+			"lang": "Latin",
+			"origin": "Latin rumpō",
+			"examples": [],
+			"letter": "Q–R",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "salping(o)-",
+			"affixes": [
+				"salping(o)-"
+			],
+			"meaning": "of or pertaining to tubes, e.g. fallopian tubes",
+			"lang": "Greek",
+			"origin": "Greek σᾰ́λπῐγξ, σαλπιγγ-, trumpet",
+			"examples": [
+				"salpingectomy",
+				"salpingopharyngeus muscle"
+			],
+			"letter": "S",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"fallopian tubes",
+				"uterine tubes"
+			]
+		},
+		{
+			"affix": "sangui-, sanguine-",
+			"affixes": [
+				"sangui-",
+				"sanguine-"
+			],
+			"meaning": "of or pertaining to blood",
+			"lang": "Latin",
+			"origin": "Latin sanguis, blood",
+			"examples": [
+				"sanguine"
+			],
+			"letter": "S",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"blood"
+			]
+		},
+		{
+			"affix": "sapro-",
+			"affixes": [
+				"sapro-"
+			],
+			"meaning": "relating to putrefaction or decay",
+			"lang": "Greek",
+			"origin": "Greek σαπρός, rotten, putrid",
+			"examples": [],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sarco-",
+			"affixes": [
+				"sarco-"
+			],
+			"meaning": "muscular, flesh-like",
+			"lang": "Greek",
+			"origin": "Greek σάρξ, flesh",
+			"examples": [
+				"sarcoma",
+				"sarcoidosis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "scapul(o)-",
+			"affixes": [
+				"scapul(o)-"
+			],
+			"meaning": "of or pertaining to the scapula",
+			"lang": "Latin",
+			"origin": "Latin (scapula), shoulder",
+			"examples": [
+				"scapulothoracic",
+				"facioscapulohumeral muscular dystrophy"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "schist(o)-",
+			"affixes": [
+				"schist(o)-"
+			],
+			"meaning": "split, cleft",
+			"lang": "Greek",
+			"origin": "Greek σχῐστός, cloven, divided",
+			"examples": [
+				"schistocyte"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "schiz(o)-",
+			"affixes": [
+				"schiz(o)-"
+			],
+			"meaning": "denoting something \"split\" or \"double-sided\"",
+			"lang": "Greek",
+			"origin": "Greek σχῐ́ζω, to split, cleave, part",
+			"examples": [
+				"schizophrenia"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "scler(o)-",
+			"affixes": [
+				"scler(o)-"
+			],
+			"meaning": "hard",
+			"lang": "Greek",
+			"origin": "Greek σκληρός",
+			"examples": [
+				"scleroderma"
+			],
+			"letter": "S",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"hard"
+			]
+		},
+		{
+			"affix": "-sclerosis",
+			"affixes": [
+				"-sclerosis"
+			],
+			"meaning": "hardening",
+			"lang": "Greek",
+			"origin": "Greek σκληρός, hard, harden; + -σῐς, added to verb stems to form abstract nouns or nouns of action, result or process",
+			"examples": [
+				"atherosclerosis",
+				"multiple sclerosis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "scoli(o)-",
+			"affixes": [
+				"scoli(o)-"
+			],
+			"meaning": "twisted",
+			"lang": "Greek",
+			"origin": "Greek σκολιός, curved, bent",
+			"examples": [
+				"scoliosis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-scope",
+			"affixes": [
+				"-scope"
+			],
+			"meaning": "instrument for viewing",
+			"lang": "Greek",
+			"origin": "Greek σκόπος, watcher",
+			"examples": [
+				"stethoscope"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-scopy",
+			"affixes": [
+				"-scopy"
+			],
+			"meaning": "process of viewing",
+			"lang": "Greek",
+			"origin": "Greek σκοπέω, to look at, behold, examine",
+			"examples": [
+				"endoscopy"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "scoto-",
+			"affixes": [
+				"scoto-"
+			],
+			"meaning": "darkness",
+			"lang": "Greek",
+			"origin": "Greek σκότος",
+			"examples": [
+				"scotopic vision"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "semi-",
+			"affixes": [
+				"semi-"
+			],
+			"meaning": "one-half, partly",
+			"lang": "Latin",
+			"origin": "Latin semi-",
+			"examples": [],
+			"letter": "S",
+			"family": [
+				"Prefixes of quantity or amount"
+			],
+			"concept": [
+				"half"
+			]
+		},
+		{
+			"affix": "sial(o)-",
+			"affixes": [
+				"sial(o)-"
+			],
+			"meaning": "saliva, salivary gland",
+			"lang": "Latin",
+			"origin": "Latin salīva, saliva.",
+			"examples": [
+				"sialagogue"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sigmoid(o)-",
+			"affixes": [
+				"sigmoid(o)-"
+			],
+			"meaning": "sigmoid, S-shaped curvature",
+			"lang": "Greek",
+			"origin": "Greek σιγμοειδής, crescent-shaped, lunate sigma-shaped",
+			"examples": [
+				"sigmoid colon"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sinus-",
+			"affixes": [
+				"sinus-"
+			],
+			"meaning": "of or pertaining to the sinus",
+			"lang": "Latin",
+			"origin": "Latin sinus, a curve, bend, hollow cavity, bosom",
+			"examples": [
+				"sinusitis"
+			],
+			"letter": "S",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"sinus"
+			]
+		},
+		{
+			"affix": "sito-",
+			"affixes": [
+				"sito-"
+			],
+			"meaning": "food, grain",
+			"lang": "Greek",
+			"origin": "Greek σῖτος",
+			"examples": [
+				"sitophobia"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "somat(o)-, somatico-",
+			"affixes": [
+				"somat(o)-",
+				"somatico-"
+			],
+			"meaning": "body, bodily",
+			"lang": "Greek",
+			"origin": "Greek σῶμα",
+			"examples": [],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "somn(o)",
+			"affixes": [
+				"somn(o)"
+			],
+			"meaning": "Sleep",
+			"lang": "Latin",
+			"origin": "Latin somnus, sleep, drowsiness",
+			"examples": [
+				"insomnia"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-spadias",
+			"affixes": [
+				"-spadias"
+			],
+			"meaning": "slit, fissure",
+			"lang": "Greek",
+			"origin": "Greek σπάω, break, split",
+			"examples": [
+				"hypospadias",
+				"epispadias"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "spasmo-",
+			"affixes": [
+				"spasmo-"
+			],
+			"meaning": "spasm",
+			"lang": "Greek",
+			"origin": "Greek σπασμός",
+			"examples": [
+				"Spasmodic dysphonia"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sperma-, spermo-, spermato-",
+			"affixes": [
+				"sperma-",
+				"spermo-",
+				"spermato-"
+			],
+			"meaning": "semen, spermatozoa",
+			"lang": "Greek",
+			"origin": "Greek σπέρμα, seed, semen",
+			"examples": [
+				"spermatogenesis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "splanchn(i)-, splanchn(o)-",
+			"affixes": [
+				"splanchn(i)-",
+				"splanchn(o)-"
+			],
+			"meaning": "viscera",
+			"lang": "Greek",
+			"origin": "Greek σπλᾰ́γχνον, bowels, guts",
+			"examples": [
+				"splanchnology"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "splen(o)-",
+			"affixes": [
+				"splen(o)-"
+			],
+			"meaning": "spleen",
+			"lang": "Greek",
+			"origin": "Greek σπλήν, σπλην-, spleen, milt",
+			"examples": [
+				"splenectomy"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "spondyl(o)-",
+			"affixes": [
+				"spondyl(o)-"
+			],
+			"meaning": "of or pertaining to the spine, the vertebra",
+			"lang": "Greek",
+			"origin": "Greek σφόνδῠλος / σπόνδυλος, the spine",
+			"examples": [
+				"spondylitis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "squamos(o)-",
+			"affixes": [
+				"squamos(o)-"
+			],
+			"meaning": "denoting something as \"full of scales\" or \"scaly\"",
+			"lang": "Latin",
+			"origin": "Latin squāmōsus, full of scales, scaly",
+			"examples": [
+				"squamous cell"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-stalsis",
+			"affixes": [
+				"-stalsis"
+			],
+			"meaning": "contraction",
+			"lang": "Greek",
+			"origin": "Greek στέλλω, I dispatch, place, set",
+			"examples": [
+				"peristalsis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-stasis",
+			"affixes": [
+				"-stasis"
+			],
+			"meaning": "stopping, standing",
+			"lang": "Greek",
+			"origin": "Greek στᾰ́σῐς, to stand, place, set",
+			"examples": [
+				"cytostasis",
+				"homeostasis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-staxis",
+			"affixes": [
+				"-staxis"
+			],
+			"meaning": "dripping, trickling",
+			"lang": "Greek",
+			"origin": "Greek στάζω, στακτός, drip, leak, trickle",
+			"examples": [
+				"epistaxis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sten(o)-",
+			"affixes": [
+				"sten(o)-"
+			],
+			"meaning": "denoting something as narrow in shape or pertaining to narrowness",
+			"lang": "Greek",
+			"origin": "Greek στενός, narrow, short",
+			"examples": [
+				"stenography"
+			],
+			"letter": "S",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"narrow"
+			]
+		},
+		{
+			"affix": "-stenosis",
+			"affixes": [
+				"-stenosis"
+			],
+			"meaning": "abnormal narrowing of a blood vessel or other tubular organ or structure",
+			"lang": "Greek",
+			"origin": "Greek στενός, narrow, short; + -σῐς, added to verb stems to form abstract nouns or nouns of action, result or process",
+			"examples": [
+				"restenosis",
+				"stenosis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "steth-",
+			"affixes": [
+				"steth-"
+			],
+			"meaning": "of or pertaining to the upper chest, the area above the breast and under the neck",
+			"lang": "Greek",
+			"origin": "Greek στῆθος, chest, cuirass",
+			"examples": [
+				"stethoscope"
+			],
+			"letter": "S",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"chest"
+			]
+		},
+		{
+			"affix": "stheno-",
+			"affixes": [
+				"stheno-"
+			],
+			"meaning": "strength, force, power",
+			"lang": "Greek",
+			"origin": "Greek σθένος",
+			"examples": [],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "stom-, stomat-",
+			"affixes": [
+				"stom-",
+				"stomat-"
+			],
+			"meaning": "of or pertaining to the mouth; an artificially created opening",
+			"lang": "Greek",
+			"origin": "Greek στόμᾰ, στοματ-, mouth",
+			"examples": [
+				"stomatogastric",
+				"stomatognathic system"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-stomy",
+			"affixes": [
+				"-stomy"
+			],
+			"meaning": "creation of an opening",
+			"lang": "New Latin",
+			"origin": "New Latin stoma, opening; from Greek στόμᾰ",
+			"examples": [
+				"colostomy"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "sub-",
+			"affixes": [
+				"sub-"
+			],
+			"meaning": "beneath, under",
+			"lang": "Latin",
+			"origin": "Latin sub",
+			"examples": [
+				"subcutaneous tissue"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "super-",
+			"affixes": [
+				"super-"
+			],
+			"meaning": "in excess, above, superior",
+			"lang": "Latin",
+			"origin": "Latin super",
+			"examples": [
+				"superior vena cava"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "supra-",
+			"affixes": [
+				"supra-"
+			],
+			"meaning": "above, excessive",
+			"lang": "Latin",
+			"origin": "Latin supra",
+			"examples": [
+				"supraorbital vein"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "syl-, sym-, syn-, sys-",
+			"affixes": [
+				"syl-",
+				"sym-",
+				"syn-",
+				"sys-"
+			],
+			"meaning": "indicates similarity, likeness, or being together; assimilates before some consonants: before l to syl-, s to sys-, before a labial consonant to sym-",
+			"lang": "Greek",
+			"origin": "Greek σῠν-, with, together",
+			"examples": [
+				"synalgia",
+				"synesthesia",
+				"syssarcosis"
+			],
+			"letter": "S",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tachy-",
+			"affixes": [
+				"tachy-"
+			],
+			"meaning": "denoting something as fast, irregularly fast",
+			"lang": "Greek",
+			"origin": "Greek τᾰχῠ́ς, fast, quickly",
+			"examples": [
+				"tachycardia",
+				"tachypnea"
+			],
+			"letter": "T",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"fast"
+			]
+		},
+		{
+			"affix": "-tension, -tensive",
+			"affixes": [
+				"-tension",
+				"-tensive"
+			],
+			"meaning": "pressure",
+			"lang": "Latin",
+			"origin": "Latin tēnsiō, stretching, extension, tension",
+			"examples": [
+				"hypertension"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "terato-",
+			"affixes": [
+				"terato-"
+			],
+			"meaning": "Monster",
+			"lang": "Greek",
+			"origin": "Greek τέρᾰς",
+			"examples": [
+				"teratoma"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tetan-",
+			"affixes": [
+				"tetan-"
+			],
+			"meaning": "rigid, tense",
+			"lang": "Greek",
+			"origin": "Greek τέτανος",
+			"examples": [
+				"tetanus"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thec-",
+			"affixes": [
+				"thec-"
+			],
+			"meaning": "case, sheath",
+			"lang": "Greek",
+			"origin": "Greek θήκη",
+			"examples": [
+				"intrathecal"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thel-",
+			"affixes": [
+				"thel-"
+			],
+			"meaning": "of or pertaining to a nipple (uncommon as a prefix)",
+			"lang": "Greek",
+			"origin": "Greek θηλή, a teat, nipple",
+			"examples": [
+				"Theleplasty",
+				"thelarche"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thely-",
+			"affixes": [
+				"thely-"
+			],
+			"meaning": "denoting something as relating to a woman, feminine",
+			"lang": "Greek",
+			"origin": "Greek θῆλῠς, female, feminine",
+			"examples": [
+				"Thelygenous"
+			],
+			"letter": "T",
+			"family": [
+				"Roots of description"
+			],
+			"concept": [
+				"female, feminine"
+			]
+		},
+		{
+			"affix": "therap-",
+			"affixes": [
+				"therap-"
+			],
+			"meaning": "treatment",
+			"lang": "Greek",
+			"origin": "Greek θερᾰπείᾱ",
+			"examples": [
+				"hydrotherapy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "therm(o)-",
+			"affixes": [
+				"therm(o)-"
+			],
+			"meaning": "heat",
+			"lang": "Greek",
+			"origin": "Greek θερμός",
+			"examples": [
+				"hypothermia",
+				"thermoregulation"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thorac(i)-, thorac(o)-, thoracico-",
+			"affixes": [
+				"thorac(i)-",
+				"thorac(o)-",
+				"thoracico-"
+			],
+			"meaning": "of or pertaining to the upper chest, chest(thorax); the area above the breast and under the neck",
+			"lang": "Latin",
+			"origin": "Latin thōrāx < Greek θώρᾱξ, chest, cuirass",
+			"examples": [
+				"thoracic spine"
+			],
+			"letter": "T",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"rib cage"
+			]
+		},
+		{
+			"affix": "thromb(o)-",
+			"affixes": [
+				"thromb(o)-"
+			],
+			"meaning": "of or relating to a blood clot, clotting of blood",
+			"lang": "Greek",
+			"origin": "Greek θρόμβος, lump, piece, clot of blood",
+			"examples": [
+				"thrombus",
+				"thrombocytopenia"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thym-",
+			"affixes": [
+				"thym-"
+			],
+			"meaning": "emotions",
+			"lang": "Greek",
+			"origin": "Greek θῡμός, spirit, soul; courage; breath, mind, emotions",
+			"examples": [
+				"dysthymia"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "thyr(o)-",
+			"affixes": [
+				"thyr(o)-"
+			],
+			"meaning": "thyroid",
+			"lang": "Greek",
+			"origin": "Greek θῠρεός, large oblong shield; + εἶδος, a form or shape",
+			"examples": [],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-tic",
+			"affixes": [
+				"-tic"
+			],
+			"meaning": "pertaining to",
+			"lang": "Greek",
+			"origin": "Greek -τῐκός, adjective-forming suffix denoting: relating to, able to, suited to",
+			"examples": [],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-tide",
+			"affixes": [
+				"-tide"
+			],
+			"meaning": "bound to, forming a noun from an adjective by dropping -ic and adding -tide.",
+			"lang": "Greek",
+			"origin": "Greek - πεπτός, adjective-forming suffix denoting: bound to, relating to, able to, suited to",
+			"examples": [
+				"Glycopeptide",
+				"Nucleotide",
+				"Peptide"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "toco-",
+			"affixes": [
+				"toco-"
+			],
+			"meaning": "childbirth",
+			"lang": "Greek",
+			"origin": "Greek τόκος",
+			"examples": [
+				"tocolytic",
+				"dystocia"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-tome",
+			"affixes": [
+				"-tome"
+			],
+			"meaning": "cutting instrument",
+			"lang": "Greek",
+			"origin": "Greek τομή, intersection",
+			"examples": [
+				"osteotome"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-tomy",
+			"affixes": [
+				"-tomy"
+			],
+			"meaning": "act of cutting; incising, incision",
+			"lang": "Greek",
+			"origin": "Greek τομία",
+			"examples": [
+				"Gastrotomy",
+				"Phlebotomy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ton-",
+			"affixes": [
+				"ton-"
+			],
+			"meaning": "tone, tension, pressure",
+			"lang": "Greek",
+			"origin": "Greek τόνος, rope, cord; tension",
+			"examples": [
+				"Tonicity",
+				"Isotonic saline"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-tony",
+			"affixes": [
+				"-tony"
+			],
+			"meaning": "tension",
+			"lang": "Greek",
+			"origin": "Greek -τονία",
+			"examples": [
+				"Hypotonia"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "top(o)-",
+			"affixes": [
+				"top(o)-"
+			],
+			"meaning": "place, topical",
+			"lang": "Greek",
+			"origin": "Greek τόπος",
+			"examples": [
+				"Topical anesthetic"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tort(i)-",
+			"affixes": [
+				"tort(i)-"
+			],
+			"meaning": "twisted",
+			"lang": "Latin",
+			"origin": "Latin tortus",
+			"examples": [
+				"Torticollis",
+				"Testicular torsion"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tox(i)-, tox(o)-, toxic(o)-",
+			"affixes": [
+				"tox(i)-",
+				"tox(o)-",
+				"toxic(o)-"
+			],
+			"meaning": "toxin, poison",
+			"lang": "Greek",
+			"origin": "Greek τοξικόν, bow (archery), bow-related; from Greek τοξικόν φάρμᾰκον, poison for smearing arrows with",
+			"examples": [
+				"Toxoplasmosis",
+				"Toxidrome"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "trache(a)-",
+			"affixes": [
+				"trache(a)-"
+			],
+			"meaning": "trachea",
+			"lang": "Greek",
+			"origin": "Greek τραχεῖα, windpipe",
+			"examples": [
+				"Tracheotomy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "trachel(o)-",
+			"affixes": [
+				"trachel(o)-"
+			],
+			"meaning": "of or pertaining to the neck",
+			"lang": "Greek",
+			"origin": "Greek τρᾰ́χηλος, neck",
+			"examples": [
+				"Tracheloplasty"
+			],
+			"letter": "T",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"neck"
+			]
+		},
+		{
+			"affix": "trans-",
+			"affixes": [
+				"trans-"
+			],
+			"meaning": "denoting something as moving or situated across or through",
+			"lang": "Latin",
+			"origin": "Latin trāns, across, through",
+			"examples": [
+				"Transfusion"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tri-",
+			"affixes": [
+				"tri-"
+			],
+			"meaning": "three",
+			"lang": "Latin",
+			"origin": "Latin tri-",
+			"examples": [
+				"Triceps",
+				"Trisomy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "trich(i)-, -trichia, trich(o)-",
+			"affixes": [
+				"trich(i)-",
+				"-trichia",
+				"trich(o)-"
+			],
+			"meaning": "of or pertaining to hair, hair-like structure",
+			"lang": "Greek",
+			"origin": "Greek θρῐ́ξ, hair",
+			"examples": [
+				"Trichocyst"
+			],
+			"letter": "T",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"hair"
+			]
+		},
+		{
+			"affix": "-tripsy",
+			"affixes": [
+				"-tripsy"
+			],
+			"meaning": "crushing",
+			"lang": "Greek",
+			"origin": "Greek τρῖψις, rubbing, friction",
+			"examples": [
+				"Lithotripsy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-trop",
+			"affixes": [
+				"-trop"
+			],
+			"meaning": "turned toward, with an orientation toward, having an affinity for, affecting",
+			"lang": "Greek",
+			"origin": "Greek τρόπος, a turn, way, manner, style",
+			"examples": [
+				"Geotropic",
+				"Phototropic"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-trophy",
+			"affixes": [
+				"-trophy"
+			],
+			"meaning": "nourishment, development",
+			"lang": "Greek",
+			"origin": "Greek τροφή, food, nourishment",
+			"examples": [
+				"Pseudohypertrophy"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "tympan(o)-",
+			"affixes": [
+				"tympan(o)-"
+			],
+			"meaning": "eardrum",
+			"lang": "Greek",
+			"origin": "Greek τῠ́μπᾰνον, drum, eardrum",
+			"examples": [
+				"Tympanocentesis",
+				"Tensor tympani"
+			],
+			"letter": "T",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-ula, -ule",
+			"affixes": [
+				"-ula",
+				"-ule"
+			],
+			"meaning": "small",
+			"lang": "Latin",
+			"origin": "Latin",
+			"examples": [],
+			"letter": "U",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ultra-",
+			"affixes": [
+				"ultra-"
+			],
+			"meaning": "beyond, excessive",
+			"lang": "Latin",
+			"origin": "Latin ultra",
+			"examples": [
+				"ultrasound",
+				"ultraviolet"
+			],
+			"letter": "U",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "umbilic-",
+			"affixes": [
+				"umbilic-"
+			],
+			"meaning": "of or pertaining to the navel, the umbilicus",
+			"lang": "Latin",
+			"origin": "Latin umbilīcus, navel, belly-button",
+			"examples": [
+				"umbilical"
+			],
+			"letter": "U",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"navel"
+			]
+		},
+		{
+			"affix": "un(i)-",
+			"affixes": [
+				"un(i)-"
+			],
+			"meaning": "one",
+			"lang": "Latin",
+			"origin": "Latin ūnus",
+			"examples": [
+				"unilateral hearing loss"
+			],
+			"letter": "U",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ungui-",
+			"affixes": [
+				"ungui-"
+			],
+			"meaning": "of or pertaining to the nail, a claw",
+			"lang": "Latin",
+			"origin": "Latin unguis, nail, claw",
+			"examples": [
+				"unguiform",
+				"ungual"
+			],
+			"letter": "U",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"nail"
+			]
+		},
+		{
+			"affix": "ur-",
+			"affixes": [
+				"ur-"
+			],
+			"meaning": "of or pertaining to urine, the urinary system",
+			"lang": "Greek",
+			"origin": "Greek οὐρέω, οὐρεῖν ; οὖρον, urine",
+			"examples": [
+				"antidiuretic",
+				"diuretic",
+				"dysuria",
+				"polyurea",
+				"polyuria",
+				"uraemia/uremia",
+				"urology"
+			],
+			"letter": "U",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "urin-",
+			"affixes": [
+				"urin-"
+			],
+			"meaning": "of or pertaining to urine, the urinary system",
+			"lang": "Latin",
+			"origin": "Latin ūrīna, urine < Greek οὖρον, see ur- above.",
+			"examples": [
+				"uriniferous"
+			],
+			"letter": "U",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "uter(o)-",
+			"affixes": [
+				"uter(o)-"
+			],
+			"meaning": "of or pertaining to the uterus or womb",
+			"lang": "Latin",
+			"origin": "Latin uterus, womb, uterus",
+			"examples": [
+				"uterus"
+			],
+			"letter": "U",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"uterus",
+				"womb"
+			]
+		},
+		{
+			"affix": "vagin-",
+			"affixes": [
+				"vagin-"
+			],
+			"meaning": "of or pertaining to the vagina",
+			"lang": "Latin",
+			"origin": "Latin vāgīna, sheath, scabbard; vagina",
+			"examples": [
+				"vaginal epithelium"
+			],
+			"letter": "V",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"vagina"
+			]
+		},
+		{
+			"affix": "varic(o)-",
+			"affixes": [
+				"varic(o)-"
+			],
+			"meaning": "swollen or twisted vein",
+			"lang": "Latin",
+			"origin": "Latin varix",
+			"examples": [
+				"esophageal varices"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "vas(o)-",
+			"affixes": [
+				"vas(o)-"
+			],
+			"meaning": "duct, blood vessel",
+			"lang": "Latin",
+			"origin": "Latin vās, vessel, dish, vase",
+			"examples": [
+				"vasoconstriction"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "vasculo-",
+			"affixes": [
+				"vasculo-"
+			],
+			"meaning": "blood vessel",
+			"lang": "Latin",
+			"origin": "Latin vāsculum",
+			"examples": [
+				"cardiovascular"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ven-",
+			"affixes": [
+				"ven-"
+			],
+			"meaning": "of or pertaining to the veins, venous blood, and the vascular system",
+			"lang": "Latin",
+			"origin": "Latin vēna, blood-vessel, vein",
+			"examples": [
+				"venule",
+				"venospasm"
+			],
+			"letter": "V",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"vein"
+			]
+		},
+		{
+			"affix": "ventr(o)-",
+			"affixes": [
+				"ventr(o)-"
+			],
+			"meaning": "of or pertaining to the belly, the stomach cavities",
+			"lang": "Latin",
+			"origin": "Latin venter, belly, stomach, womb",
+			"examples": [
+				"ventrodorsal"
+			],
+			"letter": "V",
+			"family": [
+				"Body parts and substances"
+			],
+			"concept": [
+				"stomach"
+			]
+		},
+		{
+			"affix": "ventricul(o)-",
+			"affixes": [
+				"ventricul(o)-"
+			],
+			"meaning": "of or pertaining to the ventricles; any hollow region inside an organ",
+			"lang": "Latin",
+			"origin": "Latin ventriculus, the ventricles of the heart, the ventricles of the brain",
+			"examples": [
+				"cardiac ventriculography",
+				"atrioventricular node"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-version",
+			"affixes": [
+				"-version"
+			],
+			"meaning": "turning",
+			"lang": "Latin",
+			"origin": "Latin versiō",
+			"examples": [
+				"anteversion"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "vesic(o)-",
+			"affixes": [
+				"vesic(o)-"
+			],
+			"meaning": "of or pertaining to the bladder",
+			"lang": "Latin",
+			"origin": "Latin vēsīca, bladder, blister",
+			"examples": [
+				"vesical arteries"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "viscer(o)-",
+			"affixes": [
+				"viscer(o)-"
+			],
+			"meaning": "of or pertaining to the internal organs, the viscera",
+			"lang": "Latin",
+			"origin": "Latin viscus (pl. viscera), internal organ(s)",
+			"examples": [
+				"viscera"
+			],
+			"letter": "V",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "xanth(o)-",
+			"affixes": [
+				"xanth(o)-"
+			],
+			"meaning": "having a yellow color, especially an abnormally yellow color",
+			"lang": "Greek",
+			"origin": "Greek ξᾰνθός, yellow",
+			"examples": [
+				"xanthopathy"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "xen(o)-",
+			"affixes": [
+				"xen(o)-"
+			],
+			"meaning": "foreign, different",
+			"lang": "Greek",
+			"origin": "Greek ξένος, foreign, stranger",
+			"examples": [
+				"xenograft"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "xer(o)-",
+			"affixes": [
+				"xer(o)-"
+			],
+			"meaning": "dry, desert-like",
+			"lang": "Greek",
+			"origin": "Greek ξηρός, dry",
+			"examples": [
+				"xerostomia",
+				"xeroderma"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "xiph-",
+			"affixes": [
+				"xiph-"
+			],
+			"meaning": "sword",
+			"lang": "Greek",
+			"origin": "Greek ξῐ́φος, sword",
+			"examples": [
+				"xiphisternum",
+				"xiphoid"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "-y",
+			"affixes": [
+				"-y"
+			],
+			"meaning": "condition or process of",
+			"lang": "Latin",
+			"origin": "Latin -ia, from Greek -ῐ́ᾱ, -ειᾰ, suffixes used to form abstract nouns",
+			"examples": [
+				"surgery"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "ze-",
+			"affixes": [
+				"ze-"
+			],
+			"meaning": "boil",
+			"lang": "Greek",
+			"origin": "Greek ζέω, to boil, seethe, bubble",
+			"examples": [
+				"eczema"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "zo(o)-",
+			"affixes": [
+				"zo(o)-"
+			],
+			"meaning": "animal, animal life",
+			"lang": "Greek",
+			"origin": "Greek ζῷον",
+			"examples": [
+				"zoology"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		},
+		{
+			"affix": "zym(o)-",
+			"affixes": [
+				"zym(o)-"
+			],
+			"meaning": "fermentation",
+			"lang": "Greek",
+			"origin": "Greek ζύμη, leaven, yeast",
+			"examples": [
+				"enzyme",
+				"lysozyme"
+			],
+			"letter": "X–Z",
+			"family": [],
+			"concept": []
+		}
+	],
+	"thematic": [
+		{
+			"concept": "digestion",
+			"roots": [
+				"-pepsia"
+			],
+			"family": "Roots of bodily concepts"
+		},
+		{
+			"concept": "disease",
+			"roots": [
+				"-pathy"
+			],
+			"family": "Roots of bodily concepts"
+		},
+		{
+			"concept": "eating",
+			"roots": [
+				"-phagia",
+				"-vory"
+			],
+			"family": "Roots of bodily concepts"
+		},
+		{
+			"concept": "abdomen",
+			"roots": [
+				"lapar-",
+				"abdomin-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "aorta",
+			"roots": [
+				"aort-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "arm",
+			"roots": [
+				"brachi-",
+				"arm-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "armpit",
+			"roots": [
+				"maschal-",
+				"axill-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "artery",
+			"roots": [
+				"arteri-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "back",
+			"roots": [
+				"not-",
+				"dors-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "big toe",
+			"roots": [
+				"allic-",
+				"hallic-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "bladder",
+			"roots": [
+				"cyst-",
+				"vesic-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "blood",
+			"roots": [
+				"haem(at)- ; hem(at)-",
+				"sangui-",
+				"sanguin-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "blood clot",
+			"roots": [
+				"thromb-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "blood vessel",
+			"roots": [
+				"angi-",
+				"vas-",
+				"vascul-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "body",
+			"roots": [
+				"soma-",
+				"somat-",
+				"corpor-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "bone",
+			"roots": [
+				"oste-",
+				"ossi-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "bone marrow, marrow",
+			"roots": [
+				"myel-",
+				"medull-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "brain",
+			"roots": [
+				"encephal-",
+				"cerebr-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "breast",
+			"roots": [
+				"mast-",
+				"mamm-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "chest",
+			"roots": [
+				"steth-",
+				"pector-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "cheek",
+			"roots": [
+				"parei-",
+				"bucc-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "ear",
+			"roots": [
+				"ot(o)-",
+				"aur(i)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "eggs, ova",
+			"roots": [
+				"oo-",
+				"ov-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "eye",
+			"roots": [
+				"ophthalm(o)-",
+				"ocul(o)-",
+				"optic(o)- (French)"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "eyelid",
+			"roots": [
+				"blephar(o)-",
+				"cili-",
+				"palpebr-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "face",
+			"roots": [
+				"prosop(o)-",
+				"faci(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "fallopian tubes",
+			"roots": [
+				"salping(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "fat, fatty tissue",
+			"roots": [
+				"lip(o)-",
+				"adip-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "finger",
+			"roots": [
+				"dactyl(o)-",
+				"digit-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "forehead",
+			"roots": [
+				"front(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "gallbladder",
+			"roots": [
+				"cholecyst(o)-",
+				"fell-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "genitals, sexually undifferentiated",
+			"roots": [
+				"gon(o)-",
+				"phall(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "gland",
+			"roots": [
+				"aden(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "glans penis or clitoridis",
+			"roots": [
+				"balan(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "gums",
+			"roots": [
+				"gingiv-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "hair",
+			"roots": [
+				"trich(o)-",
+				"capill-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "hands",
+			"roots": [
+				"cheir(o)-",
+				"chir(o)-",
+				"manu-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "head",
+			"roots": [
+				"cephal(o)-",
+				"capit(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "heart",
+			"roots": [
+				"cardi(o)-",
+				"cordi-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "hip, hip-joint",
+			"roots": [
+				"cox-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "horn",
+			"roots": [
+				"cerat(o)-",
+				"cornu-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "intestine",
+			"roots": [
+				"enter(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "jaw",
+			"roots": [
+				"gnath(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "kidney",
+			"roots": [
+				"nephr(o)-",
+				"ren-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "knee",
+			"roots": [
+				"gon-",
+				"genu-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "lip",
+			"roots": [
+				"cheil(o)-",
+				"chil(o)-",
+				"labi(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "liver",
+			"roots": [
+				"hepat(o)-",
+				"jecor-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "loins, pubic region",
+			"roots": [
+				"episi(o)-",
+				"pudend-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "lungs",
+			"roots": [
+				"pneumon-",
+				"pulmon(i)-",
+				"(pulmo-)"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "marrow, bone marrow",
+			"roots": [
+				"myel(o)-",
+				"medull-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "mind",
+			"roots": [
+				"psych-",
+				"ment-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "mouth",
+			"roots": [
+				"stomat(o)-",
+				"or-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "muscle",
+			"roots": [
+				"my(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "nail",
+			"roots": [
+				"onych(o)-",
+				"ungui-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "navel",
+			"roots": [
+				"omphal(o)-",
+				"umbilic-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "neck",
+			"roots": [
+				"trachel(o)-",
+				"cervic-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "nerve; the nervous system",
+			"roots": [
+				"neur(o)-",
+				"nerv-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "nipple, teat",
+			"roots": [
+				"thele-",
+				"papill-",
+				"mammill-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "nose",
+			"roots": [
+				"rhin(o)-",
+				"nas-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "ovary",
+			"roots": [
+				"oophor(o)-",
+				"ovari(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "pelvis",
+			"roots": [
+				"pyel(o)-",
+				"pelv(i)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "penis",
+			"roots": [
+				"pe(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "pupil (of the eye)",
+			"roots": [
+				"cor-",
+				"core-",
+				"coro-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "rib",
+			"roots": [
+				"pleur(o)-",
+				"cost(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "rib cage",
+			"roots": [
+				"thorac(i)-",
+				"thorac(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "shoulder",
+			"roots": [
+				"om(o)-",
+				"humer(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "sinus",
+			"roots": [
+				"sinus-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "skin",
+			"roots": [
+				"derm-",
+				"dermat(o)-",
+				"cut-",
+				"cuticul-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "skull",
+			"roots": [
+				"crani(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "stomach",
+			"roots": [
+				"gastr(o)-",
+				"ventr(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "testis",
+			"roots": [
+				"orchi(o)-",
+				"orchid(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "throat (upper throat cavity)",
+			"roots": [
+				"pharyng(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "throat (lower throat cavity/voice box)",
+			"roots": [
+				"laryng(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "thumb",
+			"roots": [
+				"pollic-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "tooth",
+			"roots": [
+				"odont(o)-",
+				"dent(i)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "tongue",
+			"roots": [
+				"gloss-",
+				"glott-",
+				"lingu(a)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "toe",
+			"roots": [
+				"dactyl(o)-",
+				"digit-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "tumour",
+			"roots": [
+				"cel-",
+				"onc(o)-",
+				"tum-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "ureter",
+			"roots": [
+				"ureter(o)-",
+				"ureter(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "urethra",
+			"roots": [
+				"urethr(o)-",
+				"urethr(a)-",
+				"urethr(o)-",
+				"urethr(a)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "urine, urinary system",
+			"roots": [
+				"ur(o)-",
+				"urin(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "uterine tubes",
+			"roots": [
+				"salping(o)-",
+				"salping(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "uterus",
+			"roots": [
+				"hyster(o)-",
+				"metr(o)-",
+				"uter(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "vagina",
+			"roots": [
+				"colp(o)-",
+				"vagin-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "vein",
+			"roots": [
+				"phleb(o)-",
+				"ven-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "vulva",
+			"roots": [
+				"episi(o)-",
+				"vulv-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "womb",
+			"roots": [
+				"hyster(o)-",
+				"metr(o)-",
+				"uter(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "wrist",
+			"roots": [
+				"carp(o)-",
+				"carp(o)-"
+			],
+			"family": "Body parts and substances"
+		},
+		{
+			"concept": "black",
+			"roots": [
+				"melan-",
+				"atr-",
+				"nigr-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "blue",
+			"roots": [
+				"cyan-",
+				"cerule-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "[[Gold (color)",
+			"roots": [
+				"chrys-",
+				"aur-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "gray, grey",
+			"roots": [
+				"poli-",
+				"can-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "green",
+			"roots": [
+				"chlor-",
+				"vir-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "purple",
+			"roots": [
+				"porphyr-",
+				"purpur-",
+				"purpureo-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "red",
+			"roots": [
+				"erythr-",
+				"rhod-",
+				"rub-",
+				"rubr-",
+				"ruf-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "red-orange",
+			"roots": [
+				"cirrh-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "[[Silver (color)",
+			"roots": [
+				"argent-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "white",
+			"roots": [
+				"leuc-",
+				"leuk-",
+				"alb-",
+				"cand-"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "yellow",
+			"roots": [
+				"xanth-",
+				"flav-",
+				"jaun- (French)"
+			],
+			"family": "Roots of color"
+		},
+		{
+			"concept": "bad, incorrect",
+			"roots": [
+				"cac-",
+				"dys-",
+				"mal-",
+				"mis-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "bent, crooked",
+			"roots": [
+				"ankyl-",
+				"prav-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "big",
+			"roots": [
+				"mega-",
+				"megal(o)-",
+				"magn(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "biggest",
+			"roots": [
+				"megist-",
+				"maxim-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "broad, wide",
+			"roots": [
+				"eury-",
+				"lat(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "cold",
+			"roots": [
+				"cry(o)-",
+				"frig(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "dead",
+			"roots": [
+				"necr(o)-",
+				"mort-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "equal",
+			"roots": [
+				"is(o)-",
+				"equ(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "false",
+			"roots": [
+				"pseud(o)-",
+				"fals(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "fast",
+			"roots": [
+				"tachy-",
+				"celer-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "female, feminine",
+			"roots": [
+				"thely-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "flat",
+			"roots": [
+				"platy-",
+				"plan(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "good, well",
+			"roots": [
+				"eu-",
+				"ben(e)-",
+				"bon(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "great",
+			"roots": [
+				"mega-",
+				"megal(o)-",
+				"magn(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "hard",
+			"roots": [
+				"scler(o)-",
+				"dur(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "heavy",
+			"roots": [
+				"bar(o)-",
+				"grav(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "hollow",
+			"roots": [
+				"coel(o)-",
+				"cav(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "huge",
+			"roots": [
+				"megal(o)-",
+				"magn(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "irregular",
+			"roots": [],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "large; extremely large",
+			"roots": [
+				"mega-",
+				"magn(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "largest",
+			"roots": [
+				"megist-",
+				"maxim-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "long",
+			"roots": [
+				"macr(o)-",
+				"long(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "male, masculine",
+			"roots": [
+				"arseno-",
+				"vir-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "narrow",
+			"roots": [
+				"sten(o)-",
+				"angust(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "new",
+			"roots": [
+				"ne(o)-",
+				"nov(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "normal, correct",
+			"roots": [
+				"orth(o)-",
+				"rect(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "old",
+			"roots": [
+				"paleo-",
+				"veter-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "sharp",
+			"roots": [
+				"oxy-",
+				"ac-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "short",
+			"roots": [
+				"brachy-",
+				"brev(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "small",
+			"roots": [
+				"micr(o)-",
+				"parv(i)- (rare)"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "smallest",
+			"roots": [
+				"minim-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "slow",
+			"roots": [
+				"brady-",
+				"tard(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "soft",
+			"roots": [
+				"malac(o)-",
+				"moll(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "straight",
+			"roots": [
+				"orth(o)-",
+				"rect(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "thick",
+			"roots": [
+				"pachy-",
+				"crass(i)-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "varied, various",
+			"roots": [
+				"poikilo-",
+				"vari-"
+			],
+			"family": "Roots of description"
+		},
+		{
+			"concept": "around, surrounding",
+			"roots": [
+				"peri-",
+				"circum-"
+			],
+			"family": "Roots of position"
+		},
+		{
+			"concept": "internal, within",
+			"roots": [
+				"endo-",
+				"intra-"
+			],
+			"family": "Roots of position"
+		},
+		{
+			"concept": "left",
+			"roots": [
+				"levo-",
+				"laev-",
+				"sinistr-"
+			],
+			"family": "Roots of position"
+		},
+		{
+			"concept": "middle",
+			"roots": [
+				"meso-",
+				"mes-",
+				"medi-"
+			],
+			"family": "Roots of position"
+		},
+		{
+			"concept": "right",
+			"roots": [
+				"dexi-",
+				"dex-",
+				"dextr-",
+				"dextro-"
+			],
+			"family": "Roots of position"
+		},
+		{
+			"concept": "double",
+			"roots": [
+				"diplo-",
+				"dupli-"
+			],
+			"family": "Prefixes of quantity or amount"
+		},
+		{
+			"concept": "equal",
+			"roots": [
+				"iso-",
+				"equi-"
+			],
+			"family": "Prefixes of quantity or amount"
+		},
+		{
+			"concept": "few",
+			"roots": [
+				"oligo-",
+				"pauci-"
+			],
+			"family": "Prefixes of quantity or amount"
+		},
+		{
+			"concept": "half",
+			"roots": [
+				"hemi-",
+				"semi-",
+				"demi- (French)"
+			],
+			"family": "Prefixes of quantity or amount"
+		},
+		{
+			"concept": "many, much",
+			"roots": [
+				"poly-",
+				"multi-"
+			],
+			"family": "Prefixes of quantity or amount"
+		},
+		{
+			"concept": "twice",
+			"roots": [
+				"dis-",
+				"bis-"
+			],
+			"family": "Prefixes of quantity or amount"
+		}
+	]
+}
