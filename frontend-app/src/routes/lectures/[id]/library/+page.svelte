@@ -218,7 +218,7 @@
 		}
 	}
 
-	const exit = () => goto(`/lectures/${lec?.id ?? ''}`);
+	const exit = () => goto('/campus');
 
 	const queuePreview = $derived.by(() => {
 		const all = lectureDecodingQueue();
@@ -311,7 +311,7 @@
 					</div>
 				{/if}
 			</div>
-			<div class="r-actions"><button class="pill-btn pill-btn--primary" onclick={exit}>강의로</button></div>
+			<div class="r-actions"><button class="pill-btn pill-btn--primary" onclick={exit}>홈으로</button></div>
 		</section>
 	{:else if current && currentTerm}
 		<section class="play">

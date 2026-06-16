@@ -219,7 +219,7 @@
 	function moreCards() {
 		buildSession(EXTRA_BATCH);
 	}
-	const exit = () => goto(`/lectures/${lec?.id ?? ''}`);
+	const exit = () => goto('/campus');
 </script>
 
 <div class="page">
@@ -283,7 +283,7 @@
 			</div>
 			<div class="r-actions">
 				<button class="pill-btn pill-btn--ghost" onclick={moreCards}>+{EXTRA_BATCH}개 더</button>
-				<button class="pill-btn pill-btn--primary" onclick={exit}>강의로</button>
+				<button class="pill-btn pill-btn--primary" onclick={exit}>홈으로</button>
 			</div>
 		</section>
 	{:else if current}

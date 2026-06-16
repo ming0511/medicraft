@@ -3,7 +3,7 @@
 	import { lectures, type Lecture } from '$lib/data/lectures';
 	import { generatedLectures, addGeneratedLecture, removeGeneratedLecture, hiddenBuiltinIds, hideBuiltinLecture } from '$lib/stores/generated-lectures.svelte';
 	import { selectedEngine, setSelectedEngine, engineParam, freeRemaining, canExtract, recordExtract, FREE_EXTRACTS, type SelectedEngine } from '$lib/stores/lecture-engine.svelte';
-	import { saveScope } from '$lib/stores/scope';
+	import { saveScope, loadScope, DEFAULT_SCOPE } from '$lib/stores/scope';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import type { PageData } from './$types';
@@ -177,8 +177,13 @@
 		e.stopPropagation();
 		const msg = gen ? '이 강의를 삭제할까요?' : '이 내장 강의를 목록에서 숨길까요?';
 		if (!confirm(msg)) return;
+		// 삭제하려는 강의가 지금 활성 범위면, 삭제 후 보정사(기본 범위)로 되돌린다.
+		// (삭제 전에 판정 — 삭제하면 loadScope 가 이미 폴백해 'lecture' 가 사라짐)
+		const cur = loadScope();
+		const wasActiveScope = cur.kind === 'lecture' && cur.lectureId === id;
 		if (gen) removeGeneratedLecture(id);
 		else hideBuiltinLecture(id);
+		if (wasActiveScope) saveScope(DEFAULT_SCOPE);
 	}
 </script>
 
